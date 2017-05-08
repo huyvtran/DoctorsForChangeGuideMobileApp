@@ -7,13 +7,20 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>PatientsInNeed</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Patients In Need</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+<ion-toolbar color="primary">
+  <ion-title>Social Screen</ion-title>
+</ion-toolbar>
+
 <ion-card>
 
   <ion-card-header>
@@ -21,7 +28,12 @@
   </ion-card-header>
 
   <ion-card-content>
-    <p>Evidence-based 10-question survey for screening about the social determinants of health in the outpatient setting.</p>
+    <p>Evidence-based 10-question survey for screening about the social determinants of health in the outpatient setting.
+    
+    From Garg A, et al. "Improving the management of family psychosocial problems at low-income children's well-child care visits: The WE CARE Project." Pediatrics 120, 547-558 (2007).
+
+    </p>
+  <button ion-button (click)="launch('http://pediatrics.aappublications.org/content/120/3/547')">WE CARE Project</button>
   </ion-card-content>
 
 </ion-card>
@@ -37,8 +49,131 @@
 
     From the National Center for Medical Legal Partnerships.</p>
 
-    <button ion-button (click)="launch('http://dfcguide.org/docs/IHELPGuide.pdf')">IHELPGuide.pdf</button>
+    <button ion-button (click)="launch('http://dfcguide.org/docs/IHELPGuide.pdf')">IHELPGuide</button>
+
+    <button ion-button (click)="launch('http://www2.aap.org/sections/ypn/r/advocacy/IHELLPPocketCard.pdf')">I-HELP Pocket Card</button>
   </ion-card-content>
 
 </ion-card>
+
+<ion-card>
+
+  <ion-card-header>
+    Caring with Compassion     
+  </ion-card-header>
+
+  <ion-card-content>
+    <p>
+      A pocket guide for medical trainees in providing clinical care across the Bio-Psychosocial domains.
+    </p>
+  <button ion-button (click)="launch('http://dfcguide.org/docs/Pocket%20Guide.pdf')">Pocket Guide</button>
+  </ion-card-content>
+
+</ion-card>
+
+<ion-toolbar color="primary">
+  <ion-title>Evidence-Based Questions </ion-title>
+</ion-toolbar>
+
+<ion-card>
+  <ion-card-content>
+    <p>
+      Evidence-based screening questions you can use to ask your patients about a variety of specific topics.
+    </p>
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+
+  <ion-card-header>
+    Food Insecurity            
+  </ion-card-header>
+
+  <ion-card-content>
+    <ul>
+    <li><p>TWO-QUESTION survey from Hager, et al. 2010</p>
+    <ul>
+    <li><p>Within the past 12 months did you worry whether your food would<br>
+    run out before you got money to buy more?</p>
+    </li>
+    <li><p>Within the past 12 months, was there a time when the food you<br>
+    bought didn't last and you didn't have money to buy more?</p>
+    </li>
+    <li><p>For more information, check out the publication:<br>
+    <a href="http://pediatrics.aappublications.org/content/126/1/e26.full.html">http://pediatrics.aappublications.org/content/126/1/e26.full.html</a></p>
+    </li>
+    <li><p>See the document below</p>
+    </li>
+    </ul>
+    </li>
+    <li><p>Do you need help in getting food by the end of the month? IF YES,<br>
+    would you like help with this (WE CARE)?</p>
+    </li>
+    </ul>
+    <h1>Documents</h1>
+    <p><a href="Childhood hunger screening.pdf">Childhood Hunger Screening</a></p>
+    <p><a href="http://www.ers.usda.gov/datafiles/Food_Security_in_the_United_States/Food_Security_Survey_Modules/hh2012.pdf">Gold standard screen for food insecurity</a></p>
+    <ul>
+    <li>U.S. Household Food Security Survey Module Please see questions on page 3 marked "HH2, HH3, &amp; HH4"</li>
+    </ul>
+    <p><a href="http://www.ers.usda.gov/topics/food-nutrition-assistance/food-security-in-the-us/survey-tools.aspx">More food insecurity screening tools and resources – USDA</a></p>
+    <p><a href="https://pace.oregonstate.edu/catalog/childhood-food-insecurity">5 module free online course on screening for food insecurity</a></p>
+  </ion-card-content>
+
+</ion-card>
+
+<ion-toolbar color="primary">
+  <ion-title>Education</ion-title>
+</ion-toolbar>
+
+<ion-card>
+
+  <ion-card-header>
+    Education and How to Screen Patients             
+  </ion-card-header>
+
+  <ion-card-content>
+    <p>
+      Link to Oregon videos of how to use screening tools and interview questions
+    </p>
+  <button ion-button (click)="launch('https://pace.oregonstate.edu/courses')">Oregon State Website</button>
+  </ion-card-content>
+
+</ion-card>
+
+<ion-toolbar color="primary">
+  <ion-title>Assessment Tools</ion-title>
+</ion-toolbar>
+
+<ion-card>
+
+  <ion-card-header>
+    HEADS assessment             
+  </ion-card-header>
+
+  <ion-card-content>
+    <p>
+      Typically used for adolescents but expanded here so it can be used for patients of any age
+    </p>
+  <button ion-button (click)="launch('http://dfcguide.org/docs/HEADS%20assessment.pdf')">Heads Assessment</button>
+  </ion-card-content>
+
+</ion-card>
+
+<ion-card>
+
+  <ion-card-header>
+    BATHE assessment             
+  </ion-card-header>
+
+  <ion-card-content>
+    <p>
+      To obtain a psychosocial history, understand the patient in the context of his/her total life situation.
+    </p>
+  <button ion-button (click)="launch('http://dfcguide.org/docs/BATHE%20assessment.pdf')">BATHE Assessment (english)</button>
+  <button ion-button (click)="launch('http://dfcguide.org/docs/BATHE%20assessment%20[spanish].pdf')">BATHE Assessment (spanish)</button>
+  </ion-card-content>
+
+</ion-card>
+
 </ion-content>

@@ -3,12 +3,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
-import { MainList } from '../pages/main-list/main-list';
-import { IntroList } from '../pages/intro-list/intro-list';
-import { Poverty } from '../pages/poverty/poverty';
-import { PatientsInNeed } from '../pages/patients-in-need/patients-in-need';
+import { HealthCare, FoodInsecurity,HomePage, MainList, IntroList, PatientsInNeed, Poverty} from '../pages/pages';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -18,11 +13,12 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
   declarations: [
     MyApp,
     HomePage,
-    ListPage,
     MainList,
     IntroList,
     Poverty,
-    PatientsInNeed
+    PatientsInNeed,
+    FoodInsecurity,
+    HealthCare
   ],
   imports: [
     BrowserModule,
@@ -32,11 +28,12 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,
     MainList,
     IntroList,
     Poverty,
-    PatientsInNeed
+    PatientsInNeed,
+    FoodInsecurity,
+    HealthCare
   ],
   providers: [
     InAppBrowser,

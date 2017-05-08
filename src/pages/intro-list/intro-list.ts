@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Poverty } from '../poverty/poverty';
+import { Poverty, FoodInsecurity, HealthCare } from '../pages';
 /**
  * Generated class for the IntroList page.
  *
@@ -29,11 +29,11 @@ export class IntroList {
       });
     this.items.push({
         title: 'Food Insecurity',
-        component: IntroList,
+        component: FoodInsecurity,
       });
     this.items.push({
         title: 'Health Care',
-        component: IntroList,
+        component: HealthCare,
       });
     this.items.push({
         title: 'Obesity',

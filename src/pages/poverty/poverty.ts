@@ -23,14 +23,14 @@ export class Poverty {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Poverty');
-    this.loadPovertyContent();
+    this.loadContent();
   }
   
   launch(url) {
     this.iab.create(url,'_system'); 
   }
 
-  loadPovertyContent(){
+  loadContent(){
   	this.items = [
   		{title:'Texas ranked 2nd highest in nation after California with 1,751,000 children living in poverty',sup:1},
   		{title:'27% of Harris County children live in poverty and 26% of Texas children do',sup:1},
@@ -45,7 +45,7 @@ export class Poverty {
   	];
   }
 
-  loadPovertyLink(){
+  loadLink(){
   	this.items = [
   	{title:'CPPP',href:'http://forabettertexas.org/economicopportunity.html'},
   	{title:'For a Better Texas',href:'http://forabettertexas.org/kidscount.html'},
@@ -53,7 +53,7 @@ export class Poverty {
   	console.log("items",this.items)
   }
 
-  loadPovertyRef(){
+  loadRef(){
   	this.items = [
   		'1. Children at Risk. Growing Up in Houston 2012-2014, Assessing the Quality of Life of Our Children. Children at Risk, 2012.',
   		'2. "Child Poverty." National Center for Children in Poverty. Columbia University Mailman School of Public Health, n.d. Web. 12 Sept 2014.',
