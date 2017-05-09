@@ -1,9 +1,3 @@
-<!--
-  Generated template for the IntroList page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
@@ -23,3 +17,13 @@
     </button>
   </ion-list>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar text-center>
+    <small >
+            <a [navPush]="MainList">Home</a> | <a [navPush]="TermsAndCond">Terms &amp; Conditions</a> | <a (click)="launch('https://docs.google.com/forms/d/1V5ySudx03DRinmNHCm6EfKWXnPa1GJAyVxaZcO5Miy0/viewform')">Feedback</a><br>
+            Copyright © 2016 Doctors for Change<br>
+            <a (click)="launch('http://www.doctorsforchange.org')">doctorsforchange.org</a>
+        </small>
+  </ion-toolbar>
+</ion-footer>

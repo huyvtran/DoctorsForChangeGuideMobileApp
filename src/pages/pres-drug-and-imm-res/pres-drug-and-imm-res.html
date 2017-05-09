@@ -1,0 +1,269 @@
+<ion-header>
+
+  <ion-navbar>
+  <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Prescription Drug and Immunization Resources</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+<!--  ########################################  Immunization Resources
+  #####################################  -->
+<ion-toolbar color="danger">
+  <ion-title>Immunization Resources</ion-title>
+</ion-toolbar>
+
+<ion-card>
+  <ion-card-header>
+  Immunization Help Line   
+  </ion-card-header>
+
+  <ion-card-content  >
+	  <p>Texas Children’s Hospital Immunization Help Line lists mobile van special events and immunization clinics in English, Spanish, and Vietnamese.</p>
+	<h1>Phone</h1>
+	<p><a href="tel:+18328242061">832-824-2061</a></p>
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-header> 
+  Mobile Immunization Clinics/Providers  
+  </ion-card-header>
+
+  <ion-card-content  >
+		<p>Contact one of the mobile immunization providers below&nbsp;to check their<br>
+		availability&nbsp;(they fill up fast).</p>
+		<ul>
+		<li><p><a href="http://www.carevan.org/neighborhood.htm">Blue Cross/Blue Shield Care Van</a><br>
+		1-800-258-5437, option 1</p>
+		</li>
+		<li><p>Harris County Hospital District Troubleshooting for Health Mobile Program<br>
+		713-566-5545 or 713-873-8687 (hotline)</p>
+		</li>
+		<li><p><a href="http://www.texaschildrens.org/carecenters/mobileclinics/RonaldMcdonald.aspx">Texas Children's Hospital Ronald McDonald Care Mobile</a><br>
+		832-372-9871 or 832-824-6788</p>
+		</li>
+		<li><p><a href="http://www.texaschildrens.org/carecenters/mobileclinics/superkids.aspx">Texas Children's Hospital SuperKids Mobile Pediatric Clinic</a><br>
+		832-372-9871 or 832-824-6788</p>
+		</li>
+		<li><p><a href="http://www.christusfoundation.org/index.php/en/welcome/m/c/healthy_living_mobile_clinic/">CHRISTUS Healthy Living Mobile Clinic</a><br>
+		713-803-1880</p>
+		</li>
+		<li><p>Gateway to Care Immunization Clinic Options<br>
+		<a href="http://www.gatewaytocare.org/downloads/immunizations.pdf">http://www.gatewaytocare.org/downloads/immunizations.pdf</a></p>
+		</li>
+		</ul>
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-header>   
+  The Immunization Partnership
+  </ion-card-header>
+
+  <ion-card-content  >
+	<p>Non-profit organization that advocates evidence-based policy that supports high immunization rates, encourages the use of immunization best practices, and provides educational resources to individuals and healthcare providers.</p>
+	<h1>Website</h1>
+	<p><a href="http://www.immunizeusa.org">http://www.immunizeusa.org</a></p>
+  </ion-card-content>
+</ion-card>
+
+<!--  ########################################  General Educational Resources  #####################################  -->
+<ion-toolbar color="danger">
+  <ion-title>General Educational Resources</ion-title>
+</ion-toolbar>
+
+<ion-card>
+  <ion-card-header>   
+  Immunizations and Developmental Milestones (birth to 6 years old)
+  </ion-card-header>
+
+  <ion-card-content  >
+  Helps parents keep track of immunizations and their child's development as they grow older
+
+  	<div text-center>
+        <button ion-button (click)="launch('http://dfcguide.org/docs/Immunization%20Milestones.pdf')">Milestones</button>
+    </div>
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-header>  
+  Recommended Immunizations and Vaccine-Preventable Diseases 
+  </ion-card-header>
+
+  <ion-card-content  >
+	  <p>Provides parents information on recommended immunizations for children<br>
+	from birth through 6 years and the vaccines that can prevent illnesses</p>
+	<h1>Documents</h1>
+	<p><a href="/docs/Parent Version - Easy to Read Recommended Vaccine Schedule Birth to 6 Years [english].pdf">Vaccine Schedule (birth to 6 years) - English</a><br>
+	<a href="/docs/Parent Version - Easy to Read Recommended Vaccine Schedule Birth to 6 Years [spanish].pdf">Vaccine Schedule (birth to 6 years) - Spanish</a></p>
+	<p><a href="/docs/Parent Version - Easy to Read Recommended Vaccine Schedule 7 to 18 Years [english].pdf">Vaccine Schedule (7 to 18 years) - English</a><br>
+	<a href="/docs/Parent Version - Easy to Read Recommended Vaccine Schedule 7 to 18 Years [spanish].pdf">Vaccine Schedule (7 to 18 years) - Spanish</a></p>
+	<p><a href="/docs/Patient Version - Easy to Read Recommended Vaccines 19 Years and Older.pdf">Vaccine Schedule (19 years and older) – English</a></p>
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-header> 
+  CDC Recommended Vaccine Schedule  
+  </ion-card-header>
+
+  <ion-card-content  >
+        <p>Recommended vaccine schedule and catch-up document designed for health care providers (not a patient handout).</p>
+		<h1>Documents</h1>
+		<p><a href="/docs/Recommended Vaccine Schedule and Catch-Up - Ages 0 to 18 Years.pdf">CDC Vaccine Schedule (0 to 18 years)</a><br>
+		<a href="/docs/Adult Recommended Vaccine Schedule For 19 Years and Older.pdf">CDC Vaccine Schedule (19 years and older)</a></p>
+  </ion-card-content>
+</ion-card>
+<!--  ########################################  Prescription Drug Resources  #####################################  -->
+<ion-toolbar color="danger">
+  <ion-title>Prescription Drug Resources</ion-title>
+</ion-toolbar>
+
+<ion-card>
+  <ion-card-content>
+  <ion-list>
+        <button ion-item class="item-stable" (click)="toggleGroup(0)" >
+            Public Insurance
+        </button>
+        <ion-item class="item-accordion" *ngIf="isGroupShown(0)">
+        	<h1>Medicare</h1>
+			<p>Prescription drugs are covered in Medicare Part D. This is a 3-tiered system:</p>
+			<ol>
+			<li>generic medications (cheapest)</li>
+			<li>preferred brand names</li>
+			<li>non-preferred brand names (most expensive). </li>
+			</ol>
+			<p>There are many different plans - so you have to find out which plan your patient has using this website</p>
+			<p><a href="https://www.medicare.gov/find-a-plan/questions/home.aspx">https://www.medicare.gov/find-a-plan/questions/home.aspx</a>.</p>
+			<p>All Medicare formularies are available on <a href="http://www.epocratesonline.com">epocratesonline.com</a>.</p>
+			<h1>TX Medicaid and CHIP</h1>
+			<p>Medicaid and CHIP use a 2-tiered system with preferred drugs (Medicaid Preferred Drug List or PDL) and restricted drugs. Check out the formulary online before prescribing medications for your patients:</p>
+			<p><a href="http://www.txvendordrug.com/pdl">http://www.txvendordrug.com/pdl</a>.</p>
+			<p>Restricted drugs need prior authorization (PA) – so call 1-877-PA-TEXAS to get PA. Make sure you have your (or your attending’s) Medicaid provider number as well as the patient’s Medicaid number.</p>
+			<h1>Harris Health System</h1>
+			<p>The Harris Health System uses a 2-tiered formulary (preferred and restricted drugs). Patients pay a co-pay (unless Healthcare for the Homeless program). Formulary is only available via the Harris Health Epic program. Restricted drugs need approval via the Formulary Command Center (FCC) – call 713-873-3706.</p>
+    	</ion-item>
+    	<button text-wrap ion-item class="item-stable" (click)="toggleGroup(1)" >
+            Reduced Cost Prescription Drugs
+(For the uninsured or for those with co-pays that are too high)
+        </button>
+        <ion-item class="item-accordion" *ngIf="isGroupShown(1)">
+        	<p>For the uninsured or for those with co-pays that are too high</p>
+			<h1>Good Rx</h1>
+			<p><a href="http://www.goodrx.com">www.goodrx.com</a> is a website that helps compare prices of all FDA-approved prescription drugs at virtually every pharmacy. This website will tell you if the medication is on any $4 or $5 dollar list. The website also contains coupons, discounts and other saving tips all in one place. This is a great resource for your patients!</p>
+			<h1>$4-10 dollar medications</h1>
+			<p>Here is a website you can use to search all $4 generic drug lists in your area (VERY NICE RESOURCE!):</p>
+			<p><a href="http://www.needymeds.org/DiscountDrugProgram.taf">http://www.needymeds.org/DiscountDrugProgram.taf</a></p>
+			<p>If you would prefer searching a specific $4 generic medication program here are some of the common locations for $4 prescriptions:</p>
+			<ul>
+			<li><p>Walmart: $4 30-day supply, $10 90-day supply<br>
+			<a href="http://www.walmart.com/cp/1078664">www.walmart.com/cp/1078664</a></p>
+			</li>
+			<li><p>Target: $4 30-day supply, $10 90-day supply<br>
+			<a href="http://www.target.com/pharmacy/generics">http://www.target.com/pharmacy/generics</a></p>
+			</li>
+			<li><p>Kroger: $4 30-day supply, $10 90-day supply<br>
+			<a href="https://www.kroger.com/topic/save-on-generic-prescriptions">https://www.kroger.com/topic/save-on-generic-prescriptions</a></p>
+			</li>
+			<li><p>Brookshire Brothers Pharmacy: $4 30-day supply, $10 90-day supply<br>
+			<a href="http://www.brookshires.com/explore/departments/generic-prescriptions/">http://www.brookshires.com/explore/departments/generic-prescriptions/</a></p>
+			</li>
+			<li><p>HEB: 30 Day Supply at $4, $8, or $12 and 90 Day Supply at $10,<br>
+			$20, or $30 <a href="https://www.heb.com/pharmacy/generics/generics.jsp">https://www.heb.com/pharmacy/generics/generics.jsp</a></p>
+			</li>
+			<li><p>Walgreens: Spend $20/year (or $35/year for families) and receive<br>
+			discounts on &gt;8,000 generic and brand name drugs, immunizations<br>
+			<a href="http://www.walgreens.com/pharmacy/psc/psc_overview_page.jsp">http://www.walgreens.com/pharmacy/psc/psc_overview_page.jsp</a></p>
+			</li>
+			<li><p>CVS: Spend $15 per person per year and receive 90-day supply of<br>
+			over 400 generic medications for $11.99<br>
+			<a href="https://www.cvs.com/promo/promoLandingTemplate.jsp?promoLandingId=healthsavingspass">https://www.cvs.com/promo/promoLandingTemplate.jsp?promoLandingId=healthsavingspass</a></p>
+			</li>
+			</ul>
+			<h1>Texas 2-1-1</h1>
+			<p>List of Free or Discount Prescription Drug Programs: an extensive list of available resources:<br>
+			<a href="http://www.needhelppayingbills.com/html/get_free_prescription_drugs.html">http://www.needhelppayingbills.com/html/get_free_prescription_drugs.html</a></p>
+			<h1>NeedyMeds (<a href="http://www.needymeds.org">needymeds.org</a>)</h1>
+			<p>An online information resource of programs that provide assistance to people who are unable to afford their medications and health care costs. Information includes:</p>
+			<ul>
+			<li><p>List of Patient Assistance Programs (PAPs) (+ list of organizations<br>
+			that help patients fill out the applications for PAPs)</p>
+			</li>
+			<li><p>Medication coupons, drug discount cards, lists of free or reduced<br>
+			cost clinics/pharmacies</p>
+			</li>
+			<li><p>List of disease-based assistance programs</p>
+			</li>
+			</ul>
+			<h1>RxAssist (<a href="http://www.rxassist.org">rxassist.org</a>)</h1>
+			<p>Search the database for generic or brand name drugs to find current application forms and information on patient assistance programs.</p>
+			<ul>
+			<li><p>List of Patient Assistance Programs (PAPs)</p>
+			</li>
+			<li><p>Prescription discount card available</p>
+			</li>
+			</ul>
+			<h1>Partnership for Prescription Assistance (<a href="http://www.pparx.org">pparx.org</a>)</h1>
+			<p>Helps qualifying patients without prescription drug coverage get the medicines they need for free or reduced-cost and offers single access point to more than 475 public and private programs including biopharmaceutical companies</p>
+			<ul>
+			<li><p>List of Patient Assistance Programs (PAPs)</p>
+			</li>
+			<li><p>List of free or low-cost clinics based on location</p>
+			</li>
+			<li><p>Diabetes programs and supplies</p>
+			</li>
+			<li><p>List of discount drug card programs</p>
+			</li>
+			</ul>
+			<h1>United Healthcare Children’s Foundation (<a href="http://www.uhccf.org">uhccf.org</a>)</h1>
+			<p>Helps pay for prescription drugs for children with private insurance but high/unaffordable co-pays.</p>
+			<h1>FamilyWize Prescription Discount Card</h1>
+			<p>Coordinated by United Way with purpose of reducing cost of prescriptions</p>
+			<ul>
+			<li><p>Free service, no application necessary</p>
+			</li>
+			<li><p>It is not form of insurance, and no conflict with other insurances</p>
+			</li>
+			<li><p>Call <strong>866-810-3784</strong> for more information or go to the website<br>
+			<a href="http://familywize.org/">http://familywize.org/</a></p>
+			</li>
+			</ul>
+			<h1>Gulf Coast Community Services Association</h1>
+			<ul>
+			<li><p>Provides prescription gift card to clients to assist with current medications only, two prescription cards per year and two prescription cards per family</p>
+			</li>
+			<li><p>Qualifications: must reside in Harris County or neighboring counties, meet federal poverty income guidelines, and have active prescription for medical concern</p>
+			</li>
+			<li><p>Submit form online for more information<br>
+			<a href="http://www.gccsa.org/contact/">http://www.gccsa.org/contact/</a></p>
+			</li>
+			</ul>
+			<h1>Rx Outreach</h1>
+			<p>Non-profit patient assistance program (PAP) that provides affordable prescription medication and over 500 different medications through a mail-order pharmacy. Qualify based on income, but may use regardless of age or if using another discount medicine program or PAP (<a href="http://rxoutreach.org">http://rxoutreach.org</a>)</p>
+			<h1>National Association of Counties (NACo) Prescription Drug Discount Card program</h1>
+			<p>Created for uninsured and underinsured residents nationwide</p>
+			<ul>
+			<li><p>Free service where the entire family can be covered by the program,<br>
+			everyone is eligible</p>
+			</li>
+			<li><p>It is not form of insurance, and no conflict with Medicare or other<br>
+			private insurance</p>
+			</li>
+			</ul>
+			<p>Call <strong>1-877-321-2652</strong> for more information or go to the website</p>
+			<p><a href="http://www.naco.org/programs/residents/pages/pdcp.aspx">http://www.naco.org/programs/residents/pages/pdcp.aspx</a></p>
+    	</ion-item>
+   </ion-list>
+
+  </ion-card-content>
+</ion-card>
+
+
+</ion-content>

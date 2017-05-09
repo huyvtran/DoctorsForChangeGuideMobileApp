@@ -1,0 +1,172 @@
+
+<ion-header>
+
+  <ion-navbar>
+  <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Care For The Uninsured</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+</ion-content>
+
+<ion-content padding>
+  <ion-card>
+  <ion-card-content>
+  So your patient does not have health insurance... there are still options for your patient to get care in Houston! Options include Federally Qualified Health Centers, free or charity clinics, the Harris Health System (for residents of Harris County) and more!
+  </ion-card-content>
+  </ion-card>
+  <ion-list>
+    <button text-wrap ion-item class="item-stable" (click)="toggleGroup(0)" >
+      Federally Qualified Health Centers
+(What are Federally qualified health centers (FQHCs)?)
+      </button>
+        <ion-item class="item-accordion" *ngIf="isGroupShown(0)">
+          <p>What are Federally qualified health centers (FQHCs)?</p>
+      <p>Federally qualified health centers (FQHCs) must serve an underserved area or population, offer a sliding fee scale, provide comprehensive services, have an ongoing quality assurance program, and have a governing board of directors.</p>
+      <p>Find a FQHC that is convenient for your patient at the HRSA website (search by zip code):</p>
+      <p><a href="http://findahealthcenter.hrsa.gov">http://findahealthcenter.hrsa.gov</a></p>
+      <h1>Examples of Federally Qualified Health Centers in Houston:</h1>
+      <p>Legacy Community Health Services<br>
+      <a href="http://legacycommunityhealth.org">http://legacycommunityhealth.org</a></p>
+      <p>Good Neighbor Healthcare Center<br>
+      <a href="http://www.gnhc.org/about-good-neighbor/">http://www.gnhc.org/about-good-neighbor/</a></p>
+      <p>Hope Clinic<br>
+      <a href="http://hopechc.org">http://hopechc.org</a></p>
+        </ion-item>
+        <button text-wrap ion-item class="item-stable" (click)="toggleGroup(1)" >
+      Safety Net Clinics
+(Safety Net Clinics have different eligibility requirements – but there are a lot of options in Houston and you can almost always find a ...)
+      </button>
+        <ion-item class="item-accordion" *ngIf="isGroupShown(1)">
+          <p>Safety Net Clinics have different eligibility requirements – but there are a lot of options in Houston and you can almost always find a place for your patient to receive primary care.</p>
+      <p>FQHCs and Charity Clinics are all considered Safety Net options for your patients.</p>
+      <p>Example Safety Net Clinics:</p>
+      <ul>
+      <li>San Jose Clinic <a href="http://www.sanjoseclinic.org">http://www.sanjoseclinic.org</a></li>
+      <li>Casa El Buen Samaritano: <a href="http://casaelbuen.org">http://casaelbuen.org</a></li>
+      </ul>
+      <p>Gateway to Care maintains a COMPLETE list of Safety Net Clinics!!</p>
+      <p>It is <strong>very important</strong> to ask for necessary information needed to<br>
+      confirm eligibility (each of these clinics have their own requirements<br>
+      for eligibility) when helping your patients make appointments!</p>
+      <p><a href="http://www.gatewaytocare.org/MANAGING-YOUR-HEALTH">http://www.gatewaytocare.org/MANAGING-YOUR-HEALTH</a></p>
+      <h1>Documents</h1>
+      <ul>
+      <li><p><a href="http://www.gatewaytocare.org/SiteAssets/Gateway-to-Care/files/generallist.pdf">List of all Safety Net clinics</a></p>
+      </li>
+      <li><p><a href="http://www.gatewaytocare.org/SiteAssets/Gateway-to-Care/files/pediatricservices.pdf">Pediatric clinics</a></p>
+      </li>
+      <li><p><a href="http://www.gatewaytocare.org/SiteAssets/Gateway-to-Care/files/immunizations.pdf">Immunizations</a></p>
+      </li>
+      <li><p><a href="http://www.gatewaytocare.org/SiteAssets/Gateway-to-Care/files/prenatalservices.pdf">Obstetrics/prenatal care</a></p>
+      </li>
+      <li><p><a href="http://www.gatewaytocare.org/SiteAssets/Gateway-to-Care/pregnancy%20testing.pdf">Pregnancy testing (low-cost)</a></p>
+      </li>
+      <li><p><a href="http://www.gatewaytocare.org/SiteAssets/Gateway-to-Care/dental%20clinics.pdf">Dental Care</a></p>
+      </li>
+      <li><p><a href="http://www.gatewaytocare.org/SiteAssets/Gateway-to-Care/files/texasruralhealthclinics.pdf">Clinics in rural areas (organized by TX county)</a></p>
+      </li>
+      <li><p><a href="http://www.needhelppayingbills.com/html/clinics_in_houston.html">Texas 2-1-1 list of Safety Net clinics</a></p>
+      </li>
+      </ul>
+        </ion-item>
+    <button text-wrap ion-item class="item-stable" (click)="toggleGroup(2)" >
+      Harris Health System
+(The Harris Health System provides both primary and specialty care for residents of Harris County (regardless of legal status))
+      </button>
+        <ion-item class="item-accordion" *ngIf="isGroupShown(2)">
+          <p>The Harris Health System provides both primary and specialty care for residents of Harris County (regardless of legal status)</p>
+      <p>Read more about the Harris Health clinics (including locations and contact information) here:</p>
+      <p><a href="https://www.harrishealth.org/en/services/locations/pages/default.aspx">https://www.harrishealth.org/en/services/locations/pages/default.aspx</a></p>
+      <p>Primary care:<br>
+      <a href="https://www.harrishealth.org/en/services/locations/pages/primary-care.aspx">https://www.harrishealth.org/en/services/locations/pages/primary-care.aspx</a></p>
+      <p>Same Day Clinics (for MINOR illnesses and injuries):<br>
+      <a href="https://www.harrishealth.org/en/services/locations/Pages/same-day-clinics.aspx">https://www.harrishealth.org/en/services/locations/Pages/same-day-clinics.aspx</a></p>
+      <p>Specialty Care:<br>
+      <a href="https://www.harrishealth.org/en/services/locations/pages/specialty-care.aspx">https://www.harrishealth.org/en/services/locations/pages/specialty-care.aspx</a></p>
+      <p>Emergency Care:<br>
+      <a href="https://www.harrishealth.org/en/services/locations/pages/emergency-care.aspx">https://www.harrishealth.org/en/services/locations/pages/emergency-care.aspx</a></p>
+      <p>Hospitals:<br>
+      <a href="https://www.harrishealth.org/en/services/locations/pages/hospitals.aspx">https://www.harrishealth.org/en/services/locations/pages/hospitals.aspx</a></p>
+      <p>For more information about the Harris Health Financial Assistance Program – check out the <a href="guide/insurance-options/harris-health-financial-assistance-program.html">Harris Health Financial Assistance Program</a> section of our guide.</p>
+        </ion-item>
+    <button text-wrap ion-item class="item-stable" (click)="launch('http://dfcguide.org/docs/Sliding%20Scale%20Clinics%20for%20Kids.pdf')" >
+      Clinic Options Specifically for Kids
+(List of clinic locations and contact information for clinics that provide care for children based on a sliding scale)
+      </button>
+    <button text-wrap ion-item class="item-stable" (click)="toggleGroup(4)" >
+      Resources for Women
+      </button>
+        <ion-item class="item-accordion" *ngIf="isGroupShown(4)">
+          <h1>Eligibility</h1>
+      <p>Women ages 18 to 44 who have little or no money. Maximum monthly income limits (see: <a href="http://yourtexasbenefits.hhsc.state.tx.us/programs/health/women/tx-womens-health-program.php">maximum monthly limits</a>).</p>
+      <p>What it offers:</p>
+      <ul>
+      <li><p>A family planning exam</p>
+      </li>
+      <li><p>Screenings for diabetes, sexually transmitted diseases, high blood<br>
+      pressure, and breast and cervical cancers</p>
+      </li>
+      <li><p>Treatment of certain sexually transmitted diseases</p>
+      </li>
+      <li><p>Family planning counseling and education</p>
+      </li>
+      <li><p>Birth control, except emergency contraception</p>
+      </li>
+      </ul>
+      <p>Must be 18 or older, a U.S. citizen or legal immigrant, don’t qualify for full Medicaid, CHIP, or Medicare Part A or B.</p>
+      <p>Program application process and form (English and Spanish) available at:</p>
+      <p><a href="http://www.texaswomenshealth.org/page/how-to-apply">http://www.texaswomenshealth.org/page/how-to-apply</a></p>
+      <p>Contact: 1-800-335-8957</p>
+        </ion-item>
+    <button text-wrap ion-item class="item-stable" (click)="toggleGroup(5)" >
+      Gateway to Care Patient Navigator Program
+(Patient navigators help people access health care at the appropriate level. If you don’t have time to help your patient find access to ...)
+      </button>
+        <ion-item class="item-accordion" *ngIf="isGroupShown(5)">
+          <p>Patient navigators help people access health care at the appropriate level. If you don’t have time to help your patient find access to care or a health home – call a navigator who has the time and resources to help!</p>
+      <p>Navigators will:</p>
+      <ul>
+      <li><p>Educate people about options of healthcare access</p>
+      </li>
+      <li><p>Assist people to identify a medical home</p>
+      </li>
+      <li><p>Assist people to obtain social services and other community resources</p>
+      </li>
+      <li><p>Educate people on the value of a medical home (Health Home), and assist in the development of family preventive health care plans</p>
+      </li>
+      <li><p>Contact a Patient Navigator to link your patients with access to care: <strong>call 713-783-4616!</strong></p>
+      </li>
+      </ul>
+        </ion-item>
+    <button text-wrap ion-item class="item-stable" (click)="toggleGroup(6)" >
+      Application Assistance
+(Community centers offering assitance with Gold Card/CHIP/Medicaid/Medicare applications.)
+      </button>
+        <ion-item class="item-accordion" *ngIf="isGroupShown(6)">
+          <p>Community centers offering assitance with Gold Card/CHIP/Medicaid/Medicare applications.</p>
+      <p><a href="/docs/Application Assistance.pdf">Application Assistance</a></p>
+        </ion-item>
+    <button text-wrap ion-item class="item-stable" (click)="toggleGroup(7)" >
+      Harris County Nurse Health Hotline
+(Free, region-wide, hotline for residents to call and receive advice and health information!)
+      </button>
+        <ion-item class="item-accordion" *ngIf="isGroupShown(7)">
+          <p>Free, region-wide, hotline for residents to call and receive advice and health information!</p>
+      <ul>
+      <li><p>Available 24/7</p>
+      </li>
+      <li><p>Staffed by Registered Nurses and Community Health Workers</p>
+      </li>
+      <li><p>Upon calling residents can receive help with general health information, care advice, and determining the appropriate time to seek care</p>
+      </li>
+      <li><p>Patients should call 713-338-7979</p>
+      </li>
+      </ul>
+        </ion-item>
+
+  </ion-list>
+</ion-content>

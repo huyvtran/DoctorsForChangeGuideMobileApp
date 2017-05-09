@@ -1,12 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Poverty, FoodInsecurity, HealthCare } from '../pages';
-/**
- * Generated class for the IntroList page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
+import { MainList, TermsAndCond, Education, HumanTrafficking, DomesticViolence, MentalHealth, AdolescentIssues, Obesity, Poverty, FoodInsecurity, HealthCare } from '../pages';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
+
 @IonicPage()
 @Component({
   selector: 'page-intro-list',
@@ -15,9 +11,16 @@ import { Poverty, FoodInsecurity, HealthCare } from '../pages';
 export class IntroList {
 
   items: Array<{title: string, component: Component}>;
+  MainList : any = MainList;
+  TermsAndCond : any = TermsAndCond;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,private iab: InAppBrowser) {
 
+  }
+
+  launch(url) {
+    console.log("url",url)
+    this.iab.create(url,'_system'); 
   }
 
   ionViewDidLoad() {
@@ -37,27 +40,27 @@ export class IntroList {
       });
     this.items.push({
         title: 'Obesity',
-        component: IntroList,
+        component: Obesity,
       });
     this.items.push({
         title: 'Adolescent Issues',
-        component: IntroList,
+        component: AdolescentIssues,
       });
     this.items.push({
         title: 'Mental Health',
-        component: IntroList,
+        component: MentalHealth,
       });
     this.items.push({
         title: 'Domestic Violence',
-        component: IntroList,
+        component: DomesticViolence,
       });
     this.items.push({
         title: 'Human Trafficking',
-        component: IntroList,
+        component: HumanTrafficking,
       });
     this.items.push({
         title: 'Education',
-        component: IntroList,
+        component: Education,
       });
   }
 

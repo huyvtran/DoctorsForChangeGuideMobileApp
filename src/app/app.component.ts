@@ -3,7 +3,7 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { HomePage, IntroList, PatientsInNeed} from '../pages/pages';
+import { HomePage, TermsAndCond, IncorporateAdvocacy, PresDrugAndImmRes, CareForTheUninsured, IntroList, PatientsInNeed, InsuranceOptions} from '../pages/pages';
 
 @Component({
   templateUrl: 'app.html'
@@ -13,7 +13,7 @@ export class MyApp {
 
   rootPage: any = HomePage;
 
-  pages: Array<{title: string, component: any}>;
+  items: Array<{title: string, component: any}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
@@ -24,38 +24,34 @@ export class MyApp {
     //   { title: 'MainList', component: MainList }
     // ];
 
-    this.pages = [];
-    this.pages.push({
-        title: 'Home',
-        component: HomePage,
-      });
-    this.pages.push({
+    this.items = [];
+    this.items.push({
         title: 'Introduction',
         component: IntroList,
       });
-    this.pages.push({
+    this.items.push({
         title: 'Identifying Patients in Need of Resources',
         component: PatientsInNeed,
       });
-    this.pages.push({
+    this.items.push({
         title: 'Insurance Options',
-        component: IntroList,
+        component: InsuranceOptions,
       });
-    this.pages.push({
+    this.items.push({
         title: 'Care for the Uninsured',
-        component: IntroList,
+        component: CareForTheUninsured,
       });
-    this.pages.push({
+    this.items.push({
         title: 'Prescription Drug and Immunization Resources',
-        component: IntroList,
+        component: PresDrugAndImmRes,
       });
-    this.pages.push({
+    this.items.push({
         title: 'Community Resources',
         component: IntroList,
       });
-    this.pages.push({
+    this.items.push({
         title: 'How to Incorporate Advocacy Into Your Daily Routine',
-        component: IntroList,
+        component: IncorporateAdvocacy,
       });
 
   }

@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+  	<button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Obesity</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+<div padding>
+  <ion-segment [(ngModel)]="container">
+    <ion-segment-button value="Content" (click)="loadContent()">
+      Content
+    </ion-segment-button>
+    <ion-segment-button value="Links" (click)="loadLink()">
+      Links
+    </ion-segment-button>
+    <ion-segment-button value="References" (click)="loadRef()">
+      References
+    </ion-segment-button>
+  </ion-segment>
+</div>
+
+<div [ngSwitch]="container">
+  <ion-list *ngSwitchCase="'Content' ">
+    <ion-item *ngFor="let item of items" text-wrap>
+      <p>{{item.title}}<sup>{{item.sup}}</sup></p>
+    </ion-item>
+  </ion-list>
+
+  <ion-list *ngSwitchCase="'Links'">
+    <button ion-item *ngFor="let item of items" text-wrap (click)="launch(item.href)">{{item.title}}</button>
+  </ion-list>
+
+  <ion-list *ngSwitchCase="'References'">
+    <ion-item *ngFor="let item of items" text-wrap>
+      <p>{{item}}</p>
+    </ion-item>
+  </ion-list>
+</div>
+
+
+  </ion-content>

@@ -1,0 +1,285 @@
+<ion-header>
+
+  <ion-navbar>
+  	<button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Insurance Options</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<ion-list>
+		<button text-wrap ion-item class="item-stable" (click)="toggleGroup(0)" >
+          Overview of Health Insurance Options
+    	</button>
+        <ion-item class="item-accordion" *ngIf="isGroupShown(0)">
+			<h1>Website(s)</h1>
+			<p>The Texas Department of Insurance<br>
+			<a href="http://www.texashealthoptions.com/cp/findingcoverage.html">http://www.texashealthoptions.com/cp/findingcoverage.html</a></p>
+			<ul>
+			<li>Summary website on health insurance options for Texans</li>
+			</ul>
+			<p>The National Health Insurance Marketplace<br>
+			<a href="http://www.healthcare.gov">http://www.healthcare.gov</a></p>
+			<ul>
+			<li>Will help you learn all about health insurance options for your<br>
+			patients</li>
+			</ul>
+			<p>Coverage for All<br>
+			<a href="https://coverageforall.org/">https://coverageforall.org/</a></p>
+			<ul>
+			<li><p>A website that will help your patients find personalized insurance<br>
+			options</p>
+			</li>
+			<li><p>Take the coverage for all 5 question quiz<br>
+			<a href="https://coverageforall.org/resources/">https://coverageforall.org/resources/</a></p>
+			</li>
+			</ul>
+			<p>The You Toons explain health insurance options (2013)<br>
+			<a href="https://www.youtube.com/watch?v=JZkk6ueZt-U&amp;feature=youtu.be">https://www.youtube.com/watch?v=JZkk6ueZt-U&amp;feature=youtu.be</a></p>
+			<h1>Documents</h1>
+			<p>Not sure where to start? Here is a very thorough flow chart (written by<br>
+			Baylor College of Medicine student Arina Chesnokova, MPH)</p>
+			<ul>
+			<li><a href="/docs/Access to Care Flowchart.pdf">Health Insurance Flow Chart</a></li>
+			</ul>
+			<p>Here is an ACA in Texas 101 by Baylor College of Medicine student Arina<br>
+			Chesnokova, MPH</p>
+			<ul>
+			<li><a href="/docs/ACA and Texas [english].pdf">ACA in Texas (engligh)</a></li>
+			<li><a href="/docs/ACA and Texas [spanish].pdf">ACA in Texas (spanish)</a></li>
+			</ul>
+        </ion-item>
+        <button text-wrap ion-item class="item-stable" (click)="toggleGroup(1)" >
+          Enrolling in the Health Insurance Marketplace (eligiblility for Medicaid or CHIP)
+    	</button>
+        <ion-item class="item-accordion" *ngIf="isGroupShown(1)">
+	    	<h1 class="title">Enrolling in the Health Insurance Marketplace</h1>
+
+	        <p><a href="http://healthcare.gov">Healthcare.gov</a> (English and Spanish – other languages are also available)</p>
+			<p>At <a href="http://healthcare.gov">healthcare.gov</a>, patients can enroll in the Health Insurance Marketplace or find out if they qualify for Medicaid or CHIP. Remember – most people can only apply for coverage through the Marketplace during the annual enrollment period (enrollment period for coverage starting in 2015 is 11/15/2014 – 2/15/2015). People who change jobs, get married, or experience another "life change", however – are eligible to enroll anytime!</p>
+			<h1>Website</h1>
+			<p><a href="http://www.healthcare.gov">http://www.healthcare.gov</a></p>
+			<h1>Phone</h1>
+			<p><a href="tel:+18003182596">1-800-318-2596</a> (open 24 hours a day, 7 days a week!)<br>
+			<a href="tel:+18558894325">1-855-889-4325</a> (TTY)</p>
+			<h1>Notes</h1>
+			<p>There are many local organizations (over 100!) that will help families enroll in the Marketplace, Texas Medicaid, or Texas CHIP. Go to <a href="https://localhelp.healthcare.gov">https://localhelp.healthcare.gov</a> and type in your patient’s zip code to find a convenient Health Insurance Marketplace Navigator to help your patients get through the system!</p>
+			<h1>Just want to hand your patient a phone number to call for a patient navigator?</h1>
+			<ul>
+			<li><p>If you are seeing a patient on a Mon-Fri (from 8am-5pm) – call<br>
+			Gateway to Care at 713-783-4616.</p>
+			</li>
+			<li><p>If you have a Spanish-speaking patient, try Ventanilla de salud<br>
+			(located at the Mexican Consulate – but this is NOT just for<br>
+			patients who are Mexican!): 713-778-6105.</p>
+			</li>
+			<li><p>And if you are seeing a patient in the middle of the night or<br>
+			weekend – have them call the national ACA hotline at 1-800-318-2596</p>
+			</li>
+			</ul>
+			<p>You can also help your patients learn how to use their new insurance:<br>
+			<a href="https://www.healthcare.gov/using-your-new-marketplace-coverage/">https://www.healthcare.gov/using-your-new-marketplace-coverage/</a></p>
+			<p>Still confused? Here is a one-page guide to the marketplace:<br>
+			<a href="https://www.healthcare.gov/get-covered-a-1-page-guide-to-the-health-insurance-marketplace/">https://www.healthcare.gov/get-covered-a-1-page-guide-to-the-health-insurance-marketplace/</a></p>
+			<h1>Documents</h1>
+			<p>You can really help your patients learn how to pick the best plan for them! Take the time to fill out the areas highlighted in yellow on this handout and give this handout to your patients!</p>
+			<ul>
+			<li><a href="/docs/Health Care Market Place Handout for Clinics.pdf">Market Place Handout</a></li>
+			</ul>
+        </ion-item>
+		<button text-wrap ion-item class="item-stable" (click)="toggleGroup(2)" >
+          Enrolling in Texas Medicaid or Texas CHIP
+          (Who is eligible for Medicaid?)
+    	</button>
+        <ion-item class="item-accordion" *ngIf="isGroupShown(2)">
+	        <h1>Eligibility for full benefits</h1>
+			<ul>
+			<li><p><strong>Families and children</strong> - Based on income level (185% of the federal<br>
+			poverty level (FPL) for pregnant women/newborns, 133% FPL for<br>
+			children 1-5 years, and 100% FPL for children 5-18 years)</p>
+			</li>
+			<li><p><strong>Children in foster care</strong> or in <strong>Child Protective Services Custody</strong></p>
+			</li>
+			<li><p><strong>Cash assistance recipients</strong> - Temporary Assistance for Needy<br>
+			Families (TANF) or Supplemental Security Income (SSI)</p>
+			</li>
+			<li><p><strong>Aged/ disabled</strong> - Based on income level, age, physical/ mental<br>
+			disability</p>
+			</li>
+			</ul>
+			<h1>Eligibility for limited benefits</h1>
+			<ul>
+			<li><p><strong>Medicare Beneficiaries</strong> - Based on income level and age</p>
+			</li>
+			<li><p><strong>Non-Citizens</strong> - Legal permanent residents and undocumented persons<br>
+			who are not eligible for Medicaid based on citizenship status may<br>
+			receive emergency services</p>
+			</li>
+			<li><p><strong>Non-pregnant women</strong> - Based on income level and age</p>
+			</li>
+			</ul>
+			<h1>Who is eligible for CHIP?</h1>
+			<p>A U.S. citizen or legal permanent resident, A Texas resident, Under age of 19, Uninsured for at least 90 days, Living in a family whose income is at or below 200 percent of FPL, Living in a family that passes an asset test if family income is above 150 percent of the FPL.</p>
+			<h1>To enroll</h1>
+			<p>Check out the Texas Health and Human Services Commission: Your Benefits website. Patients can use this website to apply for Texas Medicaid and for Texas CHIP.</p>
+			<h1>Website</h1>
+			<p><a href="https://www.yourtexasbenefits.com/ssp/SSPHome/ssphome.jsp">https://www.yourtexasbenefits.com/ssp/SSPHome/ssphome.jsp</a></p>
+			<h1>Phone (Texas CHIP)</h1>
+			<ul>
+			<li>1-877-541-7905</li>
+			<li>1-800-735-2989 (TTY)</li>
+			</ul>
+			<h1>Phone (Texas Medicaid)</h1>
+			<ul>
+			<li>1-877-541-7905</li>
+			<li>1-800-735-2989 (TTY)</li>
+			</ul>
+			<h1>Application Assitance</h1>
+			<p>Community centers offering assitance with CHIP/Medicaid applications.</p>
+			<p><a href="/docs/Application Assistance.pdf">Application Assistance</a></p>
+        </ion-item>
+		<button text-wrap ion-item class="item-stable" (click)="toggleGroup(3)" >
+          Enrolling in Medicare
+    	</button>
+        <ion-item class="item-accordion" *ngIf="isGroupShown(3)">
+        	<h1>Eligibility</h1>
+			<p>People age 65 or older, people under age 65 with certain disabilities (receiving Social Security disability benefits), and people of all ages with End-Stage Renal Disease.</p>
+			<p>Medicare has four parts:</p>
+			<ul>
+			<li><strong>Part A</strong> - Inpatient Insurance - hospitals, nursing homes, home health, hospice <em>most people do not have to pay for Part A</em></li>
+			<li><strong>Part B</strong> - Medical Insurance - <em>most people pay monthly for Part B</em></li>
+			<li><strong>Part C</strong> - Medicare Advantage - beneficiaries also enroll in private insurance (may cover more then what Medicare covers or require reduced payments, Medicare pays the insurer a fixed amount per month)</li>
+			<li><strong>Part D</strong> - Prescription drug benefit</li>
+			</ul>
+			<p>For more information:<br>
+			<a href="http://www.medicare.gov/default.aspx">http://www.medicare.gov/default.aspx</a></p>
+			<p>Enroll here:<br>
+			<a href="http://www.medicare.gov/people-like-me/new-to-medicare/getting-started-with-medicare.html">http://www.medicare.gov/people-like-me/new-to-medicare/getting-started-with-medicare.html</a></p>
+			<h1>Application Assitance</h1>
+			<p>Community centers offering assitance with Medicare applications.</p>
+			<p><a href="/docs/Application Assistance.pdf">Application Assistance</a></p>
+        </ion-item>
+		<button text-wrap ion-item class="item-stable" (click)="toggleGroup(4)" >
+          Harris Health Financial Assistance Program
+			(Formerly called the "Gold Card")
+    	</button>
+        <ion-item class="item-accordion" *ngIf="isGroupShown(4)">
+        	<h1>Description</h1>
+			<p>The Harris Health Financial Assistance Program provides reduced cost care to Harris County residents who qualify. Qualifying for Harris Health System reduced cost care is not equivalent to having health insurance, it simply means that you are eligible to receive care through the Harris Health System, and that you will pay a reduced fee for the health care services if you qualify.</p>
+			<h1>Eligibility</h1>
+			<p>Based on a patient’s household income, he/she may qualify for partial financial assistance, on a sliding scale (including: full pay, half pay or a nominal co-pay).</p>
+			<h1>Application process</h1>
+			<ul>
+			<li><p>Go to <a href="https://www.harrishealth.org/en/patients/access-care/eligibility-card/pages/eligibility-application.aspx">https://www.harrishealth.org/en/patients/access-care/eligibility-card/pages/eligibility-application.aspx</a> for the most up to date information. You can also find the application in English, Spanish, and Vietnamese on this website. You can also call 713-566-6509.</p>
+			</li>
+			<li><p>Patients must fill out the application and photocopy required<br>
+			documents – then mail in or drop off the application.</p>
+			</li>
+			<li><p>Applications must contain the following: proof of identification,<br>
+			where you live/ plan on living, household income from the previous<br>
+			30 days, household composition, immigration status (you do not have<br>
+			to be a U.S. citizen to qualify for these services, but patients on<br>
+			a visa are not eligible), and information on other healthcare<br>
+			coverage (including Medicare)</p>
+			</li>
+			<li><p>For a list of community centers providing assistance with applications, click <a href="/docs/Application Assistance.pdf">here</a>.</p>
+			</li>
+			</ul>
+			<h1>General eligibility guidelines for discounted care</h1>
+			<ul>
+			<li><p><strong>Assistance Plan 1</strong>: Gross monthly income less than 100 percent of the<br>
+			federal poverty level or up to $1,963 for a household of four.<br>
+			Co-payments of $3 for physician or clinic visit, $8 for<br>
+			prescriptions, $8 per dental service, $25 for emergency center<br>
+			visits, $25 for day surgery and $50 for inpatient stay.</p>
+			</li>
+			<li><p><strong>Assistance Plan 2</strong>: Gross monthly income less than 200 percent of the<br>
+			federal poverty level or $1,963.01 to $3,925 for a household<br>
+			of four. Co-pays of $10 for physician or clinic visit, $8 for<br>
+			prescriptions, $20 per dental service, $50 for emergency center<br>
+			visits, $75 for day surgery and $150 for inpatient stay.</p>
+			</li>
+			<li><p><strong>Assistance Plan 3</strong>: Gross monthly income less than 300 percent of the<br>
+			federal poverty level or $3,925.01 to $5,888 for a household<br>
+			of four. Patients pay amount equal to current Medicare-allowable<br>
+			reimbursement not to exceed 50 percent of total charges. Patients<br>
+			pay deposits up front instead of copays: $38 for physician or<br>
+			clinic visit, $38 per dental service, $100 for emergency center<br>
+			visits, $1,000 for day surgery and $1,000 for inpatient stay.<br>
+			Patients also pay half the cost of prescriptions.</p>
+			</li>
+			<li><p><strong>Assistance Plan 4</strong>: Self-pay patients who don't qualify for "charity<br>
+			care." Patients pay an amount equal to 120 percent of current<br>
+			Medicare-allowable reimbursement not to exceed 80 percent of<br>
+			total charges. Patients pay deposits up front instead of co-pays:<br>
+			$76 for physician or clinic visit; $76 for dental visits, $100<br>
+			for emergency center visits, $2,500 for day surgery and $2,500 for<br>
+			inpatient services. Patients also pay the full cost<br>
+			of prescriptions.</p>
+			</li>
+			</ul>
+			<p>*Patients may incur additional doctor bills from UT Health or Baylor College of Medicine.</p>
+		</ion-item>
+		<button text-wrap ion-item class="item-stable" (click)="toggleGroup(5)" >
+          Enrolling in the Texas Women's Health Program
+    	</button>
+        <ion-item class="item-accordion" *ngIf="isGroupShown(5)">
+        	<h1>Eligibility</h1>
+			<ul>
+			<li>Women ages 18 to 44 who have little or no money.</li>
+			<li>Maximum monthly income limits (see: <a href="http://yourtexasbenefits.hhsc.state.tx.us/programs/health/women/tx-womens-health-program.php">maximum monthly limits</a>)</li>
+			</ul>
+			<h1>What it offers</h1>
+			<ul>
+			<li><p>A family planning exam</p>
+			</li>
+			<li><p>Screenings for diabetes, sexually transmitted diseases, high blood<br>
+			pressure, and breast and cervical cancers</p>
+			</li>
+			<li><p>Treatment of certain sexually transmitted diseases</p>
+			</li>
+			<li><p>Family planning counseling and education</p>
+			</li>
+			<li><p>Birth control, except emergency contraception</p>
+			</li>
+			</ul>
+			<p>You can apply here<br>
+			<a href="http://www.texaswomenshealth.org/page/how-to-apply">http://www.texaswomenshealth.org/page/how-to-apply</a></p>
+        </ion-item>
+		<button text-wrap ion-item class="item-stable" (click)="toggleGroup(6)" >
+          Application Assistance
+(Community centers offering assitance with Gold Card/CHIP/Medicaid/Medicare applications.)
+    	</button>
+        <ion-item class="item-accordion" *ngIf="isGroupShown(6)">
+	        <p>Community centers offering assitance with Gold Card/CHIP/Medicaid/Medicare applications.</p>
+			<p><a href="/docs/Application Assistance.pdf">Application Assistance</a></p>
+        </ion-item>
+		<button text-wrap ion-item class="item-stable" (click)="toggleGroup(7)" >
+          I'm still confused – I don't know what to tell my patient
+    	</button>
+        <ion-item class="item-accordion" *ngIf="isGroupShown(7)">
+        	<p>If you do not have time to find out what program is right for your patient, please just give your patient the number for a patient navigator. This patient navigator will help your patient figure out the best course of action for obtaining health insurance. Here are some quick phone numbers you can provide:</p>
+			<ul>
+			<li><p>If you are seeing a patient on a Mon-Fri (from 8am-5pm) – call<br>
+			Gateway to Care at 713-783-4616.</p>
+			</li>
+			<li><p>If you have a Spanish-speaking patient, try Ventanilla de salud<br>
+			(located at the Mexican Consulate – but this is NOT just for<br>
+			patients who are Mexican!): 713-778-6105.</p>
+			</li>
+			<li><p>And if you are seeing a patient in the middle of the night or<br>
+			weekend – have them call the national ACA hotline at 1-800-318-2596</p>
+			</li>
+			</ul>
+        </ion-item>
+		<button text-wrap ion-item class="item-stable" (click)="launch('http://dfcguide.org/guide/care-of-the-uninsured/')" >
+          My patient does not qualify for any of these services... what can I do?
+(Click to go to the next section on health care for the uninsured!
+    	</button>
+	</ion-list>
+
+</ion-content>

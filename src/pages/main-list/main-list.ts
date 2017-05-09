@@ -1,13 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { IntroList } from '../intro-list/intro-list';
-import { PatientsInNeed } from '../patients-in-need/patients-in-need';
-/**
- * Generated class for the MainList page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
+import { TermsAndCond, IncorporateAdvocacy, PresDrugAndImmRes, CareForTheUninsured, IntroList, PatientsInNeed, InsuranceOptions} from '../pages';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
+
 @IonicPage()
 @Component({
   selector: 'page-main-list',
@@ -15,9 +10,16 @@ import { PatientsInNeed } from '../patients-in-need/patients-in-need';
 })
 export class MainList {
 
+  MainList : any = MainList;
+  TermsAndCond : any = TermsAndCond;
 	// items: string[];
   items: Array<{title: string, component: Component}>;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,private iab: InAppBrowser) {
+  }
+
+  launch(url) {
+    console.log("url",url)
+    this.iab.create(url,'_system'); 
   }
 
   ionViewDidLoad() {
@@ -33,15 +35,15 @@ export class MainList {
       });
     this.items.push({
         title: 'Insurance Options',
-        component: IntroList,
+        component: InsuranceOptions,
       });
     this.items.push({
         title: 'Care for the Uninsured',
-        component: IntroList,
+        component: CareForTheUninsured,
       });
     this.items.push({
         title: 'Prescription Drug and Immunization Resources',
-        component: IntroList,
+        component: PresDrugAndImmRes,
       });
     this.items.push({
         title: 'Community Resources',
@@ -49,7 +51,7 @@ export class MainList {
       });
     this.items.push({
         title: 'How to Incorporate Advocacy Into Your Daily Routine',
-        component: IntroList,
+        component: IncorporateAdvocacy,
       });
   }
 

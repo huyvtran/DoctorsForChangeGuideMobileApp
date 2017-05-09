@@ -1,9 +1,3 @@
-<!--
-  Generated template for the PatientsInNeed page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
@@ -17,7 +11,8 @@
 
 
 <ion-content padding>
-<ion-toolbar color="primary">
+<!--  ########################################  Social Screen  #####################################  -->
+<ion-toolbar color="danger">
   <ion-title>Social Screen</ion-title>
 </ion-toolbar>
 
@@ -27,13 +22,16 @@
     WE CARE Project     
   </ion-card-header>
 
-  <ion-card-content>
+  <ion-card-content  >
     <p>Evidence-based 10-question survey for screening about the social determinants of health in the outpatient setting.
     
     From Garg A, et al. "Improving the management of family psychosocial problems at low-income children's well-child care visits: The WE CARE Project." Pediatrics 120, 547-558 (2007).
 
     </p>
-  <button ion-button (click)="launch('http://pediatrics.aappublications.org/content/120/3/547')">WE CARE Project</button>
+    <div text-center>
+        <button ion-button (click)="launch('http://pediatrics.aappublications.org/content/120/3/547')">WE CARE Project</button>
+    </div>
+
   </ion-card-content>
 
 </ion-card>
@@ -48,10 +46,12 @@
     <p>This document includes questions you can ask patients to determine if your patients could benefit from legal advocacy.
 
     From the National Center for Medical Legal Partnerships.</p>
+    <div text-center>
+      <button ion-button (click)="launch('http://dfcguide.org/docs/IHELPGuide.pdf')">IHELPGuide</button>
 
-    <button ion-button (click)="launch('http://dfcguide.org/docs/IHELPGuide.pdf')">IHELPGuide</button>
-
-    <button ion-button (click)="launch('http://www2.aap.org/sections/ypn/r/advocacy/IHELLPPocketCard.pdf')">I-HELP Pocket Card</button>
+    <button ion-button (click)="launch('http://www2.aap.org/sections/ypn/r/advocacy/IHELLPPocketCard.pdf')">I-HELP Pocket Card</button>  
+    </div>
+    
   </ion-card-content>
 
 </ion-card>
@@ -66,12 +66,15 @@
     <p>
       A pocket guide for medical trainees in providing clinical care across the Bio-Psychosocial domains.
     </p>
-  <button ion-button (click)="launch('http://dfcguide.org/docs/Pocket%20Guide.pdf')">Pocket Guide</button>
+    <div text-center>
+      <button ion-button (click)="launch('http://dfcguide.org/docs/Pocket%20Guide.pdf')">Pocket Guide</button>
+    </div>
   </ion-card-content>
 
 </ion-card>
 
-<ion-toolbar color="primary">
+<!--  ########################################  Evidence based Questions  #####################################  -->
+<ion-toolbar color="danger">
   <ion-title>Evidence-Based Questions </ion-title>
 </ion-toolbar>
 
@@ -80,49 +83,198 @@
     <p>
       Evidence-based screening questions you can use to ask your patients about a variety of specific topics.
     </p>
+    <ion-list>
+        <button ion-item class="item-stable" (click)="toggleGroup(1)" >
+            Food Insecurity
+        </button>
+        <ion-item class="item-accordion" *ngIf="isGroupShown(1)">
+          <ul>
+          <li><p>TWO-QUESTION survey from Hager, et al. 2010</p>
+          <ul>
+          <li><p>Within the past 12 months did you worry whether your food would<br>
+          run out before you got money to buy more?</p>
+          </li>
+          <li><p>Within the past 12 months, was there a time when the food you<br>
+          bought didn't last and you didn't have money to buy more?</p>
+          </li>
+          <li><p>For more information, check out the publication:<br>
+          <a (click)='launch("http://pediatrics.aappublications.org/content/126/1/e26.full.html")'>http://pediatrics.aappublications.org/content/126/1/e26.full.html</a></p>
+          </li>
+          <li><p>See the document below</p>
+          </li>
+          </ul>
+          </li>
+          <li><p>Do you need help in getting food by the end of the month? IF YES,<br>
+          would you like help with this (WE CARE)?</p>
+          </li>
+          </ul>
+          <h1>Documents</h1>
+          <p><a (click)='launch("http://dfcguide.org/guide/identifying-patients-in-need-of-resources/evidence-based-questions/Childhood%20hunger%20screening.pdf")'>Childhood Hunger Screening</a></p>
+          <p><a (click)='launch("http://www.ers.usda.gov/datafiles/Food_Security_in_the_United_States/Food_Security_Survey_Modules/hh2012.pdf")'>Gold standard screen for food insecurity</a></p>
+          <ul>
+          <li>U.S. Household Food Security Survey Module Please see questions on page 3 marked "HH2, HH3, &amp; HH4"</li>
+          </ul>
+          <p><a (click)='launch("http://www.ers.usda.gov/topics/food-nutrition-assistance/food-security-in-the-us/survey-tools.aspx")'>More food insecurity screening tools and resources – USDA</a></p>
+          <p><a (click)='launch("https://pace.oregonstate.edu/catalog/childhood-food-insecurity")'>5 module free online course on screening for food insecurity</a></p>
+        </ion-item>
+        <button ion-item class="item-stable" (click)="toggleGroup(2)" >
+            Income Support
+        </button>
+        <ion-item class="item-accordion" *ngIf="isGroupShown(2)">
+          <ul>
+          <li>Do you have enough money to make ends meet (I-HELP)?</li>
+          <li>Do you have enough food to feed your family (I-HELP)?</li>
+          <li>Do you owe any money on your rent or utilities (I-HELP)?</li>
+          <li>Do you have affordable childcare (I-HELP)?</li>
+          <li>Do you have health insurance (I-HELP)?</li>
+          <li>Do you have a high school degree? IF NO – would you like help to get<br>
+          a GED (WE CARE)?</li>
+          <li>Do you have a job? IF NO – would you like help finding a job (WE<br>
+          CARE)?</li>
+          </ul>
+        </ion-item>
+        <button ion-item class="item-stable" (click)="toggleGroup(3)" >
+          Housing, Utilities, and Health
+        </button>
+        <ion-item class="item-accordion" *ngIf="isGroupShown(3)">
+          <ul>
+          <li><p>TWO-QUESTION Survey (National Survey of American Families (1999)<br>
+          questions):</p>
+          <ul>
+          <li><p>During the last 12 months, was there a time when (you/you and<br>
+          your family) were not able to pay your mortgage, rent or utility<br>
+          bills?</p>
+          </li>
+          <li><p>During the last 12 months, did you or your children move in with<br>
+          other people even for a little while because you could not<br>
+          afford to pay your mortgage, rent or utility bills?</p>
+          </li>
+          </ul>
+          </li>
+          <li><p>Do you think you are at risk of becoming homeless? IF YES – would<br>
+          you like help with this (We Care)?</p>
+          </li>
+          <li><p>Like many of my patients who are trying to do the best they can for<br>
+          their family,</p>
+          <ul>
+          <li><p>Are you concerned about the safety or stability of your housing<br>
+          (I-HELP)?</p>
+          </li>
+          <li><p>Is it hard to keep rodents, insects or mold away (I-HELP)?</p>
+          </li>
+          <li><p>Have you gotten behind on any rent or utility bills (I-HELP)?</p>
+          </li>
+          <li><p>Do you participate in any programs to reduce utility bills<br>
+          (I-HELP)?</p>
+          </li>
+          </ul>
+          </li>
+          </ul>
+        </ion-item>
+        <button ion-item class="item-stable" (click)="toggleGroup(4)" >
+          Education and Child Care
+        </button>
+        <ion-item class="item-accordion" *ngIf="isGroupShown(4)">
+          <ul>
+          <li><p>Do you need daycare for your child? IF YES – would you like help<br>
+          finding it (We Care)?</p>
+          </li>
+          <li><p>Are you concerned about your child’s learning, performance, or<br>
+          behavior in school (I-HELP)?</p>
+          </li>
+          <li><p>If you have any of these concerns, have you asked school to conduct<br>
+          a special education evaluation? (If no, then request<br>
+          one immediately.) (I-HELP)</p>
+          </li>
+          <li><p>If your child has qualified for special education or reasonable<br>
+          accommodations, are you satisfied with the special help or<br>
+          accommodations your child receives (I-HELP)?</p>
+          </li>
+          <li><p>If your child has a medical problem, is the school providing<br>
+          necessary support (I-HELP)?</p>
+          </li>
+          <li><p>Are you concerned about discipline or safety issues at school<br>
+          (I-HELP)?</p>
+          </li>
+          </ul>
+        </ion-item>
+        <button ion-item class="item-stable" (click)="toggleGroup(5)" >
+          Mental Health
+        </button>
+        <ion-item class="item-accordion" *ngIf="isGroupShown(5)">
+          <ul>
+          <li>Are you feeling sad or hopeless a lot of the time? IF YES – would<br>
+          you like help with this (WE CARE)?</li>
+          </ul>
+        </ion-item>
+        <button ion-item class="item-stable" (click)="toggleGroup(6)" >
+          Personal and Family Stability
+        </button>
+        <ion-item class="item-accordion" *ngIf="isGroupShown(6)">
+          <ul>
+          <li><p>Many of my patients have experienced domestic violence or<br>
+          controlling behavior by a family member. Do you ever feel unsafe at<br>
+          home (I-HELP)?</p>
+          </li>
+          <li><p>Does your partner hit or verbally abuse you? IF YES – would you like<br>
+          help (WE CARE)?</p>
+          </li>
+          <li><p>Have you had difficulty accessing income supports or housing<br>
+          benefits because of birth certificate documentation or custodial<br>
+          status (I-HELP)?</p>
+          </li>
+          <li><p>Are you currently receiving child support (I-HELP)?</p>
+          </li>
+          <li><p>Are you concerned that a family member cannot take care of him- or<br>
+          herself due to illness or disability (I-HELP)?</p>
+          </li>
+          <li><p>Have you identified someone who will make decisions about your<br>
+          health care in the event that you become too ill or hurt to express<br>
+          your wishes (I-HELP)?</p>
+          </li>
+          </ul>
+          <h3>Documents</h3>
+          <p><a (click)='launch("http://www.primarycarecore.org/PDF/501.pdf")'>Luben Social Network Scale to assess social support for the elderly</a></p>
+        </ion-item>
+        <button ion-item class="item-stable" (click)="toggleGroup(7)" >
+          Legal Immigration Status
+        </button>
+        <ion-item class="item-accordion" *ngIf="isGroupShown(7)">
+          <ul>
+          <li><p>Have you been discouraged from applying for public benefits because<br>
+          of immigrant status (I-HELP)?</p>
+          </li>
+          <li><p>Are you concerned about your family’s health and stability for any<br>
+          immigration-related reason (I-HELP)?</p>
+          </li>
+          </ul>
+        </ion-item>
+        <button ion-item class="item-stable" (click)="toggleGroup(8)" >
+          Transportation
+        </button>
+        <ion-item class="item-accordion" *ngIf="isGroupShown(8)">
+          <ul>
+          <li><p>Is transportation a limiting factor for you in making it to health<br>
+          appointments, or to pick up prescriptions, food or other<br>
+          health-related supplies?</p>
+          </li>
+          <li><p>Do you use public transportation?</p>
+          </li>
+          <li><p>How informed are you about public transportation options in your<br>
+          community?</p>
+          </li>
+          <li><p>Do you walk or bike 2 or more times per week?</p>
+          </li>
+          <li><p>Do you ever have trouble paying for your transportation?</p>
+          </li>
+          </ul>
+        </ion-item>
+    </ion-list>
   </ion-card-content>
 </ion-card>
 
-<ion-card>
-
-  <ion-card-header>
-    Food Insecurity            
-  </ion-card-header>
-
-  <ion-card-content>
-    <ul>
-    <li><p>TWO-QUESTION survey from Hager, et al. 2010</p>
-    <ul>
-    <li><p>Within the past 12 months did you worry whether your food would<br>
-    run out before you got money to buy more?</p>
-    </li>
-    <li><p>Within the past 12 months, was there a time when the food you<br>
-    bought didn't last and you didn't have money to buy more?</p>
-    </li>
-    <li><p>For more information, check out the publication:<br>
-    <a href="http://pediatrics.aappublications.org/content/126/1/e26.full.html">http://pediatrics.aappublications.org/content/126/1/e26.full.html</a></p>
-    </li>
-    <li><p>See the document below</p>
-    </li>
-    </ul>
-    </li>
-    <li><p>Do you need help in getting food by the end of the month? IF YES,<br>
-    would you like help with this (WE CARE)?</p>
-    </li>
-    </ul>
-    <h1>Documents</h1>
-    <p><a href="Childhood hunger screening.pdf">Childhood Hunger Screening</a></p>
-    <p><a href="http://www.ers.usda.gov/datafiles/Food_Security_in_the_United_States/Food_Security_Survey_Modules/hh2012.pdf">Gold standard screen for food insecurity</a></p>
-    <ul>
-    <li>U.S. Household Food Security Survey Module Please see questions on page 3 marked "HH2, HH3, &amp; HH4"</li>
-    </ul>
-    <p><a href="http://www.ers.usda.gov/topics/food-nutrition-assistance/food-security-in-the-us/survey-tools.aspx">More food insecurity screening tools and resources – USDA</a></p>
-    <p><a href="https://pace.oregonstate.edu/catalog/childhood-food-insecurity">5 module free online course on screening for food insecurity</a></p>
-  </ion-card-content>
-
-</ion-card>
-
-<ion-toolbar color="primary">
+<!--  ########################################  Education  #####################################  -->
+<ion-toolbar color="danger">
   <ion-title>Education</ion-title>
 </ion-toolbar>
 
@@ -136,12 +288,15 @@
     <p>
       Link to Oregon videos of how to use screening tools and interview questions
     </p>
-  <button ion-button (click)="launch('https://pace.oregonstate.edu/courses')">Oregon State Website</button>
+    <div text-center>
+        <button ion-button (click)="launch('https://pace.oregonstate.edu/courses')">Oregon State Website</button>
+    </div>
   </ion-card-content>
 
 </ion-card>
 
-<ion-toolbar color="primary">
+<!--  ########################################  Assessment Tools  #####################################  -->
+<ion-toolbar color="danger">
   <ion-title>Assessment Tools</ion-title>
 </ion-toolbar>
 
@@ -155,7 +310,9 @@
     <p>
       Typically used for adolescents but expanded here so it can be used for patients of any age
     </p>
+    <div text-center>
   <button ion-button (click)="launch('http://dfcguide.org/docs/HEADS%20assessment.pdf')">Heads Assessment</button>
+    </div>
   </ion-card-content>
 
 </ion-card>
@@ -170,10 +327,70 @@
     <p>
       To obtain a psychosocial history, understand the patient in the context of his/her total life situation.
     </p>
-  <button ion-button (click)="launch('http://dfcguide.org/docs/BATHE%20assessment.pdf')">BATHE Assessment (english)</button>
+    <div text-center>
+        <button ion-button (click)="launch('http://dfcguide.org/docs/BATHE%20assessment.pdf')">BATHE Assessment (english)</button>
   <button ion-button (click)="launch('http://dfcguide.org/docs/BATHE%20assessment%20[spanish].pdf')">BATHE Assessment (spanish)</button>
+    </div>
+
   </ion-card-content>
 
+</ion-card>
+
+<ion-card>
+  <ion-card-content text-center>
+    <button ion-button (click)='launch("http://dfcguide.org/docs/SIGECAPS%20assessment.pdf")'>SIGECAPS assessment for depression
+            </button>
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-content text-center>
+    <button ion-button (click)='launch("http://dfcguide.org/docs/RADAR%20assessment.pdf")'>RADAR assessment for domestic violence
+            </button>
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-header>
+    Screening for victims of human trafficking           
+  </ion-card-header>
+
+  <ion-card-content text-center>
+    <button ion-button (click)="launch('http://dfcguide.org/docs/Human%20Trafficking%20victims%20screen%20[english].pdf')">Screening for Human Trafficking Victims (english)</button>
+    <button ion-button (click)="launch('http://dfcguide.org/docs/Human%20Trafficking%20victims%20screen%20[spanish].pdf')">Screening for Human Trafficking Victims (spanish)</button>
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-content text-center>
+    <button ion-button (click)='launch("http://dfcguide.org/docs/CRAFFT%20assessment.pdf")'>CRAFFT assessment for substance abuse
+            </button>
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-header>
+    CAGE Assessment           
+  </ion-card-header>
+
+  <ion-card-content text-center>
+    <button ion-button (click)="launch('http://dfcguide.org/docs/CAGE%20assessment%20[english].pdf')">CAGE Assessment (english)</button>
+    <button ion-button (click)="launch('http://dfcguide.org/docs/CAGE%20assessment%20[spanish].pdf')">CAGE Assessment (spanish)</button>
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-content text-center>
+    <button ion-button (click)='launch("http://dfcguide.org/docs/ETHNIC%20assessment.pdf")'>ETHNIC assessment for culturally competent clinical practice
+            </button>
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-content text-center>
+    <button ion-button (click)='launch("http://dfcguide.org/docs/Childhood%20hunger%20screening.pdf")'>Childhood Hunger screening
+            </button>
+  </ion-card-content>
 </ion-card>
 
 </ion-content>
