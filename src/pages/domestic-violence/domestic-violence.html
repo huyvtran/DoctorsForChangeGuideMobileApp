@@ -4,6 +4,11 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Domestic Violence</ion-title>
+    <ion-buttons end>
+      <button ion-button color="danger" clear icon-only outline (click)="toggleFavorite()">
+        <ion-icon [name]="isFavorite ? 'star' : 'star-outline'"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
@@ -44,3 +49,13 @@
 
 
   </ion-content>
+
+<ion-footer>
+  <ion-toolbar text-center>
+    <small >
+            <a [navPush]="Home">Home</a> | <a [navPush]="TermsAndCond">Terms &amp; Conditions</a> | <a (click)="launch('https://docs.google.com/forms/d/1V5ySudx03DRinmNHCm6EfKWXnPa1GJAyVxaZcO5Miy0/viewform')">Feedback</a><br>
+            Copyright © 2016 Doctors for Change<br>
+            <a (click)="launch('http://www.doctorsforchange.org')">doctorsforchange.org</a>
+        </small>
+  </ion-toolbar>
+</ion-footer>

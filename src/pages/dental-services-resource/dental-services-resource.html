@@ -1,0 +1,192 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Dental Services</ion-title>
+    <ion-buttons end>
+      <button ion-button color="danger" clear icon-only outline (click)="toggleFavorite()">
+        <ion-icon [name]="isFavorite ? 'star' : 'star-outline'"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <!--  ########################################  Information  #####################################  -->
+  <ion-toolbar color="danger">
+    <ion-title>Information</ion-title>
+  </ion-toolbar>
+
+  <ion-card>
+    <ion-card-content>
+      <ul>
+      <li><p>27.3% of children in Harris County did not have dental insurance in
+      2010<sup>1</sup>.</p>
+      </li>
+      <li><p>15.3% of parents delayed dental care for their children due to cost
+      or lack of insurance<sup>1</sup>.</p>
+      </li>
+      <li><p>82.3% of children ages 2-17 in the US had a dental visit in the last
+      year, compared to 61.6% of adults in the US<sup>2</sup>.</p>
+      </li>
+      <li><p>Over 40% of poor adults (20 years and older) have at least one
+      untreated decayed tooth compared to 16% of non-poor adults<sup>2</sup>.</p>
+      </li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
+
+  <!--  ########################################  Community Resources  #####################################  -->
+  <ion-toolbar color="danger">
+    <ion-title>Community Resources</ion-title>
+  </ion-toolbar>
+
+  <ion-card>      
+    <ion-card-content>
+      <ion-list>
+        <button text-wrap ion-item (click)="toggleGroup(0)" >
+          Harris County Dental Clinics
+          <br><p>A comprehensive, verified list of dental clinics in the Harris County including free clinics, Harris Health system clinics, City of ...</p>
+        </button>
+        <ion-item *ngIf="isGroupShown(0)">
+          <p>A comprehensive, verified list of dental clinics in the Harris County including free clinics, Harris Health system clinics, City of Houston clinics and those that offer services for special needs individuals</p>
+          <h1>Documents</h1>
+          <p><a href="http://dfcguide.org/docs/Dental-1.pdf">Harris County Dental Clinics</a></p>
+        </ion-item>
+        <button text-wrap ion-item (click)="toggleGroup(1)" >
+          Harris County Dental Clinics - Brief Handout
+          <br><p>A brief, high yield handout of dental clinics in Harris County for kids and families provided by Harris County Public Health and ...</p>
+        </button>
+        <ion-item *ngIf="isGroupShown(1)">
+          <p>A brief, high yield handout of dental clinics in Harris County for kids and families provided by Harris County Public Health and Environmental Services.</p>
+          <h1>Documents</h1>
+          <p><a href="http://dfcguide.org/docs/Dental-2 [english].pdf">Harris County Dental Clinics Handout (english)</a><br>
+          <a href="http://dfcguide.org/docs/Dental-2 [spanish].pdf">Harris County Dental Clinics Handout (spanish)</a></p>
+        </ion-item>
+        <a text-wrap ion-item class="navigate-right-link" href="http://www.ghds.org/dental-care-resources.html">Greater Houston Dental Society
+          <br><p>List of local clinics (and eligibility requirements)</p>
+        </a>
+        <a text-wrap ion-item class="navigate-right-pdf" href="http://www.gatewaytocare.org/SiteAssets/Gateway-to-Care/dental%20clinics.pdf">Gateway to Care List of Dental Services
+        </a>
+        <a text-wrap ion-item class="navigate-right-link" href="http://www.toothwisdom.org/care/state/texas/dental">Tooth Wisdom
+                <p>List of resources for oral health care for Texans (including many nice resources for Houstonians!)</p>
+        </a>
+
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+    <!--  ########################################  General Resources for Physicians and Patients
+  #####################################  -->
+  <ion-toolbar color="danger">
+    <ion-title>General Resources for Physicians and Patients
+</ion-title>
+  </ion-toolbar>
+
+  <ion-card>
+    <ion-card-content>
+        <button text-wrap ion-item (click)="toggleGroup(2)" >
+          General Online Resources
+          <br><p>A few websites that provide online resources for physicians and patients/families on a variety of oral health topics</p>
+        </button>
+        <ion-item *ngIf="isGroupShown(2)">
+          <p>A few websites that provide online resources for physicians and patients/families on a variety of oral health topics</p>
+          <h1>Website</h1>
+          <p><a href="http://www2.aap.org/oralhealth">Children's Oral Health</a></p>
+          <ul>
+          <li>Online resource from the American Academy of Pediatrics that provides training, oral health practice tools and family resources</li>
+          </ul>
+          <p><a href="http://www.cdc.gov/OralHealth/index.htm">Division of Oral Health from the Centers for Disease Control and Prevention</a></p>
+          <ul>
+          <li>Online resource from the CDC that provides guidelines and recommendations, tools for physicians and patient education on various oral health topics</li>
+          </ul>
+          <p><a href="http://www.mouthhealthy.org/en">Mouth Healthy</a></p>
+          <ul>
+          <li>Online resource from the American Dental Association that provides education for patients of all ages regarding common oral health topics like fluoride, teeth sensitivity and gum disease</li>
+          </ul>
+        </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <!--  ########################################  Patient Education  #####################################  -->
+  <ion-toolbar color="danger">
+    <ion-title>Patient Education</ion-title>
+  </ion-toolbar>
+
+  <ion-card>
+    <ion-card-content>
+        <button text-wrap ion-item (click)="toggleGroup(3)" >
+          Patient Handouts
+          <br><p>A list of educational handouts on common oral health topics for children and adults</p>
+        </button>
+        <ion-item *ngIf="isGroupShown(3)">
+          <p>A list of educational handouts on common oral health topics for children and adults</p>
+          <h1>Documents</h1>
+          <p><a href="http://dfcguide.org/docs/Dental-3 [english].pdf">Brush Up on Healthy Teeth: Simple Steps for Kids’ Smiles (english)</a><br>
+          <a href="http://dfcguide.org/docs/Dental-3 [spanish].pdf">Brush Up on Healthy Teeth: Simple Steps for Kids’ Smiles (spanish)</a></p>
+          <ul>
+          <li>A list of easy ways that parents can help their children have healthy teeth</li>
+          </ul>
+          <p><a href="http://dfcguide.org/docs/Dental-4 [english].pdf">How Common and How Serious is Oral Cancer? (english)</a><br>
+          <a href="http://dfcguide.org/docs/Dental-4 [spanish].pdf">How Common and How Serious is Oral Cancer? (spanish)</a></p>
+          <ul>
+          <li>A handout from the Academy of General Dentistry about oral cancer and ways of prevention in both English and Spanish</li>
+          </ul>
+          <p><a href="http://dfcguide.org/docs/Oral Tips to Maintain Good Oral Health [english].pdf">Tips to Maintain Good Oral Health (english)</a><br>
+          <a href="http://dfcguide.org/docs/Oral Tips to Maintain Good Oral Health [spanish].pdf">Tips to Maintain Good Oral Health (spanish)</a></p>
+          <ul>
+          <li>A handout from the Centers for Disease Control and Prevention on adult oral health maintenance in both English and Spanish</li>
+          </ul>
+          <p><a href="http://dfcguide.org/docs/Dental-7 [english].pdf">Oral Health Picture for Kids and Families (english)</a><br>
+          <a href="http://dfcguide.org/docs/Dental-7 [spanish].pdf">Oral Health Picture for Kids and Families (spanish)</a></p>
+          <ul>
+          <li>A picture handout from the American Academy of Pediatrics on oral health maintenance for kids</li>
+          </ul>
+          <p><a href="http://dfcguide.org/docs/Dental-8 [english].pdf">Your Baby’s Dental Health (english)</a><br>
+          <a href="http://dfcguide.org/docs/Dental-8 [spanish].pdf">Your Baby’s Dental Health (spanish)</a></p>
+          <ul>
+          <li>A helpful handout on caring for a baby's teeth and gums from the Harris County Public Health and Environmental Services</li>
+          </ul>
+          <p><a href="http://dfcguide.org/docs/Dental-9 [english].pdf">How Do I Brush and Floss? (english)</a><br>
+          <a href="http://dfcguide.org/docs/Dental-9 [spanish].pdf">How Do I Brush and Floss? (spanish)</a></p>
+          <ul>
+          <li>A handout on brushing and flossing techniques by the Oral-B company</li>
+          </ul>
+        </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <!--  ########################################  References  #####################################  -->
+  <ion-toolbar color="danger">
+    <ion-title>References</ion-title>
+  </ion-toolbar>
+
+  <ion-card>
+    <ion-card-content>
+      <ol id="refs">
+      <li><p>Children at Risk. <em>Community Health Needs Assessment for Texas
+      Children's Hospital 2013.</em> Children at Risk, 2013. Web. 29 Aug.
+      2014.</p>
+      </li>
+      <li><p>"FastStats: Oral and Dental Health". <em>Centers for Disease Control and
+      Prevention.</em> National Center for Health Statistics, 14 May 2014. Web. 1 Sept 2014.</p>
+      </li>
+      </ol>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar text-center>
+    <small >
+            <a [navPush]="Home">Home</a> | <a [navPush]="TermsAndCond">Terms &amp; Conditions</a> | <a (click)="launch('https:/http://dfcguide.org/docs.google.com/forms/d/1V5ySudx03DRinmNHCm6EfKWXnPa1GJAyVxaZcO5Miy0/viewform')">Feedback</a><br>
+            Copyright © 2016 Doctors for Change<br>
+            <a (click)="launch('http://www.doctorsforchange.org')">doctorsforchange.org</a>
+        </small>
+  </ion-toolbar>
+</ion-footer>

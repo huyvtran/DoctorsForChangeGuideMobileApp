@@ -1,0 +1,12 @@
+
+	<button ion-button menuToggle>
+	  <ion-icon name="menu"></ion-icon>
+	</button>
+	<ion-title>{{headerTitle}}</ion-title>
+	<ion-buttons end>
+	  <button ion-button color="danger" clear icon-only outline (click)="toggleFavorite()">
+	    <ion-icon [name]="isFavorite ? 'star' : 'star-outline'"></ion-icon>
+	  </button>
+	</ion-buttons>
+
+

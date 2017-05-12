@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { MainList, TermsAndCond, Education, HumanTrafficking, DomesticViolence, MentalHealth, AdolescentIssues, Obesity, Poverty, FoodInsecurity, HealthCare } from '../pages';
+import { HomePage, TermsAndCond, Education, HumanTrafficking, DomesticViolence, MentalHealth, AdolescentIssues, Obesity, Poverty, FoodInsecurity, HealthCare } from '../pages';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { StorageService} from '../../providers/storage-service';
 
 @IonicPage()
 @Component({
@@ -11,11 +12,17 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
 export class IntroList {
 
   items: Array<{title: string, component: Component}>;
-  MainList : any = MainList;
+
+
+  constructor(public navCtrl: NavController, public navParams: NavParams,private iab: InAppBrowser, private storageService : StorageService) {
+
+  }
+
+  Home : any = HomePage;
   TermsAndCond : any = TermsAndCond;
-
-  constructor(public navCtrl: NavController, public navParams: NavParams,private iab: InAppBrowser) {
-
+  isFavorite;
+  toggleFavorite(){
+    this.storageService.toggleFavoritePage(IntroList).then(isFavorite => this.isFavorite = isFavorite);
   }
 
   launch(url) {
@@ -24,7 +31,8 @@ export class IntroList {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad IntroList');
+    this.storageService.isFavorite(IntroList).then(isFav => this.isFavorite = isFav); 
+
     this.items = [];
     this.items.push({
         title: 'Poverty',

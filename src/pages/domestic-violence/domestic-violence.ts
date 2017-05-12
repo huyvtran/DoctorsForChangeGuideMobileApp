@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { StorageService} from '../../providers/storage-service';
+import { HomePage, TermsAndCond } from '../pages';
 
 @IonicPage()
 @Component({
@@ -12,10 +14,18 @@ export class DomesticViolence {
 container = "Content";
 	items;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,private iab: InAppBrowser) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,private iab: InAppBrowser, private storageService : StorageService) {
+  }
+
+  Home : any = HomePage;
+  TermsAndCond : any = TermsAndCond;
+  isFavorite;
+  toggleFavorite(){
+    this.storageService.toggleFavoritePage(DomesticViolence).then(isFavorite => this.isFavorite = isFavorite);
   }
 
   ionViewDidLoad() {
+    this.storageService.isFavorite(DomesticViolence).then(isFav => this.isFavorite = isFav);
     this.loadContent();
   }
   

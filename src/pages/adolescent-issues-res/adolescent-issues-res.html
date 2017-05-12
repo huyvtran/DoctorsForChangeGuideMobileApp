@@ -1,0 +1,246 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Adolescent Issues</ion-title>
+    <ion-buttons end>
+      <button ion-button color="danger" clear icon-only outline (click)="toggleFavorite()">
+        <ion-icon [name]="isFavorite ? 'star' : 'star-outline'"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+	<!--  ########################################  Information  #####################################  -->
+	<ion-toolbar color="danger">
+	  <ion-title>Information</ion-title>
+	</ion-toolbar>
+
+	<ion-card>
+	  <ion-card-content>
+
+	  	<ul>
+		<li><p>In 2012, Harris County reported a teen birth rate of 42.7 births per
+		1,000 for 15-19 year olds<sup>1</sup>. This is compared to 44.4 births per
+		1,000 for 15-19 year olds in all of Texas, and 29.4 for the US teen
+		birth rate<sup>2</sup>.</p>
+		</li>
+		<li><p>Based on 2012 US survey data, 6.6% of adolescents 12-17 years of age
+		had smoked cigarettes in the past month and 12.9% had used alcohol
+		in the past month<sup>3</sup>.</p>
+		</li>
+		<li><p>In a 2013 survey of Houston ISD high school students, 21.5% of
+		students reported not having exercised once for at least 60 minutes
+		in the week leading up to the survey<sup>4</sup>.</p>
+		</li>
+		<li><p>In a 2013 survey of Houston ISD high school students<sup>4</sup>:</p>
+		<ul>
+		<li><p>43.6% had ever used marijuana</p>
+		</li>
+		<li><p>17.4% had ever used prescription drugs without prescriptions</p>
+		</li>
+		<li><p>9.4% had ever used ecstasy</p>
+		</li>
+		<li><p>6.6% had ever used methamphetamines</p>
+		</li>
+		<li><p>5.9% had ever used heroin</p>
+		</li>
+		<li><p>11.2% had ever used cocaine</p>
+		</li>
+		</ul>
+		</li>
+		<li><p>In a 2013 survey of Houston ISD high school students, 31.4% of youth
+		reported being sexually active, with 24.2% reporting not using any
+		method to prevent pregnancy<sup>4</sup>.</p>
+		</li>
+		</ul>
+
+	  </ion-card-content>
+	</ion-card>
+
+	<!--  ########################################  Community Resources  #####################################  -->
+	<ion-toolbar color="danger">
+	  <ion-title>Community Resources</ion-title>
+	</ion-toolbar>
+
+	<ion-card>			
+	  <ion-card-content>
+		  <ion-list>
+		  	<button text-wrap ion-item (click)="toggleGroup(0)" >
+	    		Child Protective Services in Harris County (CPS)
+					<br><p>A state-managed program through the Texas Department of Family and Protective Services (DFPS) that investigates reports of suspected ...</p>
+	    	</button>
+	    	<ion-item *ngIf="isGroupShown(0)">
+        	<p>A state-managed program through the Texas Department of Family and Protective Services (DFPS) that investigates reports of suspected abuse and neglect of children.</p>
+					<ul>
+					<li><p>Report incidents of child physical, sexual and emotional abuse at: <a href="http://www.hc-ps.org">http://www.hc-ps.org</a></p>
+					</li>
+					<li><p>To make a referral: Call 1-800-252-5400</p>
+					</li>
+					<li><p>To follow-up after an initial report has been made and find out who is the active case-worker: Call 713-794-4000</p>
+					</li>
+					</ul>
+	      </ion-item>
+	      <button text-wrap ion-item (click)="toggleGroup(1)" >
+	    		Community Youth Services
+	    		<br><p>A program of Harris County Protective Services for Children and Adults that provides an extensive guide (2013-2014) that includes most ...</p>
+	    	</button>
+	    	<ion-item *ngIf="isGroupShown(1)">
+        	<p>A program of Harris County Protective Services for Children and Adults that provides an extensive guide (2013-2014) that includes most commonly used non-profit, United Way, church and government resources available to the general public.</p>
+					<h1>Website</h1>
+					<p><a href="http://www.hc-ps.org/children_and_youth.aspx">http://www.hc-ps.org/children_and_youth.aspx</a></p>
+					<h1>Documents</h1>
+					<p><a href="http://dfcguide.org/docs/Adolescent - Community Youth Services Guide 2013-2014.pdf">Adolescent - Community Youth Services Guide 2013-2014</a></p>
+					<ul>
+					<li>Adoption - Page 7</li>
+					<li>AIDS Resources - Page 8</li>
+					<li>Basic Needs - Page 12</li>
+					<li>Camps - Page 19</li>
+					<li>Child Abuse and Neglect -Page 22</li>
+					<li>Community Centers and Volunteer Programs - Page 25</li>
+					<li>Counseling Services - Page 26</li>
+					<li>Dental - Page 35</li>
+					<li>Developmental Disabilities and Mental Retardation - Page 36</li>
+					<li>Domestic Violence and Victim Services - Page 37</li>
+					<li>Grief and Bereavement - Page 40</li>
+					<li>Harris County Protective Services for Children &amp; Adults - Page 41</li>
+					<li>Health Related Services - Page 43</li>
+					<li>Hotlines - Page 47</li>
+					<li>Information and Referrals - Page 48</li>
+					<li>Learning Differences - Page 51</li>
+					<li>Legal Aid - Page 55</li>
+					<li>Mental Health - Page 58</li>
+					<li>Parent Education - Page 62</li>
+					<li>Pregnancy - Page 63</li>
+					<li>Residential Care - Page 67</li>
+					<li>Sexual Assault - Page 75</li>
+					<li>STD Clinics - Page 76</li>
+					<li>Substance Abuse - Page 76</li>
+					<li>Transportation - Page 82</li>
+					<li>Vocational Training and Employment - Page 82</li>
+					</ul>
+	      </ion-item>
+	      <button text-wrap ion-item (click)="toggleGroup(2)" >
+	    		Covenant House Crisis Line
+					<br><p>The hotline connects teens with counselors that are available 24/7 as well as information and referrals for runaway and homeless youth.</p>
+	    	</button>
+	    	<ion-item *ngIf="isGroupShown(2)">
+        	<p>The hotline connects teens with counselors that are available 24/7 as well as information and referrals for runaway and homeless youth.</p>
+					<h1>Phone</h1>
+					<p><a href="tel:+18009999999">1-800-999-9999</a></p>
+	      </ion-item>
+	      <button text-wrap ion-item (click)="toggleGroup(3)" >
+	    		Texas Youth and Runaway Hotline
+					<br><p>The hotline connects teens with counselors that are available 24/7, offers resources to runaways and their families and provides ...</p>
+	    	</button>
+	    	<ion-item *ngIf="isGroupShown(3)">
+        	<p>The hotline connects teens with counselors that are available 24/7, offers resources to runaways and their families and provides prevention services.</p>
+					<h1>Phone</h1>
+					<p>1-888-580-HELP</p>
+					<p>-OR-</p>
+					<p>1-800-989-6884</p>
+	      </ion-item>
+	      <button text-wrap ion-item (click)="toggleGroup(4)" >
+	    		Crisis Intervention of Houston
+					<br><p>The hotline connects teens with counselors that are available 24/7, as well as crisis intervention, counseling, referrals and suicide ...</p>
+	    	</button>
+	    	<ion-item *ngIf="isGroupShown(4)">
+        	<p>The hotline connects teens with counselors that are available 24/7, as well as crisis intervention, counseling, referrals and suicide prevention services.</p>
+					<h1>Phone</h1>
+					<p>713-HOTLINE</p>
+	      </ion-item>
+	  	</ion-list>
+	  </ion-card-content>
+	</ion-card>
+
+	<!--  ########################################  Patient Education  #####################################  -->
+	<ion-toolbar color="danger">
+	  <ion-title>Patient Education</ion-title>
+	</ion-toolbar>
+
+	<ion-card>
+	  <ion-card-content>
+  	  <button text-wrap ion-item (click)="toggleGroup(5)" >
+    		Patient Handouts
+				<br><p>A list of high yield handouts on common adolescent issues for parents</p>
+    	</button>
+    	<ion-item *ngIf="isGroupShown(5)">
+        <p>A list of high yield handouts on common adolescent issues for parents and their teens.</p>
+				<h1>Documents</h1>
+				<p><a href="http://dfcguide.org/docs/Bullying is NOT ok [english].pdf">Bullying Is NOT ok (English)</a><br>
+				<a href="http://dfcguide.org/docs/Bullying is NOT ok [spanish].pdf">Bullying Is NOT ok (Spanish)</a></p>
+				<ul>
+				<li>Describes how bullying affects children and how adults can help</li>
+				</ul>
+				<p><a href="http://dfcguide.org/docs/Tips for Parents of Adolescents [english].pdf">Tips for Parents of Adolescents (English)</a><br>
+				<a href="http://dfcguide.org/docs/Tips for Parents of Adolescents [spanish].pdf">Tips for Parents of Adolescents (Spanish)</a></p>
+				<ul>
+				<li>Provides tips for adults and teens to navigate the time of<br>
+				adolescence together</li>
+				</ul>
+				<p><a href="http://dfcguide.org/docs/Tobacco - Straight Talk for Teens [english].pdf">Tobacco – Straight Talk for Teens (English)</a><br>
+				<a href="http://dfcguide.org/docs/Tobacco - Straight Talk for Teens [spanish].pdf">Tobacco – Straight Talk for Teens (Spanish)</a></p>
+				<ul>
+				<li>Provides facts about smoking and tobacco in an effort to prevent<br>
+				teens from picking up the habit and resources to help teens who want<br>
+				to quit</li>
+				</ul>
+				<p><a href="http://dfcguide.org/docs/Talking with your teen about sex [english].pdf">Talking with Your Teen About Sex (English)</a><br>
+				<a href="http://dfcguide.org/docs/Talking with your teen about sex [spanish].pdf">Talking with Your Teen About Sex (Spanish)</a></p>
+				<ul>
+				<li>Assists parents with starting the ongoing discussion on sex with<br>
+				adolescents</li>
+				</ul>
+				<p><a href="http://dfcguide.org/docs/Teen Suicide, Mood Disorder and Depression [english].pdf">Teen Suicide, Mood Disorder and Depression (English)</a><br>
+				<a href="http://dfcguide.org/docs/Teen Suicide, Mood Disorder and Depression [spanish].pdf">Teen Suicide, Mood Disorder and Depression (Spanish)</a></p>
+				<ul>
+				<li>Describes warning signs for teen depression and suicide as well as<br>
+				how families can be supportive</li>
+				</ul>
+      </ion-item>
+	  </ion-card-content>
+	</ion-card>
+
+	<!--  ########################################  References  #####################################  -->
+	<ion-toolbar color="danger">
+	  <ion-title>References</ion-title>
+	</ion-toolbar>
+
+	<ion-card>
+	  <ion-card-content>
+	  	<ol id="refs">
+			<li><p>Children at Risk. <em>Community Health Needs Assessment for Texas
+			Children's Hospital 2013.</em> Children at Risk, 2013. Web. 29 Aug.
+			2014.</p>
+			</li>
+			<li><p>Martin, Joyce A., et al, “Births: Final Data for 2012.” <em>National
+			Vital Statistics Reports</em> Vol. 62 No. 9. Hyattsville, MD: National
+			Center for Health Statistics. 2013. Web. 29 Aug 2014.</p>
+			</li>
+			<li><p>“FastStats: Adolescent Health”. <em>Centers for Disease Control
+			and Prevention.</em> National Center for Health Statistics, 7 July 2014.
+			Web. 29 Aug 2014.</p>
+			</li>
+			<li><p>Centers for Disease Control and Prevention. <em>1991-2013 High School
+			Youth Risk Behavior Survey Data</em>. Available at:
+			<a href="http://nccd.cdc.gov/youthonline/">http://nccd.cdc.gov/youthonline/</a>. Accessed on 29 Aug 2014.</p>
+			</li>
+			</ol>
+	  </ion-card-content>
+	</ion-card>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar text-center>
+    <small >
+            <a [navPush]="Home">Home</a> | <a [navPush]="TermsAndCond">Terms &amp; Conditions</a> | <a (click)="launch('https://docs.google.com/forms/d/1V5ySudx03DRinmNHCm6EfKWXnPa1GJAyVxaZcO5Miy0/viewform')">Feedback</a><br>
+            Copyright © 2016 Doctors for Change<br>
+            <a (click)="launch('http://www.doctorsforchange.org')">doctorsforchange.org</a>
+        </small>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,210 @@
+=<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Autism Services</ion-title>
+    <ion-buttons end>
+      <button ion-button color="danger" clear icon-only outline (click)="toggleFavorite()">
+        <ion-icon [name]="isFavorite ? 'star' : 'star-outline'"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <!--  ########################################  Information  #####################################  -->
+  <ion-toolbar color="danger">
+    <ion-title>Information</ion-title>
+  </ion-toolbar>
+
+  <ion-card>
+    <ion-card-content>
+      <ul>
+      <li><p>About 1 in 68 children has been identified with an autism spectrum
+      disorder (ASD) according to estimates from CDC's Autism and
+      Developmental Disabilities Monitoring (ADDM) Network<sup>1</sup>.</p>
+      </li>
+      <li><p>ASD is almost 5 times more common in boys than in girls<sup>1</sup>.</p>
+      </li>
+      <li><p>On average, medical expenditures for individuals with an ASD were
+      4.1–6.2 times greater than for those without an ASD<sup>1</sup>.</p>
+      </li>
+      <li><p>Children can be reliable diagnosed with autism as early as by age 2,
+      although most are not diagnosed until after age 4<sup>1</sup>.</p>
+      </li>
+      <li><p>46% of ASD children have average to above average intellectual
+      ability<sup>1</sup>.</p>
+      </li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
+
+  <!--  ########################################  Community Resources  #####################################  -->
+  <ion-toolbar color="danger">
+    <ion-title>Community Resources</ion-title>
+  </ion-toolbar>
+
+  <ion-card>      
+    <ion-card-content>
+      <ion-list>
+        <button text-wrap ion-item (click)="toggleGroup(0)" >
+          Harris County Intellectual Disability and Autism Services
+          <br><p>Mental Health Mental Retardation Authority (MHMRA) of Harris County</p>
+        </button>
+        <ion-item *ngIf="isGroupShown(0)">
+          <p>Mental Health Mental Retardation Authority (MHMRA) of Harris County provides mental health services for individuals with intellectual disability and autism.</p>
+          <h1>Website</h1>
+          <p><a href="http://www.mhmraharris.org/IDD/communityresources.htm">http://www.mhmraharris.org/IDD/communityresources.htm</a></p>
+          <h1>Documents</h1>
+          <p><a href="http://dfcguide.org/docs/MHMRA Intellectual Disability and Autism Resources Guide [english].pdf">MHMRA Intellectual Disability and Autism Resources Guides (english)</a><br>
+          <a href="http://dfcguide.org/docs/MHMRA Intellectual Disability and Autism Resources Guide [spanish].pdf">MHMRA Intellectual Disability and Autism Resources Guides (spanish)</a></p>
+          <ul>
+          <li>A brochure in English and Spanish of services provided by MHMRA</li>
+          </ul>
+        </ion-item>
+        <button text-wrap ion-item (click)="toggleGroup(1)" >
+          MHMRA STARS Program
+          <br><p>The program provides therapeutic interventions for individuals with Intellectual Developmental Disabilities or Autism Disorder with ...</p>
+        </button>
+        <ion-item *ngIf="isGroupShown(1)">
+          <p>The program provides therapeutic interventions for individuals with Intellectual Developmental Disabilities or Autism Disorder with behavioral or psychiatric issues.</p>
+          <h1>Documents</h1>
+          <p><a href="http://dfcguide.org/docs/MHMRA STARS Progam Brochure.pdf">MHMRA STARS Program</a></p>
+          <ul>
+          <li>A brochure of information about the included services and necessary admission criteria</li>
+          </ul>
+        </ion-item>
+        <button text-wrap ion-item (click)="toggleGroup(2)" >
+          MHMRA Applied Behavioral Analysis (ABA) SkIP Program
+          <br><p>The program provides ABA services to children ages 3-8 with a diagnosis of autism in a 6 month model that also focuses on parent training.</p>
+        </button>
+        <ion-item *ngIf="isGroupShown(2)">
+          <p>The program provides ABA services to children ages 3-8 with a diagnosis of autism in a 6 month model that also focuses on parent training.</p>
+          <h1>Documents</h1>
+          <p><a href="http://dfcguide.org/docs/MHMRA ABA Skip Program Brochure.pdf">MHMRA ABA SkIP Program</a></p>
+          <ul>
+          <li>A brochure of information about the included services and necessary admission criteria</li>
+          </ul>
+        </ion-item>
+        <button text-wrap ion-item (click)="toggleGroup(3)" >
+          Legacy Community Health Services
+          <br><p>Affordable and comprehensive behavioral health services provided at various locations in Harris County by Legacy Community Health Services</p>
+        </button>
+        <ion-item *ngIf="isGroupShown(3)">
+          <p>Affordable and comprehensive behavioral health services provided at various locations in Harris County by Legacy Community Health Services</p>
+          <h1>Website</h1>
+          <p><a href="http://legacycommunityhealth.org/Services/BehavioralHealthServices.aspx">http://legacycommunityhealth.org/Services/BehavioralHealthServices.aspx</a></p>
+          <h1>Phone</h1>
+          <p>To contact our South Park Behavioral Health department, call 409-242-2550.</p>
+          <p>For all other locations, please call 832-548-5014.</p>
+          <h1>Documents</h1>
+          <p><a href="http://dfcguide.org/docs/Legacy mental and behavioral health services [english].pdf">Legacy Mental and Behavioral Health Services (english)</a><br>
+          <a href="http://dfcguide.org/docs/Legacy mental and behavioral health services [spanish].pdf">Legacy Mental and Behavioral Health Services (spanish)</a></p>
+          <ul>
+          <li>A brochure on behavioral health services at different locations in Harris County</li>
+          </ul>
+        </ion-item>
+        <button text-wrap ion-item (click)="toggleGroup(4)" >
+          Harris County Autism Resources
+          <br><p>A high-yield list of autism resources in Harris County including many organizations that provide scholarships, support groups, advocate ...</p>
+        </button>
+        <ion-item *ngIf="isGroupShown(4)">
+          <p>A high-yield list of autism resources in Harris County including many organizations that provide scholarships, support groups, advocate for autism services and awareness and teach training and skills classes to individuals with autism.</p>
+          <h1>Documents</h1>
+          <p><a href="http://dfcguide.org/docs/Harris County Resource List.pdf">Harris County Autism Resources</a></p>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <!--  ########################################  Patient Education  #####################################  -->
+  <ion-toolbar color="danger">
+    <ion-title>Support Groups</ion-title>
+  </ion-toolbar>
+
+  <ion-card>
+    <ion-card-content>
+      <button text-wrap ion-item (click)="toggleGroup(5)" >
+        Houston-Area Autism Support Groups
+<br><p>Flyers for autism spectrum disorder support groups in different locations in the Greater Houston area. *Please call contacts first to ...</p>
+      </button>
+      <ion-item *ngIf="isGroupShown(5)">
+        <p>Flyers for autism spectrum disorder support groups in different locations in the Greater Houston area. <em>Please call contacts first to confirm date, time and location of meetings!</em></p>
+        <h1>Documents</h1>
+        <p><a href="http://dfcguide.org/docs/Autism Support Group - Baytown [english].pdf">Autism Support Group – Baytown (english)</a><br>
+        <a href="http://dfcguide.org/docs/Autism Support Group - Baytown [spanish].pdf">Autism Support Group – Baytown (spanish)</a></p>
+        <p><a href="http://dfcguide.org/docs/Autism Support Group - Central Houston.pdf">Autism Support Group – Central Houston</a></p>
+        <p><a href="http://dfcguide.org/docs/Autism Society of America TxGulfCoast [english].pdf">Autism Support Group – Texas Gulf Coast (english)</a><br>
+        <a href="http://dfcguide.org/docs/Autism Society of America TxGulfCoast [spanish].pdf">Autism Support Group – Texas Gulf Coast (spanish)</a></p>
+        <p><a href="http://dfcguide.org/docs/Autism Playground of Fort Bend [english].pdf">Autism Support Group – Fort Bend (english)</a><br>
+        <a href="http://dfcguide.org/docs/Autism Playground of Fort Bend [spanish].pdf">Autism Support Group – Fort Bend (spanish)</a></p>
+      </ion-item>
+
+    </ion-card-content>
+  </ion-card>
+
+  <!--  ########################################  Patient Education  #####################################  -->
+  <ion-toolbar color="danger">
+    <ion-title>Patient Education</ion-title>
+  </ion-toolbar>
+
+  <ion-card>
+    <ion-card-content>
+      <button text-wrap ion-item (click)="toggleGroup(6)" >
+        Patient Handouts
+        <br><p>A list of educational handouts explaining autism spectrum disorder, specific symptoms associated with autism and normal developmental ...</p>
+      </button>
+      <ion-item *ngIf="isGroupShown(6)">
+        <p>A list of educational handouts explaining autism spectrum disorder, specific symptoms associated with autism and normal developmental milestones for children.</p>
+        <h1>Documents</h1>
+        <p><a href="http://dfcguide.org/docs/Autism Symptoms Handout.pdf">Symptoms of Autism</a></p>
+        <ul>
+        <li>A handout with pictures of typical symptoms of children with autism </li>
+        </ul>
+        <p><a href="http://dfcguide.org/docs/Autism Spectrum Disorder Fact Sheet [english].pdf">Autism Spectrum Disorder Fact Sheet (english)</a><br>
+        <a href="http://dfcguide.org/docs/Autism Spectrum Disorder Fact Sheet [spanish].pdf">Autism Spectrum Disorder Fact Sheet (spanish)</a></p>
+        <ul>
+        <li>A handout in English and Spanish by the Centers for Disease Control and Prevention on common signs of autism</li>
+        </ul>
+        <p><a href="http://dfcguide.org/docs/Understanding ASDs [english].pdf">Understanding Autism Spectrum Disorders (english)</a><br>
+        <a href="http://dfcguide.org/docs/Understanding ASDs [spanish].pdf">Understanding Autism Spectrum Disorders (spanish)</a></p>
+        <ul>
+        <li>A comprehensive handout in English and Spanish by the American Academy of Pediatrics explaining early signs and symptoms of autism, causes and diagnosis.</li>
+        </ul>
+        <p><a href="http://dfcguide.org/docs/Milestones Card [english].pdf">Developmental Milestones (english)</a><br>
+        <a href="http://dfcguide.org/docs/Milestones Card [spanish].pdf">Developmental Milestones (spanish)</a></p>
+        <ul>
+        <li>A high-yield card in English and Spanish by the Centers for Disease Control and Prevention that lists common milestones at different ages to guide parents</li>
+        </ul>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <!--  ########################################  References  #####################################  -->
+  <ion-toolbar color="danger">
+    <ion-title>References</ion-title>
+  </ion-toolbar>
+
+  <ion-card>
+    <ion-card-content>
+      <ol id="refs">
+      <li>"Autism Spectrum Disorders (ASD): Data &amp; Statistics". <em>Centers for
+      Disease Control and Prevention.</em> National Center for Birth Defects and Developmental Disabilities, 24 March 2014. Web. 29 Aug 2014.</li>
+      </ol>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar text-center>
+    <small >
+            <a [navPush]="Home">Home</a> | <a [navPush]="TermsAndCond">Terms &amp; Conditions</a> | <a (click)="launch('https:/http://dfcguide.org/docs.google.com/forms/d/1V5ySudx03DRinmNHCm6EfKWXnPa1GJAyVxaZcO5Miy0/viewform')">Feedback</a><br>
+            Copyright © 2016 Doctors for Change<br>
+            <a (click)="launch('http://www.doctorsforchange.org')">doctorsforchange.org</a>
+        </small>
+  </ion-toolbar>
+</ion-footer>

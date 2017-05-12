@@ -1,0 +1,167 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Domestic Violence</ion-title>
+    <ion-buttons end>
+      <button ion-button color="danger" clear icon-only outline (click)="toggleFavorite()">
+        <ion-icon [name]="isFavorite ? 'star' : 'star-outline'"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <!--  ########################################  Information  #####################################  -->
+  <ion-toolbar color="danger">
+    <ion-title>Information</ion-title>
+  </ion-toolbar>
+
+  <ion-card>
+    <ion-card-content>
+      <ul>
+      <li><p>On average, 24 people per minute are victims of rape, physical
+      violence, or stalking by an intimate partner in the U.S., based on a
+      survey conducted by the CDC in 2010<sup>1</sup>.</p>
+      </li>
+      <li><p>1 in 4 women have been the victim of severe physical violence by an
+      intimate partner, while 1 in 7 men have experienced the same<sup>1</sup>.</p>
+      </li>
+      <li><p>72.9% of family violence in Texas in 2012 was committed against
+      women<sup>2</sup>.</p>
+      </li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
+
+  <!--  ########################################  Community Resources  #####################################  -->
+  <ion-toolbar color="danger">
+    <ion-title>Community Resources</ion-title>
+  </ion-toolbar>
+
+  <ion-card>      
+    <ion-card-content>
+      <ion-list>
+        <button text-wrap ion-item (click)="toggleGroup(0)" >
+          Victims of Domestic Violence Services
+          <br><p>A list of resources for domestic violence victims including organizations with hotline numbers and those that include shelters.</p>
+        </button>
+        <ion-item *ngIf="isGroupShown(0)">
+          <p>A list of resources for domestic violence victims including organizations with hotline numbers and those that include shelters.</p>
+          <h1>Documents</h1>
+          <p><a href="http://dfcguide.org/docs/Domestic Violence [english].pdf">Victims of Domestic Violence Services (english)</a><br>
+          <a href="http://dfcguide.org/docs/Domestic Violence [spanish].pdf">Victims of Domestic Violence Services (spanish)</a></p>
+        </ion-item>
+        <button text-wrap ion-item (click)="toggleGroup(1)" >
+          Resource and Referral Guide
+          <br><p>An extensive list of resource and referral organizations that includes a section for domestic violence victims provided by the ...</p>
+        </button>
+        <ion-item *ngIf="isGroupShown(1)">
+          <p>An extensive list of resource and referral organizations that includes a section for domestic violence victims provided by the organization The Bridge Over Troubled Waters.</p>
+          <h1>Documents</h1>
+          <p><a href="http://dfcguide.org/docs/Resource and Referral Guide-Legal-The Bridge.pdf">Resource and Referral Guide</a></p>
+        </ion-item>
+        <button text-wrap ion-item (click)="toggleGroup(2)" >
+          The Bridge Over Troubled Waters - Frequent Resources
+          <br><p>A handout provided by The Bridge Over Troubled Waters with information on shelters and financial assistant resources.</p>
+        </button>
+        <ion-item *ngIf="isGroupShown(2)">
+          <p>A handout provided by The Bridge Over Troubled Waters with information on shelters and financial assistant resources.</p>
+          <h1>Documents</h1>
+          <p><a href="http://dfcguide.org/docs/Shelters-Homeless-Financial Resources-TheBridge.pdf">The Bridge Over Troubled Waters - Frequent Resources</a></p>
+        </ion-item>
+        <button text-wrap ion-item (click)="toggleGroup(3)" >
+          Harris County Domestic Violence Coordinating Council
+          <br><p>An organization that works systematically to provide victims safety and support, hold perpetrators accountable for their crimes and ...</p>
+        </button>
+        <ion-item *ngIf="isGroupShown(3)">
+          <p>An organization that works systematically to provide victims safety and support, hold perpetrators accountable for their crimes and facilitates community collaboration.</p>
+          <h1>Website</h1>
+          <p><a href="http://hcdvcc.org">http://hcdvcc.org</a></p>
+        </ion-item>
+        <button text-wrap ion-item (click)="toggleGroup(4)" >
+          Crisis Intervention of Houston
+          <br><p>An organization that provides phone counseling with 24/7 counselors available, crisis intervention, referrals, support groups and youth ...</p>
+        </button>
+        <ion-item *ngIf="isGroupShown(4)">
+
+          <p>An organization that provides phone counseling with 24/7 counselors available, crisis intervention, referrals, support groups and youth outreach programs.</p>
+          <h1>Website</h1>
+          <p><a href="http://www.crisishotline.org">http://www.crisishotline.org</a></p>
+          <h1>Phone</h1>
+          <p>713-HOTLINE<br>
+          -OR-<br>
+          713-529-TEEN<br>
+          -OR-<br>
+          713-526-8088 (for Spanish)</p>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!--  ########################################  Patient Education  #####################################  -->
+  <ion-toolbar color="danger">
+    <ion-title>Patient Education</ion-title>
+  </ion-toolbar>
+
+  <ion-card>
+    <ion-card-content>
+      <button text-wrap ion-item (click)="toggleGroup(5)" >
+        Patient Handouts
+        <br><p>A few handouts explaining the significance of intimate partner violence and the rights of domestic violence victims.</p>
+      </button>
+      <ion-item *ngIf="isGroupShown(5)">
+        <p>A few handouts explaining the significance of intimate partner violence and the rights of domestic violence victims.</p>
+        <h1>Documents</h1>
+        <p><a href="http://dfcguide.org/docs/Understanding Intimate Partner Violence.pdf">Understanding Intimate Partner Violence</a></p>
+        <ul>
+        <li>A handout by the Centers for Disease Control and Prevention describing intimate partner violence, individuals at risk and ways of prevention</li>
+        </ul>
+        <p><a href="http://dfcguide.org/docs/Intimate Partner Violence [english].pdf">Intimate Partner Violence (english)</a><br>
+        <a href="http://dfcguide.org/docs/Intimate Partner Violence [spanish].pdf">Intimate Partner Violence (spanish)</a></p>
+        <ul>
+        <li>A handout by the Centers for Disease Control and Prevention describing intimate partner violence, individuals at risk and ways of prevention</li>
+        </ul>
+        <p><a href="http://dfcguide.org/docs/Know Your Rights Domestic Violence [english].pdf">Know Your Rights Domestic Violence (english)</a><br>
+        <a href="http://dfcguide.org/docs/Know Your Rights Domestic Violence [spanish].pdf">Know Your Rights Domestic Violence (spanish)</a></p>
+        <ul>
+        <li>A handout by the American Bar Association explaining how domestic violence can be handled in different courts and how to obtain court orders of protection</li>
+        </ul>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <!--  ########################################  References  #####################################  -->
+  <ion-toolbar color="danger">
+    <ion-title>References</ion-title>
+  </ion-toolbar>
+
+  <ion-card>
+    <ion-card-content>
+      <ol id="refs">
+      <li><p>“The National Intimate Partner and Sexual Violence Survey.” <em>Centers
+      for Disease Control and Prevention.</em> National Center for Injury
+      Prevention and Control, 26 Feb 2014. Web. 1 Sept 2014.</p>
+      </li>
+      <li><p>“The Texas Crime Report for 2012.” <em>Texas Department of Public
+      Safety</em>. Texas Department of Public Safety, 2012. Web. 1 Sept 2014.</p>
+      </li>
+      </ol>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar text-center>
+    <small >
+            <a [navPush]="Home">Home</a> | <a [navPush]="TermsAndCond">Terms &amp; Conditions</a> | <a (click)="launch('https:/http://dfcguide.org/docs.google.com/forms/d/1V5ySudx03DRinmNHCm6EfKWXnPa1GJAyVxaZcO5Miy0/viewform')">Feedback</a><br>
+            Copyright © 2016 Doctors for Change<br>
+            <a (click)="launch('http://www.doctorsforchange.org')">doctorsforchange.org</a>
+        </small>
+  </ion-toolbar>
+</ion-footer>

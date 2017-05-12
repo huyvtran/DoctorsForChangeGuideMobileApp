@@ -1,13 +1,16 @@
 <ion-header>
+
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Home</ion-title>
   </ion-navbar>
+
 </ion-header>
 
 <ion-content padding>
+
   <h5 text-center>
     A Guide for Access to Care and Community Resources in Houston, Texas
   </h5>
@@ -16,12 +19,33 @@
   </p>
 
   <button ion-button secondary full (click)="gotToMainMenu()">Main Menu</button>
+
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+<ion-card>
+  <ion-toolbar color="danger">
+    <ion-title>Favorites</ion-title>
+  </ion-toolbar>
+  <ion-card-content>
+    <p *ngIf="favorites?.length == 0">It looks like you have no favorites! Click the star on any page to change this! </p>
+
+    <ion-list>
+      <button ion-item *ngFor="let favorite of favorites" (click)="goToComponent(favorite)">
+        {{favorite.name}}
+      </button>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+
+
 </ion-content>
 
 <ion-footer>
   <ion-toolbar text-center>
     <small >
-            <a [navPush]="MainList">Home</a> | <a [navPush]="TermsAndCond">Terms &amp; Conditions</a> | <a (click)="launch('https://docs.google.com/forms/d/1V5ySudx03DRinmNHCm6EfKWXnPa1GJAyVxaZcO5Miy0/viewform')">Feedback</a><br>
+            <a [navPush]="Home">Home</a> | <a [navPush]="TermsAndCond">Terms &amp; Conditions</a> | <a (click)="launch('https://docs.google.com/forms/d/1V5ySudx03DRinmNHCm6EfKWXnPa1GJAyVxaZcO5Miy0/viewform')">Feedback</a><br>
             Copyright © 2016 Doctors for Change<br>
             <a (click)="launch('http://www.doctorsforchange.org')">doctorsforchange.org</a>
         </small>

@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { TermsAndCond, IncorporateAdvocacy, PresDrugAndImmRes, CareForTheUninsured, IntroList, PatientsInNeed, InsuranceOptions} from '../pages';
+import { CommunityResources, IncorporateAdvocacy, PresDrugAndImmRes, CareForTheUninsured, IntroList, PatientsInNeed, InsuranceOptions} from '../pages';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { StorageService} from '../../providers/storage-service';
+import { HomePage, TermsAndCond } from '../pages';
 
 @IonicPage()
 @Component({
@@ -10,12 +12,18 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
 })
 export class MainList {
 
-  MainList : any = MainList;
-  TermsAndCond : any = TermsAndCond;
-	// items: string[];
-  items: Array<{title: string, component: Component}>;
-  constructor(public navCtrl: NavController, public navParams: NavParams,private iab: InAppBrowser) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,private iab: InAppBrowser, private storageService : StorageService) {
   }
+
+  Home : any = HomePage;
+  TermsAndCond : any = TermsAndCond;
+  isFavorite;
+  toggleFavorite(){
+    this.storageService.toggleFavoritePage(MainList).then(isFavorite => this.isFavorite = isFavorite);
+  }
+
+  items: Array<{title: string, component: Component}>;
+
 
   launch(url) {
     console.log("url",url)
@@ -23,7 +31,7 @@ export class MainList {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad MainList');
+    this.storageService.isFavorite(MainList).then(isFav => this.isFavorite = isFav); 
     this.items = [];
     this.items.push({
         title: 'Introduction',
@@ -47,7 +55,7 @@ export class MainList {
       });
     this.items.push({
         title: 'Community Resources',
-        component: IntroList,
+        component: CommunityResources,
       });
     this.items.push({
         title: 'How to Incorporate Advocacy Into Your Daily Routine',

@@ -4,11 +4,18 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
     
-import { TermsAndCond, IncorporateAdvocacy, PresDrugAndImmRes, CareForTheUninsured, InsuranceOptions, Education, HumanTrafficking, DomesticViolence, MentalHealth, AdolescentIssues, Obesity, HealthCare, FoodInsecurity,HomePage, MainList, IntroList, PatientsInNeed, Poverty} from '../pages/pages';
+import { DomesticViolenceResource, DentalServicesResource, AutismServicesResource, AdolescentIssuesRes, Texas211, CommunityResources, TermsAndCond, IncorporateAdvocacy, PresDrugAndImmRes, CareForTheUninsured, InsuranceOptions, Education, HumanTrafficking, DomesticViolence, MentalHealth, AdolescentIssues, Obesity, HealthCare, FoodInsecurity,HomePage, MainList, IntroList, PatientsInNeed, Poverty} from '../pages/pages';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
+
+import { StorageService} from '../providers/storage-service';
+import { IonicStorageModule } from '@ionic/storage';
+
+import { DFCFooter } from '../components/dfc-footer/dfc-footer';
+import { DFCHeader } from '../components/dfc-header/dfc-header';
+
 
 @NgModule({
   declarations: [
@@ -30,11 +37,20 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
     CareForTheUninsured,
     PresDrugAndImmRes,
     IncorporateAdvocacy,
-    TermsAndCond
+    TermsAndCond,
+    CommunityResources,
+    DFCFooter,
+    DFCHeader,
+    Texas211,
+    AdolescentIssuesRes,
+    AutismServicesResource,
+    DentalServicesResource,
+    DomesticViolenceResource
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot(),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -56,9 +72,18 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
     CareForTheUninsured,
     PresDrugAndImmRes,
     IncorporateAdvocacy,
-    TermsAndCond
+    TermsAndCond,
+    CommunityResources,
+    DFCFooter,
+    DFCHeader,
+    Texas211,
+    AdolescentIssuesRes,
+    AutismServicesResource,
+    DentalServicesResource,
+    DomesticViolenceResource
   ],
   providers: [
+  StorageService,
     InAppBrowser,
     StatusBar,
     SplashScreen,

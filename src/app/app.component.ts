@@ -3,7 +3,7 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { HomePage, TermsAndCond, IncorporateAdvocacy, PresDrugAndImmRes, CareForTheUninsured, IntroList, PatientsInNeed, InsuranceOptions} from '../pages/pages';
+import { CommunityResources, HomePage, IncorporateAdvocacy, PresDrugAndImmRes, CareForTheUninsured, IntroList, PatientsInNeed, InsuranceOptions} from '../pages/pages';
 
 @Component({
   templateUrl: 'app.html'
@@ -17,12 +17,6 @@ export class MyApp {
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
-
-    // used for an example of ngFor and navigation
-    // this.pages = [
-    //   { title: 'Home', component: HomePage },
-    //   { title: 'MainList', component: MainList }
-    // ];
 
     this.items = [];
     this.items.push({
@@ -47,7 +41,7 @@ export class MyApp {
       });
     this.items.push({
         title: 'Community Resources',
-        component: IntroList,
+        component: CommunityResources,
       });
     this.items.push({
         title: 'How to Incorporate Advocacy Into Your Daily Routine',

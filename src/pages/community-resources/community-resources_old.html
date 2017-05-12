@@ -1,0 +1,2532 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Community Resources</ion-title>
+    <ion-buttons end>
+      <button ion-button color="danger" clear icon-only outline (click)="toggleFavorite()">
+        <ion-icon [name]="isFavorite ? 'star' : 'star-outline'"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+		<button text-wrap ion-item class="item-stable" (click)="toggleGroup(0)" >
+          Texas 2-1-1
+    	</button>
+        <ion-item text-wrap class="item-accordion" *ngIf="isGroupShown(0)">
+        	<p>Texas 2-1-1 is a searchable statewide list of resources.</p>
+			<p>Call 2-1-1 or check out their website for a nice overview of resources on employment opportunities, food insecurity, housing needs, health care (including access to health insurance, primary and specialty care), financial and legal aid, child care and early education, veterans support services, and aging and disability resources.</p>
+			<h1>Website</h1>
+			<p><a href="https://www.211texas.org">https://www.211texas.org</a></p>
+        </ion-item>
+        <button text-wrap ion-item class="item-stable" (click)="toggleGroup(1)" >
+          Adolescent Issues
+    	</button>
+        <ion-item text-wrap class="item-accordion" *ngIf="isGroupShown(1)">
+        	<div class="content">
+
+
+        <div class="stats">
+            <ul>
+<li><p>In 2012, Harris County reported a teen birth rate of 42.7 births per
+1,000 for 15-19 year olds<sup>1</sup>. This is compared to 44.4 births per
+1,000 for 15-19 year olds in all of Texas, and 29.4 for the US teen
+birth rate<sup>2</sup>.</p>
+</li>
+<li><p>Based on 2012 US survey data, 6.6% of adolescents 12-17 years of age
+had smoked cigarettes in the past month and 12.9% had used alcohol
+in the past month<sup>3</sup>.</p>
+</li>
+<li><p>In a 2013 survey of Houston ISD high school students, 21.5% of
+students reported not having exercised once for at least 60 minutes
+in the week leading up to the survey<sup>4</sup>.</p>
+</li>
+<li><p>In a 2013 survey of Houston ISD high school students<sup>4</sup>:</p>
+<ul>
+<li><p>43.6% had ever used marijuana</p>
+</li>
+<li><p>17.4% had ever used prescription drugs without prescriptions</p>
+</li>
+<li><p>9.4% had ever used ecstasy</p>
+</li>
+<li><p>6.6% had ever used methamphetamines</p>
+</li>
+<li><p>5.9% had ever used heroin</p>
+</li>
+<li><p>11.2% had ever used cocaine</p>
+</li>
+</ul>
+</li>
+<li><p>In a 2013 survey of Houston ISD high school students, 31.4% of youth
+reported being sexually active, with 24.2% reporting not using any
+method to prevent pregnancy<sup>4</sup>.</p>
+</li>
+</ul>
+
+        </div>
+
+    <ul class="table-view">
+        <li class="table-view-divider">Community Resources</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="child-protective-services-in-harris-county-cps.html">Child Protective Services in Harris County (CPS)
+                <p>A state-managed program through the Texas Department of Family and Protective Services (DFPS) that investigates reports of suspected ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="community-youth-services.html">Community Youth Services
+                <p>A program of Harris County Protective Services for Children and Adults that provides an extensive guide (2013-2014) that includes most ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="covenant-house-crisis-line.html">Covenant House Crisis Line
+                <p>The hotline connects teens with counselors that are available 24/7 as well as information and referrals for runaway and homeless youth.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="texas-youth-and-runaway-hotline.html">Texas Youth and Runaway Hotline
+                <p>The hotline connects teens with counselors that are available 24/7, offers resources to runaways and their families and provides ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="crisis-intervention-of-houston.html">Crisis Intervention of Houston
+                <p>The hotline connects teens with counselors that are available 24/7, as well as crisis intervention, counseling, referrals and suicide ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Patient Education</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="patient-handouts.html">Patient Handouts
+                <p>A list of high yield handouts on common adolescent issues for parents</p>
+            </a>
+        </li>
+
+    </ul>
+
+        <div class="stats">
+            <ol id="refs">
+<li><p>Children at Risk. <em>Community Health Needs Assessment for Texas
+Children's Hospital 2013.</em> Children at Risk, 2013. Web. 29 Aug.
+2014.</p>
+</li>
+<li><p>Martin, Joyce A., et al, “Births: Final Data for 2012.” <em>National
+Vital Statistics Reports</em> Vol. 62 No. 9. Hyattsville, MD: National
+Center for Health Statistics. 2013. Web. 29 Aug 2014.</p>
+</li>
+<li><p>“FastStats: Adolescent Health”. <em>Centers for Disease Control
+and Prevention.</em> National Center for Health Statistics, 7 July 2014.
+Web. 29 Aug 2014.</p>
+</li>
+<li><p>Centers for Disease Control and Prevention. <em>1991-2013 High School
+Youth Risk Behavior Survey Data</em>. Available at:
+<a href="http://nccd.cdc.gov/youthonline/">http://nccd.cdc.gov/youthonline/</a>. Accessed on 29 Aug 2014.</p>
+</li>
+</ol>
+
+        </div>
+    </div>
+        </ion-item>
+        <button text-wrap ion-item class="item-stable" (click)="toggleGroup(2)" >
+          Autism Services
+    	</button>
+        <ion-item text-wrap class="item-accordion" *ngIf="isGroupShown(2)">
+        	<div class="content">
+        <div class="stats">
+            <ul>
+<li><p>About 1 in 68 children has been identified with an autism spectrum
+disorder (ASD) according to estimates from CDC's Autism and
+Developmental Disabilities Monitoring (ADDM) Network<sup>1</sup>.</p>
+</li>
+<li><p>ASD is almost 5 times more common in boys than in girls<sup>1</sup>.</p>
+</li>
+<li><p>On average, medical expenditures for individuals with an ASD were
+4.1–6.2 times greater than for those without an ASD<sup>1</sup>.</p>
+</li>
+<li><p>Children can be reliable diagnosed with autism as early as by age 2,
+although most are not diagnosed until after age 4<sup>1</sup>.</p>
+</li>
+<li><p>46% of ASD children have average to above average intellectual
+ability<sup>1</sup>.</p>
+</li>
+</ul>
+
+        </div>
+
+    <ul class="table-view">
+        <li class="table-view-divider">Community Resources</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="harris-county-intellectual-disability-and-autism-services.html">Harris County Intellectual Disability and Autism Services
+                <p>Mental Health Mental Retardation Authority (MHMRA) of Harris County</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="mhmra-stars-program.html">MHMRA STARS Program
+                <p>The program provides therapeutic interventions for individuals with Intellectual Developmental Disabilities or Autism Disorder with ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="mhmra-applied-behavioral-analysis-aba-skip-program.html">MHMRA Applied Behavioral Analysis (ABA) SkIP Program
+                <p>The program provides ABA services to children ages 3-8 with a diagnosis of autism in a 6 month model that also focuses on parent training.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="legacy-community-health-services.html">Legacy Community Health Services
+                <p>Affordable and comprehensive behavioral health services provided at various locations in Harris County by Legacy Community Health Services</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="harris-county-autism-resources.html">Harris County Autism Resources
+                <p>A high-yield list of autism resources in Harris County including many organizations that provide scholarships, support groups, advocate ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Support Groups</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="houston-area-autism-support-groups.html">Houston-Area Autism Support Groups
+                <p>Flyers for autism spectrum disorder support groups in different locations in the Greater Houston area. *Please call contacts first to ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Patient Education</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="patient-handouts.html">Patient Handouts
+                <p>A list of educational handouts explaining autism spectrum disorder, specific symptoms associated with autism and normal developmental ...</p>
+            </a>
+        </li>
+
+    </ul>
+
+        <div class="stats">
+            <ol id="refs">
+<li>"Autism Spectrum Disorders (ASD): Data &amp; Statistics". <em>Centers for
+Disease Control and Prevention.</em> National Center for Birth Defects and Developmental Disabilities, 24 March 2014. Web. 29 Aug 2014.</li>
+</ol>
+
+        </div>
+
+    </div>
+        </ion-item>
+        <button text-wrap ion-item class="item-stable" (click)="toggleGroup(3)" >
+          Dental Services
+    	</button>
+        <ion-item text-wrap class="item-accordion" *ngIf="isGroupShown(3)">
+        	<div class="content">
+        <div class="stats">
+            <ul>
+<li><p>27.3% of children in Harris County did not have dental insurance in
+2010<sup>1</sup>.</p>
+</li>
+<li><p>15.3% of parents delayed dental care for their children due to cost
+or lack of insurance<sup>1</sup>.</p>
+</li>
+<li><p>82.3% of children ages 2-17 in the US had a dental visit in the last
+year, compared to 61.6% of adults in the US<sup>2</sup>.</p>
+</li>
+<li><p>Over 40% of poor adults (20 years and older) have at least one
+untreated decayed tooth compared to 16% of non-poor adults<sup>2</sup>.</p>
+</li>
+</ul>
+
+        </div>
+
+    <ul class="table-view">
+        <li class="table-view-divider">Community Resources</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="harris-county-dental-clinics.html">Harris County Dental Clinics
+                <p>A comprehensive, verified list of dental clinics in the Harris County including free clinics, Harris Health system clinics, City of ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="harris-county-dental-clinics-brief-handout.html">Harris County Dental Clinics - Brief Handout
+                <p>A brief, high yield handout of dental clinics in Harris County for kids and families provided by Harris County Public Health and ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right-link" href="http://www.ghds.org/dental-care-resources.html">Greater Houston Dental Society
+                <p>List of local clinics (and eligibility requirements)</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right-pdf" href="http://www.gatewaytocare.org/SiteAssets/Gateway-to-Care/dental%20clinics.pdf">Gateway to Care List of Dental Services
+                <p>http://www.gatewaytocare.org/SiteAssets/Gateway-to-Care/dental%20clinics.pdf</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right-link" href="http://www.toothwisdom.org/care/state/texas/dental">Tooth Wisdom
+                <p>List of resources for oral health care for Texans (including many nice resources for Houstonians!)</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">General Resources for Physicians and Patients</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="general-online-resources.html">General Online Resources
+                <p>A few websites that provide online resources for physicians and patients/families on a variety of oral health topics</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Patient Education</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="patient-handouts.html">Patient Handouts
+                <p>A list of educational handouts on common oral health topics for children and adults</p>
+            </a>
+        </li>
+
+    </ul>
+
+        <div class="stats">
+            <ol id="refs">
+<li><p>Children at Risk. <em>Community Health Needs Assessment for Texas
+Children's Hospital 2013.</em> Children at Risk, 2013. Web. 29 Aug.
+2014.</p>
+</li>
+<li><p>"FastStats: Oral and Dental Health". <em>Centers for Disease Control and
+Prevention.</em> National Center for Health Statistics, 14 May 2014. Web. 1 Sept 2014.</p>
+</li>
+</ol>
+
+        </div>
+
+    </div>
+        </ion-item>
+        <button text-wrap ion-item class="item-stable" (click)="toggleGroup(4)" >
+          Domestic Violence
+    	</button>
+        <ion-item text-wrap class="item-accordion" *ngIf="isGroupShown(4)">
+        	<div class="content">
+
+        <div class="stats">
+            <ul>
+<li><p>On average, 24 people per minute are victims of rape, physical
+violence, or stalking by an intimate partner in the U.S., based on a
+survey conducted by the CDC in 2010<sup>1</sup>.</p>
+</li>
+<li><p>1 in 4 women have been the victim of severe physical violence by an
+intimate partner, while 1 in 7 men have experienced the same<sup>1</sup>.</p>
+</li>
+<li><p>72.9% of family violence in Texas in 2012 was committed against
+women<sup>2</sup>.</p>
+</li>
+</ul>
+
+        </div>
+
+    <ul class="table-view">
+        <li class="table-view-divider">Community Resources</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="victims-of-domestic-violence-services.html">Victims of Domestic Violence Services
+                <p>A list of resources for domestic violence victims including organizations with hotline numbers and those that include shelters.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="resource-and-referral-guide.html">Resource and Referral Guide
+                <p>An extensive list of resource and referral organizations that includes a section for domestic violence victims provided by the ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="the-bridge-over-troubled-waters-frequent-resources.html">The Bridge Over Troubled Waters - Frequent Resources
+                <p>A handout provided by The Bridge Over Troubled Waters with information on shelters and financial assistant resources.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="harris-county-domestic-violence-coordinating-council.html">Harris County Domestic Violence Coordinating Council
+                <p>An organization that works systematically to provide victims safety and support, hold perpetrators accountable for their crimes and ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="crisis-intervention-of-houston.html">Crisis Intervention of Houston
+                <p>An organization that provides phone counseling with 24/7 counselors available, crisis intervention, referrals, support groups and youth ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Patient Education</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="patient-handouts.html">Patient Handouts
+                <p>A few handouts explaining the significance of intimate partner violence and the rights of domestic violence victims.</p>
+            </a>
+        </li>
+
+    </ul>
+
+        <div class="stats">
+            <ol id="refs">
+<li><p>“The National Intimate Partner and Sexual Violence Survey.” <em>Centers
+for Disease Control and Prevention.</em> National Center for Injury
+Prevention and Control, 26 Feb 2014. Web. 1 Sept 2014.</p>
+</li>
+<li><p>“The Texas Crime Report for 2012.” <em>Texas Department of Public
+Safety</em>. Texas Department of Public Safety, 2012. Web. 1 Sept 2014.</p>
+</li>
+</ol>
+
+        </div>
+
+    </div>
+        </ion-item>
+        <button text-wrap ion-item class="item-stable" (click)="toggleGroup(5)" >
+          Early Childhood Education and Parenting Support
+    	</button>
+        <ion-item text-wrap class="item-accordion" *ngIf="isGroupShown(5)">
+        	<div class="content">
+        <div class="stats">
+            <ul>
+<li><p>It is estimated that less than 1% of parents in Harris County have
+access to evidence-based parent education programs<sup>1</sup></p>
+</li>
+<li><p>In 2012, there were 6,459 births to 19 year olds and younger in
+Harris County. 87.7% of births were to unmarried women, with 92
+births to women 14 years or younger<sup>2</sup>.</p>
+</li>
+<li><p>Effective parent education promotes protective factors including:
+nurturing and attachment, knowledge of child development, parental
+resilience, and social connections<sup>1</sup></p>
+</li>
+<li><p>CHIP, Children’s Health Insurance Program, is available to children
+in families with incomes up to 200% of the Federal Poverty Level.
+CHIP provides health coverage to children in families that have
+incomes too high to qualify for Medicaid but can’t afford private
+coverage</p>
+</li>
+<li><p>Children can be reliable diagnosed with autism as early as by age 2,
+although most are not diagnosed until after age 4<sup>3</sup>. Also, boys are
+5 times more likely to be autistic than girls.</p>
+</li>
+</ul>
+
+        </div>
+
+    <ul class="table-view">
+        <li class="table-view-divider">Early Childhood Education</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="daycare-resources-list.html">Daycare Resources List
+                <p>List of unverified daycare resources in the Greater Houston area.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="collaborative-for-childrens-resource-for-finding-child-care.html">Collaborative for Children's Resource for Finding Child Care
+                <p>There is an online search tool as well as information about who you can call for help.</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Parenting a Healthy Child</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="parent-education-programs.html">Parent Education Programs
+                <p>Extensive list of evidence-based parent education programs provided by Children At Risk.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="2-1-1-texas.html">2-1-1 Texas
+                <p>2-1-1 Texas is a program of the Texas Health and Human Services Commission that helps Texans connect with nearby financial, housing, ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="car-seat-safety-information-safe-riders-program.html">Car Seat Safety Information - Safe Riders Program
+                <p>Helpful information on child passenger safety and specific local resources for free car seats and car seat education.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="car-seat-safety-checks.html">Car Seat Safety Checks
+                <p>A list of several locations in Greater Houston area that provide car seat inspections by appointment.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="pool-safety.html">Pool Safety
+                <p>Information on preventing drowning and injury in pools/spas.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="immunization-milestones.html">Immunization Milestones
+                <p>Childhood vaccines required at each age, and information about the vaccine, signs and symptoms of possible disease.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="newborn-jaundice.html">Newborn Jaundice
+                <p>An extensive guide providing information on jaundice among newborns, its effects, signs and symptoms, and points of contact for care ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Developmental Needs</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="resource-guide-for-parents-of-children-with-disabilities-by-elaine-hime.html">Resource Guide for Parents of Children with Disabilities by Elaine Hime
+                <p>The resource guide provides information on local and national list of resources, financial assistance, therapies, respite care, ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="children-with-special-health-care-needs-resource-guide.html">Children with Special Health Care Needs Resource Guide
+                <p>The extensive guide that lists general and specific organizations for people with disabilities as well as child care assistance, funding ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="pediatric-therapies.html">Pediatric Therapies
+                <p>An extensive list of pediatric therapy services by location.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="preschool-program-for-children-with-disabilities.html">Preschool Program for Children with Disabilities
+                <p>The program serves children between the ages of 3-5 with access to free and appropriate educational services within their school district.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="texas-department-of-state-health-services-personal-care-services-pcs.html">Texas Department of State Health Services - Personal Care Services (PCS)
+                <p>The Texas Department of State Health Services provides Personal Care Services through the Texas Medicaid program that helps clients with ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="texas-department-of-state-health-services-children-with-special-health-care-needs-cshcn.html">Texas Department of State Health Services – Children with Special Health Care Needs (CSHCN)
+                <p>The Texas Department of State Health Services helps children with special health care needs and people of any age with cystic fibrosis ...</p>
+            </a>
+        </li>
+
+    </ul>
+
+        <div class="stats">
+            <ol id="refs">
+<li><p>Children at Risk. <em>Growing Up in Houston 2012-2014: Assessing the
+Quality of Life of Our Children</em>. Available at:
+<a href="http://childrenatrisk.org/wp-content/uploads/2013/05/GrowingUpinHouston_2012-2014.pdf">http://childrenatrisk.org/wp-content/uploads/2013/05/GrowingUpinHouston_2012-2014.pdf</a>.
+Accessed 6 Sept 2014</p>
+</li>
+<li><p>Texas Department of State Health Services, Texas Health Data, Births
+to Texas Residents. Available at:
+<a href="http://soupfin.tdh.state.tx.us/birthdoc.htm">http://soupfin.tdh.state.tx.us/birthdoc.htm</a>. Accessed 6 Sept 2014</p>
+</li>
+<li><p>Centers for Disease Control and Prevention, Autism Spectrum
+Disorders, Data and Statistics. Available at:
+<a href="http://www.cdc.gov/ncbddd/autism/data.html">http://www.cdc.gov/ncbddd/autism/data.html</a>. Accessed 6 Sept 2014</p>
+</li>
+</ol>
+
+        </div>
+
+    </div>
+        </ion-item>
+        <button text-wrap ion-item class="item-stable" (click)="toggleGroup(6)" >
+          Financial-Houston-Employment Assistance Programs
+    	</button>
+        <ion-item text-wrap class="item-accordion" *ngIf="isGroupShown(6)">
+        	<div class="content">
+        <div class="stats">
+            <ul>
+<li><p>Nearly half of the children in Texas live at 200% or below the
+federal poverty rate, while the national average is 44%.<sup>1</sup></p>
+</li>
+<li><p>The 2013 Federal Poverty Level (FPL) for a family of 4
+equals $23,550. On average, it is estimated that it takes twice
+that amount to provide the most basic needs.<sup>2</sup></p>
+</li>
+<li><p>In 2011, 46.2 million people (15%) in the U.S. were in poverty.<sup>3</sup></p>
+</li>
+</ul>
+
+        </div>
+
+    <ul class="table-view">
+        <li class="table-view-divider">Community Resources</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="unemployment-resource-list.html">Unemployment Resource List
+                <p>A list of unverified employment resources in Harris County.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="harris-county-assistance-programs.html">Harris County Assistance Programs
+                <p>An extensive list of Harris County assistance programs including rent/mortgage, housing, debt, utility, and food assistance.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="bridge-over-troubled-waters-frequent-resources.html">Bridge Over Troubled Waters Frequent Resources
+                <p>A handout provided by The Bridge Over Troubled Waters with information on shelters, financial resources.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="2-1-1-texas.html">2-1-1 Texas
+                <p>2-1-1 Texas is a program of the Texas Health and Human Services Commission that helps Texans connect with nearby financial, housing, ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="need-help-paying-bills.html">Need Help Paying Bills
+                <p>A detailed Harris County Assistance Programs website that provides information on help with mortgage, utility bills, rent assistance ...</p>
+            </a>
+        </li>
+
+    </ul>
+
+        <div class="stats">
+            <ol id="refs">
+<li><p>Children at Risk. <em>Growing Up in Houston 2012-2014: Assessing the
+Quality of Life of Our Children</em>. Available at:
+<a href="http://childrenatrisk.org/wp-content/uploads/2013/05/GrowingUpinHouston_2012-2014.pdf">http://childrenatrisk.org/wp-content/uploads/2013/05/GrowingUpinHouston_2012-2014.pdf</a>.
+Accessed 12 Sept 2014.</p>
+</li>
+<li><p>National Center for Children in Poverty<em>. Child Poverty</em>. Available
+at: <a href="http://www.nccp.org/topics/childpoverty.html">http://www.nccp.org/topics/childpoverty.html</a>. Accessed 12
+Sept 2014.</p>
+</li>
+<li><p>Feeding America. <em>Hunger and Poverty Statistics</em>. Available at:
+<a href="http://feedingamerica.org/hunger-in-america/hunger-facts/hunger-and-poverty-statistics.aspx">http://feedingamerica.org/hunger-in-america/hunger-facts/hunger-and-poverty-statistics.aspx</a>.
+Accessed 12 Sept 2014.</p>
+</li>
+</ol>
+
+        </div>
+
+    </div>
+        </ion-item>
+        <button text-wrap ion-item class="item-stable" (click)="toggleGroup(7)" >
+          Food Insecurity
+    	</button>
+        <ion-item text-wrap class="item-accordion" *ngIf="isGroupShown(7)">
+        	<div class="content">
+        <div class="stats">
+            <ul>
+<li><p>81% of families served by the Houston Food Bank are food insecure<sup>1</sup></p>
+</li>
+<li><p>Programs like SNAP (food stamps) can assist, but only 60% of those
+eligible are enrolled in Houston<sup>1</sup></p>
+</li>
+<li><p>47% of Houston Food Bank clients are &lt;18 years of age<sup>1</sup></p>
+</li>
+</ul>
+
+        </div>
+
+    <ul class="table-view">
+        <li class="table-view-divider">Find a Food Bank</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="2-1-1-service.html">2-1-1 Service
+                <p>Call 2-1-1 to get information on food banks in your area. This service also assists with finding many other community health and human ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="houston-food-bank.html">Houston Food Bank
+                <p>Visit their website to find a food pantry, meal site, and/or shelter near you.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="food-banks-by-zip-code.html">Food Banks by Zip Code
+                <p>Unverified list of food banks in the greater Houston area (call first to confirm information).</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">WIC or SNAP Enrollment</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="women-infants-and-children-wic.html">Women Infants and Children (WIC)
+                <p>WIC provides money (in the form of an EBT card) for eligible mothers to purchase approved foods for their infants and/or children.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="supplemental-nutrition-assistance-program-snap.html">Supplemental Nutrition Assistance Program (SNAP)
+                <p>Formerly called Food Stamps, SNAP Food Benefits provides money (in the form of an EBT card) for food to individuals and families in need.</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Other Assistance Programs</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="summer-feeding-program.html">Summer Feeding Program
+                <p>The Summer Food Service Program (SFSP) has created the Summer Feeding Program which provides low-income children ages 18 and younger ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="life-houston-local-infant-formula-for-emergencies.html">LIFE Houston - Local Infant Formula for Emergencies
+                <p>Information on the three LIFE Houston locations and the services they provide.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="other-emergency-food-options.html">Other Emergency Food Options
+                <p>A brief list of other local organizations providing periodic meals to those in emergent need of food.</p>
+            </a>
+        </li>
+
+    </ul>
+
+        <div class="stats">
+            <ol id="refs">
+<li>Houston Food Bank. <em>FactSheet - Hunger Facts</em>. Available at:
+<a href="http://www.houstonfoodbank.org/media/10314/Hunger_Fact_Sheet%20_ev_10-09-2012.pdf">http://www.houstonfoodbank.org/media/10314/Hunger_Fact_Sheet%20_ev_10-09-2012.pdf</a>. Accessed 12 Sept 2014.</li>
+</ol>
+
+        </div>
+
+    </div>
+        </ion-item>
+        <button text-wrap ion-item class="item-stable" (click)="toggleGroup(8)" >
+          Health Maintenance for Adults
+    	</button>
+        <ion-item text-wrap class="item-accordion" *ngIf="isGroupShown(8)">
+        	<div class="content">
+
+        <div class="stats">
+            <ul>
+<li><p>67 million American adults (31%) have high blood pressure – that’s 1
+of every 3 adults<sup>1</sup>.</p>
+</li>
+<li><p>About 600,000 people die of heart disease in the United States every
+year – about 1 in every 4 deaths<sup>2</sup>.</p>
+</li>
+<li><p>Heart disease is the leading cause of death for both men and women.
+More than half of the deaths due to heart disease in 2009 were in
+men<sup>2</sup>.</p>
+</li>
+<li><p>Seven of the top 10 causes of death in 2010 were chronic diseases.
+Two of these chronic diseases—heart disease and cancer—together
+accounted for nearly 48% of all deaths<sup>3</sup>.</p>
+</li>
+</ul>
+
+        </div>
+
+    <ul class="table-view">
+        <li class="table-view-divider">General Resources-Patient Education</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="breast-cancer-resources.html">Breast Cancer Resources
+                <p>A few websites with resources and educational handouts on breast cancer as well as a list of organizations that provide free/low cost ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="cervical-cancer-resources.html">Cervical Cancer Resources
+                <p>A few websites with resources and educational handouts on cervical cancer.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="colorectal-cancer-resources.html">Colorectal Cancer Resources
+                <p>A few websites with resources and educational handouts on colorectal cancer.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="prostate-cancer-resources.html">Prostate Cancer Resources
+                <p>A few websites with resources and educational handouts on prostate cancer.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="influenza-resources.html">Influenza Resources
+                <p>Resources and an educational handout on influenza.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="high-cholesterol-resources.html">High Cholesterol Resources
+                <p>A few websites with resources and educational handouts on high cholesterol.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="high-blood-pressure-resources.html">High Blood Pressure Resources
+                <p>A few websites with resources and educational handouts on high blood pressure.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="heart-disease-and-stroke-resources.html">Heart Disease and Stroke Resources
+                <p>A few websites with resources and educational handouts on heart disease and stroke.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="heart-health-recommended-screening.html">Heart Health Recommended Screening
+                <p>Information on heart health screening and patient education materials on a variety of cardiovascular conditions.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="diabetes-resources.html">Diabetes Resources
+                <p>A few websites with resources and educational handouts on diabetes.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="physical-activity-resources.html">Physical Activity Resources
+                <p>A few websites with resources and educational handouts on physical activity for adults.</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Doctor-Patient Communication Aid</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="ask-me-3-questions-program.html">Ask Me 3 Questions Program
+                <p>A program by Pfizer to help patients have a better conversation with their doctors, pharmacists and nurses about their health.</p>
+            </a>
+        </li>
+
+    </ul>
+
+        <div class="stats">
+            <ol id="refs">
+<li><p>CDC. <a href="http://www.cdc.gov/mmwr/preview/mmwrhtml/mm6135a3.htm">Vital signs: awareness and treatment of uncontrolled
+hypertension among adults—United States, 2003–2010</a>. <strong><em>MMWR</em></strong>. 2012;61(35):703–9.</p>
+</li>
+<li><p>Murphy SL, Xu JQ, Kochanek KD. Deaths: Final data for 2010. <strong><em>Natl
+Vital Stat Rep</em></strong>. 2013;61(4).
+<em><a href="http://www.cdc.gov/nchs/data/nvsr/nvsr61/nvsr61_04.pdf">http://www.cdc.gov/nchs/data/nvsr/nvsr61/nvsr61_04.pdf</a></em></p>
+</li>
+<li><p>“FastStats: Death and Mortality”. Centers for Disease Control
+and Prevention. <em>National Center for Health Statistics,</em> 14
+July 2014. Web. 1 Sept 2014.</p>
+</li>
+</ol>
+
+        </div>
+
+    </div>
+        </ion-item>
+        <button text-wrap ion-item class="item-stable" (click)="toggleGroup(9)" >
+          Homeless
+    	</button>
+        <ion-item text-wrap class="item-accordion" *ngIf="isGroupShown(9)">
+        	<div class="content">
+        <div class="stats">
+            <ul>
+<li><p>On any given night in Harris and Fort Bend counties, there are 1,412
+jailed, 3,824 unsheltered, and 3,532 sheltered individuals who are
+homeless, for a total of 8,768.<sup>1</sup></p>
+</li>
+<li><p>It is estimated that between a quarter and a third of the adult
+homeless population suffers from severe and persistent mental
+illness that prevents them from carrying out essential daily
+activities.<sup>2</sup></p>
+</li>
+</ul>
+
+        </div>
+
+    <ul class="table-view">
+        <li class="table-view-cell">
+            <a class="navigate-right" href="how-to-obtain-id.html">How to Obtain ID
+                <p>Obtaining medical attention, employment, and many other services important to the homeless community require possession of an ID card. ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="gold-card.html">Gold Card
+                <p>The Gold Card Program (now called Harris Health’s Financial Assistance Program) is a Texas public health benefit through the Harris ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="medical-transportation-management-mtm.html">Medical Transportation Management (MTM)
+                <p>MTM is a company devoted to providing non-emergent medical transportation services to people in the Texas Medicaid and Children with ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="project-access.html">Project Access
+                <p>Project Access provides free transportation on a set route for the homeless community. Tickets are required to ride and can be obtained ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="shelters.html">Shelters
+                <p>Short list of first come first serve short-term shelters for women and men.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="clothing.html">Clothing
+                <p>Short list of first come first serve organizations providing free clothing.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="general-resources-help-card.html">General Resources - Help Card
+                <p>Comprehensive list of resources available to the homeless population created by the Coalition for the Homeless, including shelters, ...</p>
+            </a>
+        </li>
+
+    </ul>
+
+        <div class="stats">
+            <ol id="refs">
+<li><p>Coalition for the Homeless. <em>Coalition releases 2012 Needs
+Assessment findings in Houston, Harris County and Fort Bend County</em>.
+Available at:
+<a href="http://www.homelesshouston.org/coalition-releases-2012-needs-assessment-findings-in-houston-harris-county-and-fort-bend-county/">http://www.homelesshouston.org/coalition-releases-2012-needs-assessment-findings-in-houston-harris-county-and-fort-bend-county/</a>.
+Accessed 12 Sept 2014.</p>
+</li>
+<li><p>Healthcare for the Homeless Houston (HHH). <em>Who We Serve</em>. Available
+at: <a href="http://homeless-healthcare.org/about-us/who-we-serve/">http://homeless-healthcare.org/about-us/who-we-serve/</a>.
+Accessed 12 Sept 2014.</p>
+</li>
+</ol>
+
+        </div>
+
+    </div>
+        </ion-item>
+        <button text-wrap ion-item class="item-stable" (click)="toggleGroup(10)" >
+          Hospice and Palliative Care
+    	</button>
+        <ion-item text-wrap class="item-accordion" *ngIf="isGroupShown(10)">
+        	<div class="content">
+        <div class="stats">
+            <ul>
+<li><p>As of 2010, there are 325 Medicare-Certified Hospice Agencies in
+Texas, serving 79,328 patients.<sup>1</sup></p>
+</li>
+<li><p>42% of all hospitals in Texas offer Palliative Care, including 15
+hospitals in Harris County<sup>2</sup></p>
+</li>
+<li><p>Palliative Care is not Hospice. Both are multi-disciplinary,
+symptom-based approaches to caring for patients with complex and
+life threatening illnesses. However, PALLIATIVE CARE can be
+implemented at any time in the disease process regardless of stage,
+prognosis, or other treatments while HOSPICE is an insurance benefit
+reserved for the last 6 months of life.</p>
+</li>
+</ul>
+
+        </div>
+
+    <ul class="table-view">
+        <li class="table-view-divider">Hospice - General Info</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="national-hospice-and-palliative-care-organization.html">National Hospice and Palliative Care Organization
+                <p>Visit NHPCO website for help finding hospice providers near you.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="caring-connections-helpline.html">Caring Connections Helpline
+                <p>Caring Connections Helpline is a toll-free number with staff available to answer questions, find local end-of-life resources, offer ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="hospice-foundation-of-america.html">Hospice Foundation of America
+                <p>Find hospice providers near you and/or learn more about hospice services.</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Hospice - Inpatient and Home Care</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="vitas-innovative-hospice.html">Vitas Innovative Hospice
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="houston-hospice.html">Houston Hospice
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="memorial-hermann-hospice.html">Memorial Hermann Hospice
+            </a>
+        </li>
+
+        <li class="table-view-divider">Hospice - Pediatric</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="houston-hospice.html">Houston Hospice
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="texas-childrens-special-needs-primary-care-clinic.html">Texas Children's Special Needs Primary Care Clinic
+                <p>Care for children with medical complexity who have functional limitations and an increased need for medical services - includes ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="healthbridge-childrens-hospital.html">HealthBridge Children's Hospital
+                <p>Serves as a bridge between hospital and home for children who have face medical issues following a serious injury, acute illness, ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="compassionate-care-hospice.html">Compassionate Care Hospice
+            </a>
+        </li>
+
+        <li class="table-view-divider">Palliative Care</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="national-hospice-and-palliative-care-organization.html">National Hospice and Palliative Care Organization
+                <p>Visit NHPCO website for help finding palliative care providers near you.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="memorial-hermann-adult-palliative-care.html">Memorial Hermann Adult Palliative Care
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="university-of-texas-chosen-clinic.html">University of Texas CHOSEN Clinic
+                <p>Care and case management for patients (birth to 21 years old) with special health care needs, including any chronic illness or disabling ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="texas-childrens-special-needs-primary-care-clinic.html">Texas Children's Special Needs Primary Care Clinic
+                <p>Care for children with medical complexity who have functional limitations and an increased need for medical services - includes ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="healthbridge-childrens-hospital.html">HealthBridge Children's Hospital
+                <p>Serves as a bridge between hospital and home for children who have face medical issues following a serious injury, acute illness, ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">End of Life Planning</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="senior-resource-guide.html">Senior Resource Guide
+                <p>Provides explanations of important steps to be taken when coming near to end of life – including funerals/burials/cremation, disposition ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="cremation-services.html">Cremation Services
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="find-a-funeral-home-near-you.html">Find a Funeral Home Near You
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="federal-trade-commission.html">Federal Trade Commission
+                <p>A consumer guide to funerals - series of articles giving advice on planning a funeral, the expected fees, types of funerals, choosing a ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Mental Health - Adult</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="caring-connections.html">Caring Connections
+                <p>Provides people with information and support when they are planning ahead, caring for a loved one, living with an illness or grieving a ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="center-for-stress-management.html">Center for Stress Management
+                <p>A multi-disciplinary team of healthcare providers dedicated to helping people with pain management, pyscho-social-spiritual factors ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Mental Health - Child</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="bos-place.html">Bo's Place
+                <p>A bereavement center offering grief support services to children, ages 3 to 18, and their families who have experienced the death of a ...</p>
+            </a>
+        </li>
+
+    </ul>
+
+        <div class="stats">
+            <ol id="refs">
+<li><p>National Association for Home Care. <em>Texas Hospice Fact Sheet.</em>
+Available at: <a href="http://www.nahc.org/assets/1/7/tx.pdf">http://www.nahc.org/assets/1/7/tx.pdf</a>. Accessed 12
+Sept 2014.</p>
+</li>
+<li><p>Center to Advance Palliative Care. <em>State by State Report Cards</em>.
+Available at:
+<a href="http://www.capc.org/reportcard/home/TX/RC/Texas/2708">http://www.capc.org/reportcard/home/TX/RC/Texas/2708</a>. Accessed 12
+Sept 2014.</p>
+</li>
+</ol>
+
+        </div>
+
+    </div>
+        </ion-item>
+        <button text-wrap ion-item class="item-stable" (click)="toggleGroup(11)" >
+          Human Trafficking
+    	</button>
+        <ion-item text-wrap class="item-accordion" *ngIf="isGroupShown(11)">
+        	<div class="content">
+        <div class="stats">
+            <ul>
+<li><p>Texas is a hub of human trafficking. The U.S. Department of Justice
+identified the I-10 corridor as the #1 human trafficking route in
+the U.S., with as many as 1 in 4 victims in the U.S. passing through
+Texas<sup>1</sup>.</p>
+</li>
+<li><p>Houston is a hub for all forms of human trafficking due to its
+proximity to the border, national airports and seaports and diverse
+population<sup>1</sup>.</p>
+</li>
+</ul>
+
+        </div>
+
+    <ul class="table-view">
+        <li class="table-view-divider">Provider Resources</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="identifying-victims.html">Identifying Victims
+                <p>Helpful health care provider assessment cards with key questions to ask and clues to look for in human trafficking victims.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="reporting-victims.html">Reporting Victims
+                <p>A pocket card for health care providers with contact information for the National Human Trafficking Resource Center and how they can assist:</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="human-trafficking-information-cheat-sheet.html">Human Trafficking Information Cheat Sheet
+                <p>A handout by Polaris Project about human trafficking and common myths and misconceptions.</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Community Resources</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="crisis-intervention-of-houston.html">Crisis Intervention of Houston
+                <p>An organization that provides phone counseling with 24/7 counselors available, crisis intervention, referrals, support groups and ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="houston-anti-trafficking-organizations.html">Houston Anti-Trafficking Organizations
+                <p>An extensive list of Houston area anti-trafficking organizations dedicated to educating the public, identifying and rehabilitating ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="national-human-trafficking-resource.html">National Human Trafficking Resource
+                <p>A flyer about the National Human Trafficking Resource Center with contact information.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="reporting-victims.html">Reporting Victims
+                <p>A handout of different contacts used to report suspected human trafficking including specific reporting methods for Houston.</p>
+            </a>
+        </li>
+
+    </ul>
+
+        <div class="stats">
+            <ol id="refs">
+<li>Children at Risk. <em>Growing Up in Houston 2012-2014, Assessing the
+Quality of Life of Our Children</em>. Children at Risk, 2012.</li>
+</ol>
+
+        </div>
+
+    </div>
+        </ion-item>
+        <button text-wrap ion-item class="item-stable" (click)="toggleGroup(12)" >
+          Legal Services
+    	</button>
+        <ion-item text-wrap class="item-accordion" *ngIf="isGroupShown(12)">
+        	<div class="content">
+        <div class="stats">
+            <ul>
+<li><p>In 2011, the United States accepted 56,424 refugees for
+resettlement.<sup>1</sup></p>
+</li>
+<li><p>According to the 2012 US Census Bureau, 32% of foreign-born American
+residents are uninsured; 18.3% of citizen foreign-born individuals
+and 43.4% of non-citizen foreign-born individuals. In contrast, only
+13% of the native-born population had no health insurance.<sup>2</sup></p>
+</li>
+</ul>
+
+        </div>
+
+    <ul class="table-view">
+        <li class="table-view-divider">Community Resources</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="free-and-reduced-legal-services.html">Free and Reduced Legal Services
+                <p>A list of frequently used organizations that provide legal services to low income citizens for free or reduced rates.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="citizenship-assistance.html">Citizenship Assistance
+                <p>A list of organizations that provide ESL, GED, or citizenship classes, assistance with filling out several naturalization forms, work ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="legal-resource-and-referral-guide.html">Legal Resource and Referral Guide
+                <p>A more extensive list of resource and referral organizations that specialize in child, elder, domestic violence, family, ...</p>
+            </a>
+        </li>
+
+    </ul>
+
+        <div class="stats">
+            <ol id="refs">
+<li><p>Center for Disease Control and Prevention. <em>Immigrant and Refugee
+Health</em>. Available at:
+<a href="http://www.cdc.gov/immigrantrefugeehealth/about-refugees.html">http://www.cdc.gov/immigrantrefugeehealth/about-refugees.html</a>.
+Accessed 12 Sept 2014.</p>
+</li>
+<li><p>United States Census Bureau. <em>Income, Poverty, and Health Insurance
+Coverage in the United States: 2012</em>. Available at:
+<a href="http://www.census.gov/prod/2013pubs/p60-245.pdf">http://www.census.gov/prod/2013pubs/p60-245.pdf</a>. Accessed 12
+Sept 2014.</p>
+</li>
+</ol>
+
+        </div>
+
+    </div>
+        </ion-item>
+        <button text-wrap ion-item class="item-stable" (click)="toggleGroup(13)" >
+          Mental and Behavioral Health
+    	</button>
+        <ion-item text-wrap class="item-accordion" *ngIf="isGroupShown(13)">
+        	<div class="content">
+        <div class="stats">
+            <ul>
+<li><p>It is estimated that 20% of people age 55 years or older experience
+some type of mental health concern. The most common conditions
+include anxiety, severe cognitive impairment, and mood disorders<sup>1</sup>.</p>
+</li>
+<li><p>Texas ranks last nationally in per capita mental health spending, at
+$38.38<sup>2</sup>.</p>
+</li>
+<li><p>Many families in Houston experience difficulty in accessing mental
+health services for their children, as 14,000 children in Houston
+cannot access mental health services<sup>2</sup>.</p>
+</li>
+</ul>
+
+        </div>
+
+    <ul class="table-view">
+        <li class="table-view-divider">Community Resources</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="the-guide-by-mental-health-america-of-greater-houston.html">The Guide by Mental Health America of Greater Houston
+                <p>An extensive list of non-profit mental health services in Harris County with sections for children, elderly, adult and family, social ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="affordable-mental-health-resources-in-harris-county.html">Affordable Mental Health Resources in Harris County
+                <p>A brief high-yield list of affordable mental health resources in Harris County divided by emergency services, non-emergency services, ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="legacy-community-health-services.html">Legacy Community Health Services
+                <p>A brochure by Legacy Health on affordable behavioral health services provided at various locations in Harris County both in English and ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="memorial-hermann-mental-health-crisis-clinic.html">Memorial Hermann Mental Health Crisis Clinic
+                <p>An outpatient mental health clinic designed to serve patients in crisis situations or those unable to follow up with other outpatient ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="crisis-intervention-of-houston.html">Crisis Intervention of Houston
+                <p>An organization that provides phone counseling with 24/7 counselors available, crisis intervention, referrals, support groups and youth ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="mental-health-mental-retardation-authority-mhmra-of-harris-county.html">Mental Health Mental Retardation Authority (MHMRA) of Harris County
+                <p>An organization that provides care and support through three service divisions: Mental Health, Intellectual &amp; Developmental ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="houston-area-psychiatric-hospitals.html">Houston Area Psychiatric Hospitals
+                <p>A list of psychiatric hospitals in the Houston area and the population they serve.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="suicide-risk-safety-plan.html">Suicide Risk Safety Plan
+                <p>A safety plan handout for patients at risk of suicide to complete and share with their doctor.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="samhsa-treatment-services-locator.html">SAMHSA Treatment Services Locator
+                <p>Treatment facilities for substance abuse/addiction and/or mental health problems.</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Child-Adolescent Resources</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="childrens-mental-health-action-network-resource-guide.html">Children's Mental Health Action Network Resource Guide
+                <p>A guide written by parents and caregivers to advocate for children with mental health needs and provide resources.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="mental-health-mental-retardation-authority-mhmra-of-harris-county-copy.html">Mental Health Mental Retardation Authority (MHMRA) of Harris County copy
+                <p>An organization that provides care and support through three service divisions: Mental Health, Intellectual &amp; Developmental ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="depelchin-childrens-center.html">DePelchin Children's Center
+                <p>DePelchin Children's Center in Texas is focused on foster care, adoption services, children's well-being, and mental health.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="homework-tips-for-children-with-adhd.html">Homework Tips for Children with ADHD
+                <p>A handout on homework tips for parents of children with ADHD.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="parenting-a-child-with-adhd.html">Parenting a Child with ADHD
+                <p>An easy to read resource for parents of children with ADHD and how they can assist their children to succeed.</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Postpartum Resources</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="emotions-after-delivery.html">Emotions after Delivery
+                <p>A pamphlet for women seeking support for postpartum depression and/or other mental health issues after delivery, in English or Spanish, ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="resources-for-mothers-with-postpartum-mental-illness.html">Resources for Mothers with Postpartum Mental Illness
+                <p>A list of useful postpartum depression hotlines, clinics, counseling services, therapy, and support groups for woman in need of support ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="nurse-family-partnership-of-harris-county.html">Nurse Family Partnership of Harris County
+                <p>A free voluntary program that partners first-time mothers with nurse home visitors that visit throughout the pregnancy until the baby ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="the-well-mom-checklist.html">The Well Mom Checklist
+                <p>A tool developed to assist new mothers in their self-care.</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Patient Education</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="national-institute-of-mental-health-nimh.html">National Institute of Mental Health (NIMH)
+                <p>NIMH provides handouts and research information on a variety of mental health disorders including depression, bipolar disorder and ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="american-psychiatric-association-apa.html">American Psychiatric Association (APA)
+                <p>APA provides educational materials and brochures on psychiatric disorders and treatments including ADHD, schizophrenia and substance abuse.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="what-to-do-in-a-psychiatric-emergency.html">What to Do in a Psychiatric Emergency
+                <p>A handout that provides information on who to call and psychiatric hospitals and programs available for specific patients in a ...</p>
+            </a>
+        </li>
+
+    </ul>
+
+        <div class="stats">
+            <ol id="refs">
+<li><p>Centers for Disease Control and Prevention and National Association
+of Chronic Disease Directors. The State of Mental Health and Aging
+in America. Issue Brief 1: What Do the Data Tell Us? Atlanta, GA:
+National Association of Chronic Disease Directors; 2008. Web. 4
+Sept 2014.</p>
+</li>
+<li><p>Children at Risk. <em>Growing Up in Houston 2012-2014, Assessing the
+Quality of Life of Our Children</em>. Children at Risk, 2012.</p>
+</li>
+</ol>
+
+        </div>
+
+    </div>
+        </ion-item>
+        <button text-wrap ion-item class="item-stable" (click)="toggleGroup(14)" >
+          Obesity and Wellness
+    	</button>
+        <ion-item text-wrap class="item-accordion" *ngIf="isGroupShown(14)">
+        	<div class="content">
+        <div class="stats">
+            <ul>
+<li><p>Texas is ranked 6<sup>th</sup> in the nation for childhood obesity<sup>1</sup>.</p>
+</li>
+<li><p>1 in 4 teens in Houston consume at least one soda on a daily
+basis<sup>1</sup>.</p>
+</li>
+<li><p>In Harris County, 29% of adults are obese and 22% are physically
+inactive<sup>2</sup>.</p>
+</li>
+</ul>
+
+        </div>
+
+    <ul class="table-view">
+        <li class="table-view-divider">Medical Resources</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="center-for-clinical-and-translational-sciences.html">Center for Clinical and Translational Sciences
+                <p>A list of Greater Houston by the University of Texas Health Science Center at Houston on obesity prevention and treatment resources ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="ut-weight-management-clinic.html">UT Weight Management Clinic
+                <p>A 6 month program designed to help adults lose weight by the University of Texas Health Science Center at Houston.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="obesity-prevention-programs.html">Obesity Prevention Programs
+                <p>A list of some programs exclusively for those with the Texas Children’s Health Plan and others for all.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="harris-health-pediatric-weight-management-clinic.html">Harris Health Pediatric Weight Management Clinic
+                <p>A multidisciplinary weight loss clinic (nursing, nutrition, physical therapy, social work, and child life) for children &lt; 20 years old.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="healthbridge-childrens-hospital-weight-management-program.html">HealthBridge Children's Hospital- Weight Management Program
+                <p>The HealthBridge Children’s Hospital has an inpatient program that provides the advantage over outpatient treatments of offering ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Exercise Programs</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="ymca-of-greater-houston.html">YMCA of Greater Houston
+                <p>The YMCA has multiple locations in the Greater Houston area with swimming activities, camps, sports, child care, and family programs.  ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="houston-parks-and-recreation-department.html">Houston Parks and Recreation Department
+                <p>The Houston Parks and Recreation Department website provides an updated recreation catalog every season that includes many free and ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="shape-up-houston.html">Shape Up Houston
+                <p>The mission of Shape Up Houston is to inspire, motivate, and educate the people of Houston to improve or maintain good health by making ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="marathon-kids.html">Marathon Kids
+                <p>A program that challenges children to walk or run 26.2 miles over 6 months.</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Nutrition Programs and Classes</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="kids-cafe.html">Kid's Cafe
+                <p>The class provides nutritious meals in a safe surrounding along with food safety and nutrition education and hands-on instruction to ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="houston-food-bank-nutrition-classes.html">Houston Food Bank Nutrition Classes
+                <p>The Houston Food Bank provides nutrition education classes with cooking demonstrations for low income participants.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="houston-food-bank-recipes.html">Houston Food Bank Recipes
+                <p>The Houston Food Bank website can link to nutritious recipes listed by specific Food Bank items such as turkey, tuna or peas.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="farmers-markets-co-ops-and-csas.html">Farmers Markets, Co-Ops and CSA's
+                <p>The list describes the difference between these organizations and then lists farmers markets in the Houston area by day of the week.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="urban-gardener-houston-parks-and-recreation-department.html">Urban Gardener - Houston Parks and Recreation Department
+                <p>Through a partnership with the Houston Parks and Recreation Department, community and non-profit groups and local businesses, city-owned ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="urban-harvest.html">Urban Harvest
+                <p>A nonprofit organization dedicated to strengthening communities through gardening education. They offer a variety of organic-based ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="can-do-houston-children-and-neighbors-defeat-obesity.html">CAN DO Houston (Children and Neighbors Defeat Obesity)
+                <p>CAN DO Houston serves as a coordinating center to promote and support initiatives based on community input.  Through their grassroots ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="recipe-for-success.html">Recipe for Success
+                <p>The program mobilizes volunteers to go into schools and teach educators, parents, and kids about growing and preparing nutritious meals. ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="salud-familia.html">¡Salud, Familia!
+                <p>Arte Público Press's publishing and outreach program that encompasses health and nutrition education. ¡Salud, Familia! is comprised of ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="hisd-nutrition-services.html">HISD Nutrition Services
+                <p>This HISD website provides information about HISD nutrition services. There is information for families to manage their child's food ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="summer-food-service-program.html">Summer Food Service Program
+                <p>The Houston Parks and Recreation Department (HPARD) sponsored program provides free and nutritious lunches and snacks for youth ages ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Patient Education</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="video-education-for-patients-and-families.html">Video Education for Patients and Families
+                <p>The Weight of the Nation videos by HBO provide kid-friendly videos on calories and energy.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="general-online-resource-guide.html">General Online Resource Guide
+                <p>An extensive list of online resources including handouts, interactive websites and tools about nutrition, physical activity and wellness ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="patient-handouts.html">Patient Handouts
+                <p>A list of brief, high-yield handouts on healthy eating and exercise</p>
+            </a>
+        </li>
+
+    </ul>
+
+        <div class="stats">
+            <ol id="refs">
+<li><p>Children at Risk. <em>Growing Up in Houston 2012-2014, Assessing the
+Quality of Life of Our Children</em>. Children at Risk, 2012.</p>
+</li>
+<li><p>“County Health Rankings: National Healthy Worksite Program”.
+<em>Centers for Disease Control and Prevention.</em> National Center for
+Chronic Disease Prevention and Health Promotion, 14 April 2014. Web.
+7 Sept 2014</p>
+</li>
+</ol>
+
+        </div>
+
+    </div>
+        </ion-item>
+        <button text-wrap ion-item class="item-stable" (click)="toggleGroup(15)" >
+          People with Disabilities
+    	</button>
+        <ion-item text-wrap class="item-accordion" *ngIf="isGroupShown(15)">
+        	<div class="content">
+        <div class="stats">
+            <ul>
+<li><p>In 2012, 19.5% of adults in Texas reported having a disability,
+compared with 21.4% in the United States and Territories<sup>1</sup>.</p>
+</li>
+<li><p>In 2012, the percentage of adults with disabilities who had a
+household income of &lt; $15,000 was 25.1%, and the percentage of
+adults without disabilities who had a household income of
+&lt; $15,000 was 12.2%<sup>1</sup>.</p>
+</li>
+<li><p>Of the 53.9 million school-aged children in the U.S., about 2.8
+million (5.2%) were reported to have a disability in 2010<sup>2</sup>.</p>
+</li>
+</ul>
+
+        </div>
+
+    <ul class="table-view">
+        <li class="table-view-divider">Community Resources</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="the-arc-of-greater-houston.html">The Arc of Greater Houston
+                <p>The Arc promotes and protects the human rights of people with intellectual and developmental disabilities and their website provides ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="houston-area-special-needs-resource-guide.html">Houston Area Special Needs Resource Guide
+                <p>An extensive guide to organizations, service providers, and support groups categorized by disabilities in the Houston area.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="special-needs-library.html">Special Needs Library
+                <p>An online library created by parents in the Greater Houston area that is searchable by topic and location.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="texas-department-of-state-health-services-personal-care-services-pcs.html">Texas Department of State Health Services - Personal Care Services (PCS)
+                <p>The Texas Department of State Health Services provides Personal Care Services through the Texas Medicaid program that helps clients with ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="texas-department-of-state-health-services-department-of-assistive-and-rehabilitative-services-dars.html">Texas Department of State Health Services - Department of Assistive and Rehabilitative Services (DARS)
+                <p>The Department of Assistive and Rehabilitative Services (DARS) administers programs for people with disabilities and children with ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Child Resources</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="resource-guide-for-parents-of-children-with-disabilities-by-elaine-hime.html">Resource Guide for Parents of Children with Disabilities by Elaine Hime
+                <p>The resource guide provides information on local and national list of resources, financial assistance, therapies, respite care, ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="children-with-special-health-care-needs-resource-guide.html">Children with Special Health Care Needs Resource Guide
+                <p>The extensive guide that lists general and specific organizations for people with disabilities as well as child care assistance, funding ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="pediatric-therapies.html">Pediatric Therapies
+                <p>An extensive list of pediatric therapy services by location.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="preschool-program-for-children-with-disabilities.html">Preschool Program for Children with Disabilities
+                <p>The program serves children between the ages of 3-5 with access to free and appropriate educational services within their school district.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="texas-department-of-state-health-services-personal-care-services-pcs.html">Texas Department of State Health Services - Personal Care Services (PCS)
+                <p>The Texas Department of State Health Services provides Personal Care Services through the Texas Medicaid program that helps clients with ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="dshs-children-with-special-health-care-needs-cshcn.html">Texas Department of State Health Services - Children with Special Health Care Needs (CSHCN)
+                <p>The Texas Department of State Health Services helps children with special health care needs and people of any age with cystic fibrosis ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Patient Education</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="patient-handouts.html">Patient Handouts
+                <p>A list of handouts on rights and services specific to patients with disabilities.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="website-resources.html">Website Resources
+                <p>A few websites that provide statistics, education and resource for people with disabilities.</p>
+            </a>
+        </li>
+
+    </ul>
+
+        <div class="stats">
+            <ol id="refs">
+<li><p>“Disability and Health Data System (DHDS): Texas State Profile”.
+<em>Centers for Disease Control and Prevention.</em> National Center on
+Birth Defects and Developmental Disabilities, 22 July 2014. Web. 5
+Sept 2014.</p>
+</li>
+<li><p>Brault, Matthew W. “School-Aged Children with Disabilities in U.S.
+Metropolitan Statistical Areas: 2010”. <em>United States
+Census Bureau.</em> U.S. Census Bureau, Nov 2011. Web. 5 Sept 2014.</p>
+</li>
+</ol>
+
+        </div>
+
+    </div>
+        </ion-item>
+        <button text-wrap ion-item class="item-stable" (click)="toggleGroup(16)" >
+          Poison Control
+    	</button>
+        <ion-item text-wrap class="item-accordion" *ngIf="isGroupShown(16)">
+        	<div class="content">
+        <div class="stats">
+            <ul>
+<li><p>Although children younger than 6 accounted for about half of all the
+poison exposure calls to poison center in 2010, adults accounted for 92% of all poison-related deaths reported to poison centers<sup>1</sup>.</p>
+</li>
+<li><p>More than 70 percent of poison exposure calls to poison centers
+can be treated at home<sup>1</sup>.</p>
+</li>
+<li><p>18% of calls to poison centers come from health care facilities<sup>1</sup>.</p>
+</li>
+</ul>
+
+        </div>
+
+    <ul class="table-view">
+        <li class="table-view-cell">
+            <a class="navigate-right" href="poison-help-line.html">Poison Help Line
+                <p>Emergency hotline to call in case of poisoning or suspected poisoning.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="general-educational-resources/">General Educational Resources
+            </a>
+        </li>
+
+    </ul>
+
+        <div class="stats">
+            <ol id="refs">
+<li>American Association of Poison Control Centers, Prevention.
+<a href="http://www.aapcc.org/">http://www.aapcc.org/</a>. Accessed 7 September 2014.</li>
+</ol>
+
+        </div>
+
+    </div>
+        </ion-item>
+        <button text-wrap ion-item class="item-stable" (click)="toggleGroup(17)" >
+          Prenatal and Postnatal Care
+    	</button>
+        <ion-item text-wrap class="item-accordion" *ngIf="isGroupShown(17)">
+        	<div class="content">
+        <div class="stats">
+            <ul>
+<li><p>Only 54.7% of women accessed prenatal care during their first
+trimester in the Greater Houston area in 2010<sup>1</sup>.</p>
+</li>
+<li><p>Over 55% of all births in Texas are paid for through Medicaid<sup>1</sup>.</p>
+</li>
+<li><p>The teen birth rate in Greater Houston is 42.7 per 1,000 adolescent
+females ages 15-17 years<sup>1</sup>.</p>
+</li>
+</ul>
+
+        </div>
+
+    <ul class="table-view">
+        <li class="table-view-divider">Prenatal Community Resources and Education</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="prenatal-care-services-in-houston-area.html">Prenatal Care Services in Houston Area
+                <p>An extensive list of verified clinics in Greater Houston area that provide prenatal care to low income women.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="provider-service-delivery-directory.html">Provider Service Delivery Directory
+                <p>An extensive directory of prenatal and postnatal services in the community provided by the Mothers’ Wellness Collaborative in Harris ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="centering-pregnancy-sites.html">Centering Pregnancy Sites
+                <p>A list of clinics that are centering pregnancy sites where a group of women meet at regularly scheduled visits for prenatal care.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="centering-pregnancy-flyer.html">Centering Pregnancy Flyer
+                <p>A flyer from Harris Health on the purpose of centering pregnancy groups and contact information to find a nearby group for additional ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="prenatal-and-ob-care-at-harris-health.html">Prenatal and OB Care at Harris Health
+                <p>A handout that lists providers and programs available for OB patients at all prenatal care locations within the Harris Health System.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="nurse-family-partnership-in-harris-county.html">Nurse Family Partnership in Harris County
+                <p>A free voluntary program that partners first-time mothers with nurse home visitors that visit throughout the pregnancy until the baby ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="march-of-dimes-healthy-babies-are-worth-the-wait.html">March of Dimes - Healthy Babies are Worth the Wait
+                <p>An educational campaign to reduce medically unnecessary early deliveries.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="march-of-dimes-get-ready-for-labor.html">March of Dimes - Get Ready for Labor
+                <p>The March of Dimes website provides information for women on birth plan, signs of labor and what to expect.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="caring-through-education-discomforts-of-pregnancy.html">Caring Through Education - Discomforts of Pregnancy
+                <p>An informational handout with suggestions to help relieve some discomforts associated with pregnancy in both English and Spanish.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="caring-through-education-preterm-labor.html">Caring Through Education - Preterm Labor
+                <p>An informational handout that explains potential causes, signs/symptoms and treatments for preterm labor in both English and Spanish.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="caring-through-education-pre-eclampsia.html">Caring Through Education - Pre-Eclampsia
+                <p>An informational handout that explains that signs/symptoms and special care needed for pre-eclampsia in both English and Spanish.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="caring-through-education-biophysical-profile.html">Caring Through Education - Biophysical Profile
+                <p>An informational handout that describes the biophysical profile test and why it is necessary for the health of the fetus in both English ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Postnatal Community Resources and Education</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="provider-service-delivery-directory.html">Provider Service Delivery Directory
+                <p>An extensive directory of prenatal and postnatal services in the community provided by the Mothers’ Wellness Collaborative in Harris ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="baby-supply-assistance.html">Baby Supply Assistance
+                <p>A list of organizations that provide baby supplies and clothing assistance for families.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="text-4-baby.html">Text 4 Baby
+                <p>A free mobile information service designed to promote  maternal and child health through text messaging.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="nurse-family-partnership-in-harris-county.html">Nurse Family Partnership in Harris County
+                <p>A free voluntary program that partners first-time mothers with nurse home visitors that visit throughout the pregnancy until the baby ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="lactation-foundation.html">Lactation Foundation
+                <p>The Lactation Foundation is a joint venture between the University of Texas Health Science Center at Houston and Texas WIC that provides ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="10-breastfeeding-tips.html">10 Breastfeeding Tips
+                <p>An informational handout that provides breastfeeding tips for success for mothers in both English and Spanish.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="caring-through-education-newborn-jaundice.html">Caring Through Education - Newborn Jaundice
+                <p>An informational handout that explains newborn jaundice and how to care for the condition in both English and Spanish.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="caring-through-education-birth-control-after-delivery.html">Caring Through Education - Birth Control after Delivery
+                <p>An informational handout that describes how to correctly take birth control after miscarriage or delivery in both English and Spanish.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="caring-through-education-herpes-infection-after-delivery.html">Caring Through Education - Herpes Infection after Delivery
+                <p>An informational handout that describes how herpes infection can potentially affect mother and baby after delivery in both English and ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="the-well-mom-checklist.html">The Well Mom Checklist
+                <p>A tool developed to assist new mothers in their self-care.</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Mental Health</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="emotions-after-delivery.html">Emotions after Delivery
+                <p>A pamphlet for women seeking support for postpartum depression and/or other mental health issues after delivery, in English or Spanish, ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="resources-for-mothers-with-postpartum-mental-illness.html">Resources for Mothers with Postpartum Mental Illness
+                <p>A list of useful postpartum depression hotlines, clinics, counseling services, therapy, and support groups for woman in need of support ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="postpartum-support-and-counseling.html">Postpartum Support and Counseling
+                <p>A list of resources for postpartum mothers in need of support or counseling.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="crisis-intervention-of-houston.html">Crisis Intervention of Houston
+                <p>An organization that provides phone counseling with 24/7 counselors available, crisis intervention, referrals, support groups and youth ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="nurse-family-partnership-in-harris-county.html">Nurse Family Partnership in Harris County
+                <p>A free voluntary program that partners first-time mothers with nurse home visitors that visit throughout the pregnancy until the baby ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="the-well-mom-checklist.html">The Well Mom Checklist
+                <p>A tool developed to assist new mothers in their self-care.</p>
+            </a>
+        </li>
+
+    </ul>
+
+        <div class="stats">
+            <ol id="refs">
+<li>Children at Risk. <em>Community Health Needs Assessment for Texas
+Children's Hospital 2013.</em> Children at Risk, 2013. Web. 29 Aug.
+2014.</li>
+</ol>
+
+        </div>
+    </div>
+        </ion-item>
+        <button text-wrap ion-item class="item-stable" (click)="toggleGroup(18)" >
+          Senior Care
+    	</button>
+        <ion-item text-wrap class="item-accordion" *ngIf="isGroupShown(18)">
+        	<div class="content">
+        <div class="stats">
+            <ul>
+<li><p>The fastest growing segment of our population is those age greater
+than 80. When seniors are hospitalized, more than 60% will need
+assistance upon discharge and more than 30% are without resources
+for that assistance.<sup>1</sup></p>
+</li>
+<li><p>95% of health care costs for older Americans are for chronic
+diseases, such as heart disease, cancer, stroke, chronic lower
+respiratory diseases, Alzheimer’s disease, and diabetes, as well as
+many others<sup>1</sup>.</p>
+</li>
+<li><p>32.9 % of seniors in Texas had a fall-related injury during 2010.<sup>1</sup></p>
+</li>
+<li><p>An estimated 5.4 million Americans have Alzheimer's disease.<sup>2</sup></p>
+</li>
+<li><p>In 2011, there were 58,068 confirmed cases of elder abuse, neglect
+or exploitation in Texas.<sup>3</sup></p>
+</li>
+</ul>
+
+        </div>
+
+    <ul class="table-view">
+        <li class="table-view-divider">General Information Overview</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="senior-resource-guide.html">Senior Resource Guide
+                <p>The Senior Resource Guide brand provides lifestyle resources to active aging adults, caregivers and elder care professionals in Houston.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="fall-prevention.html">Fall Prevention
+                <p>A fact sheet that gives advice on how to prevent falls with exercise programs, making your home safer, along with other helpful links. ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="senior-guidance-directory.html">Senior Guidance Directory
+                <p>A free online and in-print resource guide for elder caregiving in Houston.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="physical-activity-for-older-adults.html">Physical Activity for Older Adults
+                <p>The World Health Organization recommendations for physical activity for health in adults 65 years and older.</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Home Care and Placement Assistance</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="new-lifestyles.html">New Lifestyles
+                <p>A free online and in-print guide to home care and placement options based on zip code.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="area-agency-on-aging.html">Area Agency on Aging
+                <p>Help with meals, Medicare/insurance benefits, at home services, caregiver support services, transportation, and nursing home advocates.</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Case Management Services</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="family-services-of-greater-houston.html">Family Services of Greater Houston
+                <p>Assistance and referrals for individuals, families and seniors to access community resources in the greater Houston community (legal ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="national-association-of-geriatric-care-managers.html">National Association of Geriatric Care Managers
+                <p>A GCM (Geriatric Care Manager) is a health and human services specialist who helps families who are caring for older relatives. They are ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Financial Assistance</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="area-agency-on-aging.html">Area Agency on Aging
+                <p>Help with meals, Medicare/insurance benefits, at home services, caregiver support services, transportation, and nursing home advocates.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="centers-for-medicare-and-medicaid-services-cms.html">Centers for Medicare and Medicaid Services (CMS)
+                <p>Visit the CMS website for general information and questions.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="paying-for-senior-care.html">Paying for Senior Care
+                <p>Interactive website to assist in understanding Medicare benefits, social security benefits, and private funding sources and how they can ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="social-security-administration.html">Social Security Administration
+            </a>
+        </li>
+
+        <li class="table-view-divider">Assistance with Legal Issues</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="elder-law-committee-and-services.html">Elder Law Committee and Services
+                <p>The Houston Bar Association Elder Law and Committee facilitates programs that help income-eligible seniors with legal problems, ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="houston-volunteer-lawyers.html">Houston Volunteer Lawyers
+                <p>Provide free legal aid to low-income individuals by connecting them with lawyers in the private bar who volunteer their time (they do ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Guardianship</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="senior-guidance-directory.html">Senior Guidance Directory
+                <p>A free online and in-print resource guide for elder caregiving in Houston.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="texas-guardianship-association.html">Texas Guardianship Association
+                <p>A non-profit providing information on guardianship basics/legalities and links to possible low-cost legal aid services which may be able ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Elder Abuse</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="hotline-to-report-abuse.html">Hotline to Report Abuse
+                <p>If you suspect abuse, call the Department of Family and Protective Services (DFPS) hotline.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="adult-protective-services-aps.html">Adult Protective Services (APS)
+                <p>Available for those 65 years and older, or age 18-65 who have disabilities, who are reported to be abused, neglected, or exploited.</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Mental Health</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right-link" href="/guide/community-resources/mental-and-behavioral-health/">Mental Health
+            </a>
+        </li>
+
+        <li class="table-view-divider">Alzheimer's</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="warning-signs-for-diagnosis.html">Warning Signs for Diagnosis
+                <p>A checklist to help you self-diagnose/recognize Alzheimer's.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="alzheimers-association.html">Alzheimer's Association
+                <p>Find the chapter near you and information on the resources that they provide by visiting their website.</p>
+            </a>
+        </li>
+
+    </ul>
+
+        <div class="stats">
+            <ol id="refs">
+<li><p>Center for Disease Control and Prevention. <em>The State of Aging &amp;
+Health in America 2013</em>. Available at:
+<a href="http://www.cdc.gov/features/agingandhealth/state_of_aging_and_health_in_america_2013.pdf">http://www.cdc.gov/features/agingandhealth/state_of_aging_and_health_in_america_2013.pdf</a>.
+Accessed 12 Sept 2014.</p>
+</li>
+<li><p>Center for Disease Control and Prevention. <em>Alzheimer’s Disease.</em>
+Available at: <a href="http://www.cdc.gov/aging/aginginfo/alzheimers.htm">http://www.cdc.gov/aging/aginginfo/alzheimers.htm</a>.
+Accessed 12 Sept 2014.</p>
+</li>
+<li><p>Texas Department of Family and Protective Services. <em>Texas Adult
+Protective Services (APS)</em>. Available at:
+<a href="https://www.dfps.state.tx.us/adult_protection/">https://www.dfps.state.tx.us/adult_protection/</a>. Accessed 12
+Sept 2014.</p>
+</li>
+</ol>
+
+        </div>
+    </div>
+        </ion-item>
+        <button text-wrap ion-item class="item-stable" (click)="toggleGroup(19)" >
+          Substance Abuse
+    	</button>
+        <ion-item text-wrap class="item-accordion" *ngIf="isGroupShown(19)">
+        	<div class="content">
+        <div class="stats">
+            <ul>
+<li><p>38.9% of Houston ISD high school students had experimented with
+marijuana in 2011 and 15.1% had ever used prescription drugs without
+a prescription<sup>1</sup>.</p>
+</li>
+<li><p>In 2011, more than 60% of White Houston ISD high school students had
+at least one alcoholic drink in the past 30 days compared to about
+40% of Latino youth and about 25% of Black youth<sup>1</sup>.</p>
+</li>
+<li><p>Among adults aged 50 to 64, the rate of current illicit drug use has
+increased during the past decade. For adults aged 50 to 54, the rate
+increased from 3.4&nbsp;percent in 2002 to 7.2&nbsp;percent in 2012<sup>2</sup>.</p>
+</li>
+</ul>
+
+        </div>
+
+    <ul class="table-view">
+        <li class="table-view-divider">Community Resources</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="substance-abuse-services-of-greater-houston.html">Substance Abuse Services of Greater Houston
+                <p>A comprehensive verified list of substance abuse treatment and counseling centers in the Greater Houston area.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="tobacco-cessation-programs-in-houston.html">Tobacco Cessation Programs in Houston
+                <p>An extensive list of tobacco cessation programs in the Houston area that are free or at low cost for patients as well as multiple ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="the-guide-by-mental-health-america-of-greater-houston.html">The Guide by Mental Health America of Greater Houston
+                <p>An extensive list of non-profit substance abuse services in Harris County.</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">General Resources</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="smoking-cessation-information.html">Smoking Cessation Information
+                <p>The national program from the U.S. Department of Health and Human Services that provides smoking cessation information to patients.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="texas-department-of-state-health-services-dshs.html">Texas Department of State Health Services (DSHS)
+                <p>The Texas DSHS provides substance abuse services, programs and information online.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="national-institute-on-drug-abuse-nida.html">National Institute on Drug Abuse (NIDA)
+                <p>The NIDA website provides statistics, research, treatment services and patient/family education on substance abuse.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="centers-for-disease-control-and-prevention-cdc.html">Centers for Disease Control and Prevention (CDC)
+                <p>The CDC website provides statistics, strategies for prevention, treatment and educational material on substance abuse including alcohol, ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Patient Education</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="patient-handouts.html">Patient Handouts
+                <p>A list of handouts specific to children and adults on different forms of substance abuse and methods of prevention.</p>
+            </a>
+        </li>
+
+    </ul>
+
+        <div class="stats">
+            <ol id="refs">
+<li><p>Children at Risk. <em>Community Health Needs Assessment for Texas
+Children's Hospital 2013.</em> Children at Risk, 2013. Web. 29 Aug.
+2014.</p>
+</li>
+<li><p>“Results from the 2012 National Survey on Drug Use and Health:
+Summary of National Findings”. <em>Substance Abuse and Mental Health
+Services Administration.</em> U.S. Department of Health and Human
+Services, 2012. Web. 4 Sept 2014.</p>
+</li>
+</ol>
+
+        </div>
+
+    </div>
+        </ion-item>
+        <button text-wrap ion-item class="item-stable" (click)="toggleGroup(20)" >
+          Transportation
+    	</button>
+        <ion-item text-wrap class="item-accordion" *ngIf="isGroupShown(20)">
+        	<div class="content">
+
+        <div class="stats">
+            <ul>
+<li><p>According to the latest 3-year estimate from the US Census, only
+2.4% of the Houston-Sugar Land-Baytown Metropolitan Statistical Area
+commuters used public mass transportation.<sup>1</sup></p>
+</li>
+<li><p>In 2011, there were 3,105 motor vehicle traffic fatalities with
+34.5% of those involving a drive under the influence of alcohol.<sup>2</sup></p>
+</li>
+<li><p>METRO Transit Authority of Houston has 1,230 buses, a 7.5 mile light
+rail service, and 29 Park &amp; Ride lots with over 33,000 available
+parking spaces.<sup>3</sup></p>
+</li>
+</ul>
+
+        </div>
+
+    <ul class="table-view">
+        <li class="table-view-cell">
+            <a class="navigate-right" href="metro-public-transportation.html">Metro Public Transportation
+                <p>One-way fare on local buses and light rail is $1.25. Visit the METRO RideStore or one of the listed retailers to purchase a reloadable Q ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="metrolift.html">MetroLift
+                <p>MetroLift provides transportation for persons with disabilities who cannot board, ride, or disembark from a regular METRO fixed-route bus. </p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="texas-medicaid-and-chip-medical-transportation-program.html">Texas Medicaid and CHIP Medical Transportation Program
+                <p>The Medical Transportation Program sets up non-emergency rides for people who have no other way to get to their Medicaid health-care ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="medical-transportation-management-mtm.html">Medical Transportation Management (MTM)
+                <p>MTM is a company devoted to providing non-emergent medical transportation services to people in the Texas Medicaid and Children with ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="american-cancer-society.html">American Cancer Society
+                <p>Transportation is provided to and from treatment center for cancer patients, or AIDS patients with a cancer diagnosis (when volunteer ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="project-access.html">Project Access
+                <p>Project Access provides free transportation on a set route for the homeless community. Tickets are required to ride and can be obtained ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="houston-area-parkinson-society.html">Houston Area Parkinson Society
+                <p>Provides handicapped equipped van rides for those with Parkinson Disease in need of transportation to their therapy sites and doctor's ...</p>
+            </a>
+        </li>
+
+    </ul>
+
+        <div class="stats">
+            <ol id="refs">
+<li><p>Central Houston, Inc. <em>Downtown Commute Survey 2013</em>. Available at:
+<a href="http://www.downtownhouston.org/site_media/uploads/attachments/2014-04-08/2013_Commute_Survey_Report.pdf">http://www.downtownhouston.org/site_media/uploads/attachments/2014-04-08/2013_Commute_Survey_Report.pdf</a>. Accessed 12 Sept 2014.</p>
+</li>
+<li><p>Texas Department of Transportation. <em>Texas Highway Safety Annual
+Report, FY 2012.</em> Available at:
+<a href="https://www.txdot.gov/apps/egrants/eGrantsHelp/Reports/TexasTrafficSafetyAnnualReport-2012.pdf">https://www.txdot.gov/apps/egrants/eGrantsHelp/Reports/TexasTrafficSafetyAnnualReport-2012.pdf</a>. Accessed 12 Sept 2014.</p>
+</li>
+<li><p>Metropolitan Transit Authority of Harris County, Houston, Texas. <em>An
+Overview of the Metropolitan Transit Authority of Harris County</em>.
+Available at: <a href="http://www.ridemetro.org/aboutus/">http://www.ridemetro.org/aboutus/</a>. Accessed 12
+Sept 2014.</p>
+</li>
+</ol>
+
+        </div>
+
+    </div>
+        </ion-item>
+        <button text-wrap ion-item class="item-stable" (click)="toggleGroup(21)" >
+          Vision Services
+    	</button>
+        <ion-item text-wrap class="item-accordion" *ngIf="isGroupShown(21)">
+        	<div class="content">
+        <div class="stats">
+            <ul>
+<li><p>About 14 million Americans aged 12 years and older have
+self-reported visual impairment defined as distance visual acuity of
+20/50 or worse. Among them, more than 11 million Americans could
+have improved their vision to 20/40 or better with refractive
+correction<sup>1</sup>.</p>
+</li>
+<li><p>Americans without health insurance had the lowest age-adjusted rate
+of use of eye care services (42%) compared with Americans with
+private health insurance (67%) or public health insurance (55%)<sup>1</sup>.</p>
+</li>
+<li><p>National and state data show that more than half of adult Americans
+who did not seek eye care are due to lack of awareness or costs;
+which often exacerbated by lack of adequate health insurance<sup>2</sup>.</p>
+</li>
+<li><p>Approximately 6.8% of children younger than 18 years in the United
+States have a diagnosed eye and vision condition<sup>2</sup>.</p>
+</li>
+</ul>
+
+        </div>
+
+    <ul class="table-view">
+        <li class="table-view-divider">Community Resources</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="vision-services-in-harris-county.html">Vision Services in Harris County
+                <p>A comprehensive verified list of optometry clinics in Harris County.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="prevent-blindness-america.html">Prevent Blindness America
+                <p>These are documents provided by Prevent Blindness of many national programs and organizations that can provide financial assistance to ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="eye-care-for-kids-foundation.html">Eye Care for Kids Foundation
+                <p>An application for eligible children for a free comprehensive eye exam and eyeglasses provided by Eye Care for Kids Foundation and a ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Patient Education</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="tips-to-maintain-healthy-eyes.html">Tips to Maintain Healthy Eyes
+                <p>A handout provided by the Centers for Disease Control and Prevention on how to maintain healthy eyes.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="national-eye-institute.html">National Eye Institute
+                <p>NEI eye health information (in English and Spanish) listed alphabetically by disease/disorder along with a collection of eye health ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="prevent-blindness.html">Prevent Blindness
+                <p>Prevent Blindness has some helpful information on eye health and safety, vision screening and programs, along with other great info for ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="eye-smart-american-academy-of-ophthalmology.html">Eye Smart - American Academy of Ophthalmology
+                <p>Eye Smart provides eye health information by the American Academy of Ophthalmology on common eye conditions in both English and Spanish.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="american-optometric-association.html">American Optometric Association
+                <p>AOA provides doctor-reviewed and approved information about the most common eye conditions as helpful handouts for patients.</p>
+            </a>
+        </li>
+
+    </ul>
+
+        <div class="stats">
+            <ol id="refs">
+<li><p>"National Data: Vision Health Initiative (VHI)". <em>Centers for
+Disease Control and Prevention.</em> National Center for Chronic Disease
+Prevention and Health Promotion, 28 Sept 2009. Web. 4 Sept 2014.</p>
+</li>
+<li><p>"FastStats: Vision Health Initiative (VHI)". <em>Centers for Disease
+Control and Prevention.</em> National Center for Chronic Disease
+Prevention and Health Promotion, 5 Nov 2009. Web. 4 Sept 2014.</p>
+</li>
+</ol>
+
+        </div>
+    </div>
+        </ion-item>
+        <button text-wrap ion-item class="item-stable" (click)="toggleGroup(22)" >
+          Women's Health
+    	</button>
+        <ion-item text-wrap class="item-accordion" *ngIf="isGroupShown(22)">
+        	<div class="content">
+
+        <div class="stats">
+            <ul>
+<li><p>In the US, 67.1% of women over 40 years old have had a mammogram
+within the past 2 years, and 73.2% of women 18 years old have had a
+pap smear within the past 3 years<sup>1</sup>.</p>
+</li>
+<li><p>In Texas, more than 1,200 women are expected to be diagnosed with
+cervical cancer each year, and over 16,000 are expected to be
+diagnosed with breast cancer each year<sup>2</sup>.</p>
+</li>
+<li><p>It is estimated that 1 million woman in Texas are in need of
+preventative care and family planning services<sup>2</sup>.</p>
+</li>
+</ul>
+
+        </div>
+
+    <ul class="table-view">
+        <li class="table-view-divider">Family Planning and Reproductive Health</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="family-planning-in-texas.html">Family Planning in Texas
+                <p>Information on DSHS-funded family planning services and a search function for local clinics.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="planned-parenthood-health-center-search.html">Planned Parenthood Health Center Search
+                <p>Find a variety of women’s health services at local Planned Parenthood Clinics.</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="birth-control.html">Birth Control
+                <p>Fact sheets about birth control options in English and Spanish from Department of State Health Services.</p>
+            </a>
+        </li>
+
+        <li class="table-view-divider">Cancer and Cancer Prevention Resources and Education</li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="breast-cancer-resources.html">Breast Cancer Resources
+                <p>A few websites with resources and educational handouts on breast cancer as well as a list of organizations that provide free/low cost ...</p>
+            </a>
+        </li>
+
+        <li class="table-view-cell">
+            <a class="navigate-right" href="cervical-cancer-resources.html">Cervical Cancer Resources
+                <p>A few websites with resources and educational handouts on cervical cancer.</p>
+            </a>
+        </li>
+
+    </ul>
+
+        <div class="stats">
+            <ol id="refs">
+<li><p>CDC: Women’s Health Fact Sheet. Accessed 6 Sept 2014:
+<a href="http://www.cdc.gov/nchs/fastats/womens-health.htm">http://www.cdc.gov/nchs/fastats/womens-health.htm</a></p>
+</li>
+<li><p>Texas Women’s Healthcare Coalition. Accessed 6 Sept 2014:
+<a href="http://www.texaswhc.org/why-you-should-care">http://www.texaswhc.org/why-you-should-care</a></p>
+</li>
+</ol>
+
+        </div>
+
+    </div>
+        </ion-item>
+
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar text-center>
+    <small >
+            <a [navPush]="Home">Home</a> | <a [navPush]="TermsAndCond">Terms &amp; Conditions</a> | <a (click)="launch('https://docs.google.com/forms/d/1V5ySudx03DRinmNHCm6EfKWXnPa1GJAyVxaZcO5Miy0/viewform')">Feedback</a><br>
+            Copyright © 2016 Doctors for Change<br>
+            <a (click)="launch('http://www.doctorsforchange.org')">doctorsforchange.org</a>
+        </small>
+  </ion-toolbar>
+</ion-footer>

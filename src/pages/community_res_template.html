@@ -1,0 +1,122 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Adolescent Issues</ion-title>
+    <ion-buttons end>
+      <button ion-button color="danger" clear icon-only outline (click)="toggleFavorite()">
+        <ion-icon [name]="isFavorite ? 'star' : 'star-outline'"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <!--  ########################################  Information  #####################################  -->
+  <ion-toolbar color="danger">
+    <ion-title>Information</ion-title>
+  </ion-toolbar>
+
+  <ion-card>
+    <ion-card-header>
+     
+    </ion-card-header>
+
+    <ion-card-content>
+
+    </ion-card-content>
+  </ion-card>
+
+  <!--  ########################################  Community Resources  #####################################  -->
+  <ion-toolbar color="danger">
+    <ion-title>Community Resources</ion-title>
+  </ion-toolbar>
+
+  <ion-card>      
+    <ion-card-content>
+      <ion-list>
+        <button text-wrap ion-item (click)="toggleGroup(0)" >
+          test
+        </button>
+        <ion-item *ngIf="isGroupShown(0)">
+          test 1
+        </ion-item>
+        <button text-wrap ion-item (click)="toggleGroup(1)" >
+          test
+        </button>
+        <ion-item *ngIf="isGroupShown(1)">
+          test 1
+        </ion-item>
+        <button text-wrap ion-item (click)="toggleGroup(2)" >
+          test
+        </button>
+        <ion-item *ngIf="isGroupShown(2)">
+          test 1
+        </ion-item>
+        <button text-wrap ion-item (click)="toggleGroup(3)" >
+          test
+        </button>
+        <ion-item *ngIf="isGroupShown(3)">
+          test 1
+        </ion-item>
+        <button text-wrap ion-item (click)="toggleGroup(4)" >
+          test
+        </button>
+        <ion-item *ngIf="isGroupShown(4)">
+          test 1
+        </ion-item>
+        <button text-wrap ion-item (click)="toggleGroup(5)" >
+          test
+        </button>
+        <ion-item *ngIf="isGroupShown(5)">
+          test 1
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!--  ########################################  Patient Education  #####################################  -->
+  <ion-toolbar color="danger">
+    <ion-title>Patient Education</ion-title>
+  </ion-toolbar>
+
+  <ion-card>
+    <ion-card-header>
+     
+    </ion-card-header>
+
+    <ion-card-content>
+
+    </ion-card-content>
+  </ion-card>
+
+  <!--  ########################################  References  #####################################  -->
+  <ion-toolbar color="danger">
+    <ion-title>References</ion-title>
+  </ion-toolbar>
+
+  <ion-card>
+    <ion-card-header>
+     
+    </ion-card-header>
+
+    <ion-card-content>
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar text-center>
+    <small >
+            <a [navPush]="Home">Home</a> | <a [navPush]="TermsAndCond">Terms &amp; Conditions</a> | <a (click)="launch('https://docs.google.com/forms/d/1V5ySudx03DRinmNHCm6EfKWXnPa1GJAyVxaZcO5Miy0/viewform')">Feedback</a><br>
+            Copyright © 2016 Doctors for Change<br>
+            <a (click)="launch('http://www.doctorsforchange.org')">doctorsforchange.org</a>
+        </small>
+  </ion-toolbar>
+</ion-footer>
